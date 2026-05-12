@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://sellerlab.it/</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sellerlab.it/"/>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://sellerlab.it/marketplace.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sellerlab.it/marketplace.html"/>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://sellerlab.it/tools.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sellerlab.it/tools.html"/>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://sellerlab.it/confronto.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sellerlab.it/confronto.html"/>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://sellerlab.it/calcolatore.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sellerlab.it/calcolatore.html"/>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://sellerlab.it/guida.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sellerlab.it/guida.html"/>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://sellerlab.it/glossario.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sellerlab.it/glossario.html"/>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://sellerlab.it/consulenza.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://sellerlab.it/consulenza.html"/>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>
