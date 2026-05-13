@@ -28,14 +28,7 @@ $items = array_filter($tools, fn($t) => $t['category'] === 'inventory');
 
 <section class="section">
   <div class="section-inner">
-    <nav class="breadcrumb">
-      <a href="../index.php">Home</a>
-      <span class="breadcrumb-sep">/</span>
-      <a href="../tools.php">Tool & Software</a>
-      <span class="breadcrumb-sep">/</span>
-      <span class="breadcrumb-current">Inventario & Ordini</span>
-    </nav>
-    <div class="grid-2">
+<div class="grid-2">
       <?php foreach ($items as $item) render_card($item); ?>
     </div>
   </div>

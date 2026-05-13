@@ -28,14 +28,7 @@ $items = array_filter($marketplaces, fn($m) => $m['category'] === 'comparatori')
 
 <section class="section">
   <div class="section-inner">
-    <nav class="breadcrumb">
-      <a href="../index.php">Home</a>
-      <span class="breadcrumb-sep">/</span>
-      <a href="../marketplace.php">Marketplace</a>
-      <span class="breadcrumb-sep">/</span>
-      <span class="breadcrumb-current">Comparatori</span>
-    </nav>
-    <div class="grid-2">
+<div class="grid-2">
       <?php foreach ($items as $item) render_card($item); ?>
     </div>
   </div>
