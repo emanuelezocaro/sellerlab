@@ -159,7 +159,7 @@ include 'includes/nav.php';
       <button class="filter-btn" onclick="filterTable('libero', this)">Accesso libero</button>
     </div>
 
-    <div class="table-wrap">
+    <div class="table-wrap" id="table-wrap">
       <table id="main-table">
         <thead>
           <tr>
@@ -480,6 +480,9 @@ function filterTable(type, btn) {
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   renderTable();
+  if (window.scrollY > 120) {
+    document.getElementById('table-wrap').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
 }
 
 function sortTable(col) {
