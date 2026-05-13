@@ -1,5 +1,5 @@
 <?php
-$title = 'Confronto Commissioni Marketplace Italiani 2025 - SellerLab';
+$title = 'Confronto Commissioni Marketplace 2025: Amazon vs eBay vs Zalando | SellerLab';
 $description = 'Tabella comparativa di tutti i marketplace italiani: commissioni, traffico, tipo di accesso, categorie principali. Amazon vs eBay vs Zalando vs Etsy e molto altro.';
 $canonical = 'https://sellerlab.it/confronto.php';
 $og_title = 'Confronto Commissioni Marketplace Italiani 2025 - SellerLab';
@@ -135,7 +135,7 @@ include 'includes/nav.php';
 <div class="page-hero">
   <div class="page-hero-inner">
     <div class="section-label">Tabella comparativa</div>
-    <h1>Tutti i marketplace a confronto</h1>
+    <h1>Confronto commissioni marketplace 2025</h1>
     <p>Commissioni, traffico, tipo di accesso e categorie principali. Filtra e ordina per trovare il canale giusto per te.</p>
   </div>
 </div>

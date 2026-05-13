@@ -1,5 +1,5 @@
 <?php
-$title = 'Marketplace Italiani 2025 - Commissioni e Guide | SellerLab';
+$title = 'Marketplace Italiani 2025: Commissioni, Pro e Contro | SellerLab';
 $description = 'Confronta tutti i marketplace per vendere online in Italia: Amazon, eBay, Zalando, Etsy, Subito, ManoMano e molto altro. Commissioni aggiornate, pro e contro, guide pratiche.';
 $keywords = 'marketplace italiani, vendere su amazon italia, commissioni amazon, ebay italia commissioni, zalando venditori, etsy italia, manomano marketplace, subito.it venditori, comparatore marketplace ecommerce';
 $canonical = 'https://sellerlab.it/marketplace.php';
@@ -29,7 +29,7 @@ include 'includes/nav.php';
 <div class="page-hero">
   <div class="page-hero-inner">
     <div class="section-label">Marketplace</div>
-    <h1>Tutti i canali di vendita italiani</h1>
+    <h1>Marketplace italiani 2025: commissioni, pro e contro</h1>
     <p>20+ piattaforme analizzate con commissioni reali, traffico stimato, pro e contro. Aggiornato al 2025.</p>
   </div>
 </div>

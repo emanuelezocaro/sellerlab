@@ -1,6 +1,6 @@
 <?php
-$title = 'SellerLab - Marketplace e Tool per Vendere Online in Italia';
-$description = 'Confronta tutti i marketplace italiani e i tool per venditori online: Amazon, eBay, Zalando, Etsy e molto altro. Commissioni reali, pro e contro aggiornati al 2025.';
+$title = 'Vendere Online in Italia: Marketplace, Tool e Guide | SellerLab';
+$description = 'Confronta tutti i marketplace italiani e i tool per vendere online: Amazon, eBay, Zalando, Etsy. Commissioni reali, pro e contro onesti, guide pratiche aggiornate al 2025.';
 $keywords = 'marketplace italiani, vendere online italia, amazon italia commissioni, ebay italia, zalando venditori, ecommerce italia, tool ecommerce, shopify italia';
 $canonical = 'https://sellerlab.it/';
 $og_title = 'SellerLab - Marketplace e Tool per Vendere Online in Italia';
@@ -16,7 +16,7 @@ include 'includes/nav.php';
 <!-- HERO -->
 <section class="hero">
   <div class="hero-badge">🇮🇹 Focalizzato sul mercato italiano</div>
-  <h1>Vendi online in Italia.<br><em>Scegli bene dove farlo.</em></h1>
+  <h1>Vendere online in Italia.<br><em>Scegli bene dove farlo.</em></h1>
   <p>SellerLab raccoglie e confronta tutti i marketplace, le piattaforme e i tool per venditori italiani. Commissioni reali, pro e contro onesti, guide pratiche.</p>
   <div class="hero-actions">
     <a href="marketplace.php" class="btn btn-primary">Esplora i Marketplace →</a>

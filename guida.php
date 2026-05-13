@@ -1,8 +1,8 @@
 <?php
-$title = 'Guida: Quale Marketplace Scegliere - SellerLab';
-$description = 'Non sai da dove iniziare? Scopri quale marketplace fa per te in base al tipo di prodotto, ai tuoi obiettivi e al tuo livello di esperienza.';
+$title = 'Quale Marketplace Scegliere per Vendere Online in Italia | SellerLab';
+$description = 'Non sai da dove iniziare a vendere online? Scopri quale marketplace fa per te in base al tipo di prodotto, ai tuoi obiettivi e al livello di esperienza.';
 $canonical = 'https://sellerlab.it/guida.php';
-$og_title = 'Guida: Quale Marketplace Scegliere - SellerLab';
+$og_title = 'Quale Marketplace Scegliere per Vendere Online in Italia | SellerLab';
 $og_description = 'Guida pratica per scegliere il marketplace giusto in base al tipo di prodotto e agli obiettivi di business.';
 $og_url = 'https://sellerlab.it/guida.php';
 $og_locale = 'it_IT';
@@ -120,7 +120,7 @@ include 'includes/nav.php';
 <div class="page-hero">
   <div class="page-hero-inner">
     <div class="section-label">Guida pratica</div>
-    <h1>Quale marketplace fa per te?</h1>
+    <h1>Quale marketplace scegliere per vendere online</h1>
     <p>Non esiste la piattaforma giusta in assoluto. Dipende da cosa vendi, quali sono i tuoi obiettivi e quanto sei disposto a investire. Questa guida ti aiuta a scegliere.</p>
   </div>
 </div>

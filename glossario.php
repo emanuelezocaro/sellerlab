@@ -1,8 +1,8 @@
 <?php
-$title = 'Glossario E-commerce e Marketplace - SellerLab';
-$description = 'Tutti i termini del commercio online spiegati in italiano: FBA, FBM, BSR, Buy Box, ASIN, EAN, GTIN, CPC, ROAS, AOV e molto altro.';
+$title = 'Glossario E-commerce Italiano: Termini Marketplace e Vendita Online | SellerLab';
+$description = 'Tutti i termini del commercio online spiegati in italiano: FBA, FBM, BSR, Buy Box, ASIN, EAN, GTIN, CPC, ROAS e molto altro. Il glossario per chi vende online.';
 $canonical = 'https://sellerlab.it/glossario.php';
-$og_title = 'Glossario E-commerce e Marketplace - SellerLab';
+$og_title = 'Glossario E-commerce Italiano: Termini Marketplace e Vendita Online | SellerLab';
 $og_description = 'Tutti i termini del commercio online spiegati in italiano: FBA, BSR, Buy Box, ASIN, CPC e molto altro.';
 $og_url = 'https://sellerlab.it/glossario.php';
 $og_locale = 'it_IT';
@@ -110,7 +110,7 @@ include 'includes/nav.php';
 <div class="page-hero">
   <div class="page-hero-inner">
     <div class="section-label">Glossario</div>
-    <h1>Termini dell'e-commerce spiegati</h1>
+    <h1>Glossario e-commerce italiano</h1>
     <p>60+ definizioni di marketplace, logistica, advertising e metriche. Da FBA a ROAS, tutto ciò che devi sapere.</p>
   </div>
 </div>

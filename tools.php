@@ -1,6 +1,6 @@
 <?php
-$title = 'Tool per Vendere Online 2025 - Shopify, Helium 10, Lengow | SellerLab';
-$description = 'I migliori tool per venditori online italiani: Shopify, WooCommerce, Lengow, Helium 10, Keepa, Scalapay e molto altro. Guide pratiche con prezzi e confronti aggiornati al 2025.';
+$title = 'Tool per Vendere Online 2025: Software e-commerce per Seller | SellerLab';
+$description = 'I migliori tool per vendere online in Italia: Shopify, WooCommerce, Helium 10, Lengow, Keepa e molto altro. Prezzi, confronti e guide pratiche aggiornate al 2025.';
 $keywords = 'tool ecommerce italia, shopify italia, woocommerce, helium 10 amazon, lengow feed management, channable, keepa amazon, scalapay ecommerce, feedaty recensioni, repricing amazon';
 $canonical = 'https://sellerlab.it/tools.php';
 $og_title = 'Tool per Vendere Online in Italia 2025 - SellerLab';
@@ -30,7 +30,7 @@ include 'includes/nav.php';
 <div class="page-hero">
   <div class="page-hero-inner">
     <div class="section-label">Tool & Software</div>
-    <h1>I tool che usano i seller professionisti</h1>
+    <h1>I migliori tool per vendere online in Italia</h1>
     <p>Piattaforme e-commerce, feed management, repricing, analytics e molto altro. 30+ tool analizzati per il mercato italiano.</p>
   </div>
 </div>
