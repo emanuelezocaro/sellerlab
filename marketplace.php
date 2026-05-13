@@ -1,13 +1,13 @@
 <?php
-$title = 'Marketplace Italiani 2025 — Commissioni e Guide | SellerLab';
+$title = 'Marketplace Italiani 2025 - Commissioni e Guide | SellerLab';
 $description = 'Confronta tutti i marketplace per vendere online in Italia: Amazon, eBay, Zalando, Etsy, Subito, ManoMano e molto altro. Commissioni aggiornate, pro e contro, guide pratiche.';
 $keywords = 'marketplace italiani, vendere su amazon italia, commissioni amazon, ebay italia commissioni, zalando venditori, etsy italia, manomano marketplace, subito.it venditori, comparatore marketplace ecommerce';
 $canonical = 'https://sellerlab.it/marketplace.php';
-$og_title = 'Marketplace Italiani 2025 — Confronto Commissioni e Guide';
+$og_title = 'Marketplace Italiani 2025 - Confronto Commissioni e Guide';
 $og_description = 'Confronta Amazon, eBay, Zalando, Etsy, Subito e altri 15+ marketplace italiani. Commissioni reali, pro e contro aggiornati.';
 $og_url = 'https://sellerlab.it/marketplace.php';
 $og_locale = 'it_IT';
-$jsonld = '<script type="application/ld+json">\n  {\n    "@context": "https://schema.org",\n    "@graph": [\n      {\n        "@type": "BreadcrumbList",\n        "itemListElement": [\n          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sellerlab.it/" },\n          { "@type": "ListItem", "position": 2, "name": "Marketplace", "item": "https://sellerlab.it/marketplace.html" }\n        ]\n      },\n      {\n        "@type": "ItemList",\n        "name": "Marketplace per vendere online in Italia",\n        "description": "Lista completa dei marketplace italiani con commissioni e caratteristiche aggiornate al 2025",\n        "numberOfItems": 18,\n        "itemListElement": [\n          { "@type": "ListItem", "position": 1, "name": "Amazon.it", "url": "https://amazon.it", "description": "Il marketplace più grande in Italia con oltre 35 milioni di visitatori mensili. Commissioni 8-15%." },\n          { "@type": "ListItem", "position": 2, "name": "eBay.it", "url": "https://ebay.it", "description": "Marketplace storico ideale per usato, collezionismo e ricambi. Commissione ~12.8%." },\n          { "@type": "ListItem", "position": 3, "name": "Subito.it", "url": "https://subito.it", "description": "Piattaforma di annunci n.1 in Italia. Gratuito per privati, piani pro per dealer." },\n          { "@type": "ListItem", "position": 4, "name": "Etsy", "url": "https://etsy.com", "description": "Marketplace per handmade, vintage e prodotti creativi. Commissione 6.5%." },\n          { "@type": "ListItem", "position": 5, "name": "Zalando", "url": "https://zalando.it", "description": "Leader europeo fashion. Accesso selettivo, commissioni 5-25%." },\n          { "@type": "ListItem", "position": 6, "name": "ManoMano", "url": "https://manomano.it", "description": "Marketplace europeo per bricolage e giardinaggio. Commissioni 12-15%." },\n          { "@type": "ListItem", "position": 7, "name": "Vinted", "url": "https://vinted.it", "description": "Moda second-hand. Zero commissioni per il venditore." },\n          { "@type": "ListItem", "position": 8, "name": "TikTok Shop", "url": "https://shop.tiktok.com", "description": "Social commerce emergente in Italia. Commissioni ~5-8%." }\n        ]\n      },\n      {\n        "@type": "WebPage",\n        "name": "Marketplace Italiani — Confronto e Guide",\n        "url": "https://sellerlab.it/marketplace.html",\n        "description": "Confronto completo di tutti i marketplace per vendere online in Italia",\n        "inLanguage": "it-IT",\n        "isPartOf": { "@id": "https://sellerlab.it/#website" }\n      }\n    ]\n  }\n  </script>';
+$jsonld = '<script type="application/ld+json">\n  {\n    "@context": "https://schema.org",\n    "@graph": [\n      {\n        "@type": "BreadcrumbList",\n        "itemListElement": [\n          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sellerlab.it/" },\n          { "@type": "ListItem", "position": 2, "name": "Marketplace", "item": "https://sellerlab.it/marketplace.html" }\n        ]\n      },\n      {\n        "@type": "ItemList",\n        "name": "Marketplace per vendere online in Italia",\n        "description": "Lista completa dei marketplace italiani con commissioni e caratteristiche aggiornate al 2025",\n        "numberOfItems": 18,\n        "itemListElement": [\n          { "@type": "ListItem", "position": 1, "name": "Amazon.it", "url": "https://amazon.it", "description": "Il marketplace più grande in Italia con oltre 35 milioni di visitatori mensili. Commissioni 8-15%." },\n          { "@type": "ListItem", "position": 2, "name": "eBay.it", "url": "https://ebay.it", "description": "Marketplace storico ideale per usato, collezionismo e ricambi. Commissione ~12.8%." },\n          { "@type": "ListItem", "position": 3, "name": "Subito.it", "url": "https://subito.it", "description": "Piattaforma di annunci n.1 in Italia. Gratuito per privati, piani pro per dealer." },\n          { "@type": "ListItem", "position": 4, "name": "Etsy", "url": "https://etsy.com", "description": "Marketplace per handmade, vintage e prodotti creativi. Commissione 6.5%." },\n          { "@type": "ListItem", "position": 5, "name": "Zalando", "url": "https://zalando.it", "description": "Leader europeo fashion. Accesso selettivo, commissioni 5-25%." },\n          { "@type": "ListItem", "position": 6, "name": "ManoMano", "url": "https://manomano.it", "description": "Marketplace europeo per bricolage e giardinaggio. Commissioni 12-15%." },\n          { "@type": "ListItem", "position": 7, "name": "Vinted", "url": "https://vinted.it", "description": "Moda second-hand. Zero commissioni per il venditore." },\n          { "@type": "ListItem", "position": 8, "name": "TikTok Shop", "url": "https://shop.tiktok.com", "description": "Social commerce emergente in Italia. Commissioni ~5-8%." }\n        ]\n      },\n      {\n        "@type": "WebPage",\n        "name": "Marketplace Italiani - Confronto e Guide",\n        "url": "https://sellerlab.it/marketplace.html",\n        "description": "Confronto completo di tutti i marketplace per vendere online in Italia",\n        "inLanguage": "it-IT",\n        "isPartOf": { "@id": "https://sellerlab.it/#website" }\n      }\n    ]\n  }\n  </script>';
 $current_page = 'marketplace';
 include 'includes/head.php';
 include 'includes/nav.php';
@@ -164,7 +164,7 @@ include 'includes/nav.php';
           <div class="card-desc" style="margin-top:10px;">
             Nata nel 2008 come successore di Kijiji, Subito.it è la piattaforma di annunci numero uno in Italia per traffico e penetrazione. Forte su usato locale, auto, immobili ed elettronica, funziona su logica geografica: chi cerca, filtra per città o regione, e questo la rende complementare ai marketplace nazionali.<br><br>
             Per i <strong>privati</strong> è gratuita nella maggior parte delle categorie. Per i <strong>professionisti</strong> (dealer auto, agenzie immobiliari, rivenditori) esistono piani a pagamento con inserzioni illimitate, visibilità premium e strumenti di gestione. Le categorie più forti sono: <strong>auto e moto</strong>, <strong>immobiliare</strong>, <strong>elettronica</strong>, <strong>arredamento</strong> e <strong>abbigliamento</strong>.<br><br>
-            Subito non gestisce i pagamenti: le transazioni avvengono direttamente tra acquirente e venditore. Le "Spedizioni Subito" offrono protezione per entrambe le parti, ma l'utilizzo rimane parziale — molti scambi avvengono ancora in contanti di persona.
+            Subito non gestisce i pagamenti: le transazioni avvengono direttamente tra acquirente e venditore. Le "Spedizioni Subito" offrono protezione per entrambe le parti, ma l'utilizzo rimane parziale - molti scambi avvengono ancora in contanti di persona.
           </div>
           <div class="metrics">
             <div class="metric"><div class="metric-label">Commissione</div><div class="metric-value">0% (privati)</div></div>
@@ -212,7 +212,7 @@ include 'includes/nav.php';
           <div class="card-type">Marketplace verticale · Elettronica & Tecnologia</div>
           <div class="card-desc" style="margin-top:10px;">
             ePrice nasce nel 1999 come e-commerce di elettronica e nel tempo ha aperto la sezione marketplace a venditori terzi. Rimane uno dei pochi player italiani indipendenti nel tech, con un pubblico già orientato all'acquisto online di informatica, smartphone, TV e audio, piccoli e grandi elettrodomestici.<br><br>
-            L'accesso è su richiesta: servono partita IVA e rispetto degli standard qualitativi della piattaforma. Non è un canale per prodotti generalisti — funziona solo per chi vende tech.<br><br>
+            L'accesso è su richiesta: servono partita IVA e rispetto degli standard qualitativi della piattaforma. Non è un canale per prodotti generalisti - funziona solo per chi vende tech.<br><br>
             Il confronto con Amazon è diretto: ePrice ha meno traffico, ma anche meno concorrenza. Su alcune referenze tech i margini sono migliori proprio perché si compete con meno seller. Da trattare come canale complementare, non primario.
           </div>
           <div class="metrics">
@@ -270,7 +270,7 @@ include 'includes/nav.php';
           <div class="card-name" style="margin:12px 0 4px;">Etsy</div>
           <div class="card-type">Marketplace verticale · Handmade, Vintage & Creatività</div>
           <div class="card-desc" style="margin-top:10px;">
-            Etsy è la piattaforma globale per artigianato, vintage e prodotti creativi: 90 milioni di acquirenti attivi, base italiana in crescita. Chi compra su Etsy cerca qualcosa di specifico e unico — non il prezzo più basso. Questo cambia completamente le dinamiche competitive rispetto ai marketplace generalisti.<br><br>
+            Etsy è la piattaforma globale per artigianato, vintage e prodotti creativi: 90 milioni di acquirenti attivi, base italiana in crescita. Chi compra su Etsy cerca qualcosa di specifico e unico - non il prezzo più basso. Questo cambia completamente le dinamiche competitive rispetto ai marketplace generalisti.<br><br>
             Le categorie più forti: gioielli artigianali, stampe e illustrazioni digitali, abbigliamento handmade e personalizzato, decorazioni casa, candele, ceramiche, prodotti vintage (almeno 20 anni di età) e forniture per creativi. I prodotti industriali non sono ammessi, ma il print-on-demand tramite partner come Printful o Printify è consentito.<br><br>
             Etsy Ads consente di sponsorizzare i propri listing internamente. Per i venditori italiani è disponibile anche un programma spedizioni integrato con corrieri convenzionati.
           </div>
@@ -323,7 +323,7 @@ include 'includes/nav.php';
           <div class="card-desc" style="margin-top:10px;">
             ManoMano copre bricolage, fai-da-te, giardinaggio e arredamento su sei mercati europei, Italia inclusa dal 2016. La pandemia ha accelerato la crescita del settore DIY e ManoMano ne ha beneficiato in modo diretto: oggi è il canale verticale di riferimento per chi vende prodotti per la casa in Europa.<br><br>
             Serve sia il <strong>segmento B2C</strong> (appassionati DIY, proprietari di casa) che il <strong>segmento PRO</strong> (professionisti edili e impiantisti). Categorie principali: utensili manuali ed elettrici, materiali edili, impianti idraulici ed elettrici, arredo giardino, illuminazione, vernici e finiture.<br><br>
-            L'onboarding richiede EAN su tutti i prodotti, SLA di spedizione stringenti e approvazione. Lo scontrino medio è tra i più alti dei marketplace verticali — un ordine tipico vale 3-4 volte quello di un marketplace generalista — il che rende le commissioni al 12-15% più digeribili.
+            L'onboarding richiede EAN su tutti i prodotti, SLA di spedizione stringenti e approvazione. Lo scontrino medio è tra i più alti dei marketplace verticali - un ordine tipico vale 3-4 volte quello di un marketplace generalista - il che rende le commissioni al 12-15% più digeribili.
           </div>
           <div class="metrics">
             <div class="metric"><div class="metric-label">Commissione</div><div class="metric-value">12–15%</div></div>
@@ -372,7 +372,7 @@ include 'includes/nav.php';
           <div class="card-type">Marketplace verticale · Abbigliamento usato · C2C</div>
           <div class="card-desc" style="margin-top:10px;">
             Vinted è l'app di moda second-hand più scaricata in Italia, con una base utenti concentrata sotto i 35 anni. Il suo meccanismo è semplice: <strong>il venditore non paga commissioni</strong>. Le fee (circa 5% + 0,70€) le paga l'acquirente come "protezione acquirente". Risultato: zero barriere all'ingresso per chi vende, ma margini difficili da pianificare per chi vuole farne un business strutturato.<br><br>
-            La piattaforma è pensata per il <strong>C2C privato</strong>. Chi vende in modo professionale deve dichiararlo esplicitamente — obbligo legale dal 2023 con il Digital Services Act — e rispettare norme specifiche. Le categorie più attive: abbigliamento donna, bambino e luxury second-hand.<br><br>
+            La piattaforma è pensata per il <strong>C2C privato</strong>. Chi vende in modo professionale deve dichiararlo esplicitamente - obbligo legale dal 2023 con il Digital Services Act - e rispettare norme specifiche. Le categorie più attive: abbigliamento donna, bambino e luxury second-hand.<br><br>
             Su Vinted i prezzi sono tendenzialmente bassi e gli acquirenti sono abituati a trattare. Non è il canale giusto per costruire un'attività scalabile, ma per smaltire stock o iniziare a vendere usato senza costi fissi non ha rivali.
           </div>
           <div class="metrics">
@@ -479,7 +479,7 @@ include 'includes/nav.php';
           <div class="card-type">Marketplace fashion · B2C · Solo brand selezionati</div>
           <div class="card-desc" style="margin-top:10px;">
             Con 50 milioni di clienti attivi in 25 paesi, Zalando è la vetrina fashion più grande d'Europa. In Italia ha un pubblico consolidato e un tasso di acquisto ripetuto alto. Ma non è un marketplace aperto: si entra solo tramite il <strong>Zalando Partner Program (ZPP)</strong>, su invito o candidatura approvata.<br><br>
-            Due modelli possibili: <strong>Wholesale</strong> (Zalando acquista lo stock e gestisce tutto) oppure <strong>Partner Program</strong> (il brand lista i prodotti, gestisce la logistica in proprio o tramite Zalando Fulfillment Solutions). Per candidarsi servono: brand registrato, collezione stagionale strutturata, capacità logistica adeguata e conformità agli standard fotografici — che sono molto rigidi.<br><br>
+            Due modelli possibili: <strong>Wholesale</strong> (Zalando acquista lo stock e gestisce tutto) oppure <strong>Partner Program</strong> (il brand lista i prodotti, gestisce la logistica in proprio o tramite Zalando Fulfillment Solutions). Per candidarsi servono: brand registrato, collezione stagionale strutturata, capacità logistica adeguata e conformità agli standard fotografici - che sono molto rigidi.<br><br>
             Il lato critico: Zalando può restituire l'invenduto e le condizioni commerciali penalizzano i brand piccoli. Le commissioni variano dal 5 al 25% a seconda della categoria. Ha senso per chi ha già un brand strutturato e vuole distribuirlo a scala europea, meno per chi sta ancora costruendo il prodotto.
           </div>
           <div class="metrics">
@@ -615,8 +615,8 @@ include 'includes/nav.php';
           <div class="card-name" style="margin:12px 0 4px;">Depop</div>
           <div class="card-type">Social marketplace · Secondhand · B2C / C2C</div>
           <div class="card-desc" style="margin-top:10px;">
-            Depop funziona come un incrocio tra Instagram e un mercatino vintage: ogni seller ha un profilo, pubblica foto curate e costruisce una community di follower. Il focus è su abbigliamento vintage, streetwear, pezzi unici e second-hand di marca. Non si vende a catalogo — si vende un'estetica.<br><br>
-            Acquistato da Etsy nel 2021, conta 35 milioni di utenti globali con forte concentrazione in UK, USA e Italia, tutti under 30. Funziona per chi ha pezzi selezionati e curati — vintage anni '80–'00, capsule collection, capi di nicchia. Non funziona per chi vende in modo seriale o vuole scalare con un catalogo ampio.
+            Depop funziona come un incrocio tra Instagram e un mercatino vintage: ogni seller ha un profilo, pubblica foto curate e costruisce una community di follower. Il focus è su abbigliamento vintage, streetwear, pezzi unici e second-hand di marca. Non si vende a catalogo - si vende un'estetica.<br><br>
+            Acquistato da Etsy nel 2021, conta 35 milioni di utenti globali con forte concentrazione in UK, USA e Italia, tutti under 30. Funziona per chi ha pezzi selezionati e curati - vintage anni '80–'00, capsule collection, capi di nicchia. Non funziona per chi vende in modo seriale o vuole scalare con un catalogo ampio.
           </div>
           <div class="metrics">
             <div class="metric"><div class="metric-label">Commissione</div><div class="metric-value">10% + fees</div></div>
@@ -661,7 +661,7 @@ include 'includes/nav.php';
           <div class="card-name" style="margin:12px 0 4px;">Vestiaire Collective</div>
           <div class="card-type">Luxury resale · Autenticazione · C2C / B2C</div>
           <div class="card-desc" style="margin-top:10px;">
-            Vestiaire Collective è il canale europeo per il luxury second-hand: borse Chanel, scarpe Gucci, orologi di pregio, cappotti Burberry. Ciò che lo distingue dalla concorrenza è l'autenticazione fisica degli articoli prima della consegna — ogni pezzo passa per esperti e fotografi prima di arrivare all'acquirente. Questo riduce le frodi e consente prezzi più alti.<br><br>
+            Vestiaire Collective è il canale europeo per il luxury second-hand: borse Chanel, scarpe Gucci, orologi di pregio, cappotti Burberry. Ciò che lo distingue dalla concorrenza è l'autenticazione fisica degli articoli prima della consegna - ogni pezzo passa per esperti e fotografi prima di arrivare all'acquirente. Questo riduce le frodi e consente prezzi più alti.<br><br>
             23 milioni di utenti globali, tutti orientati all'acquisto di fascia alta. Solo brand premium sono accettati: niente fast fashion. È il canale giusto per chi rivende capi di lusso usati o gestisce un archivio di pezzi premium e vuole prezzi adeguati al valore reale.
           </div>
           <div class="metrics">
@@ -769,7 +769,7 @@ include 'includes/nav.php';
           <div class="card-type">Comparatore prezzi · CPC · Italiano</div>
           <div class="card-desc" style="margin-top:10px;">
             Trovaprezzi è il comparatore prezzi italiano più usato: milioni di utenti al mese che cercano la migliore offerta su un prodotto specifico. Funziona bene su elettronica, informatica, elettrodomestici e qualsiasi prodotto con EAN, dove il confronto di prezzo è immediato e l'utente è già in fase di decisione d'acquisto.<br><br>
-            Per listare serve registrarsi come merchant, inviare un feed prodotti (CSV o XML) e impostare un budget CPC. Il costo per clic varia per categoria e competitività — in genere inferiore a Google Shopping. Ha senso come canale complementare per chi ha prezzi competitivi; non serve a chi non può o non vuole competere sul prezzo.
+            Per listare serve registrarsi come merchant, inviare un feed prodotti (CSV o XML) e impostare un budget CPC. Il costo per clic varia per categoria e competitività - in genere inferiore a Google Shopping. Ha senso come canale complementare per chi ha prezzi competitivi; non serve a chi non può o non vuole competere sul prezzo.
           </div>
           <div class="metrics">
             <div class="metric"><div class="metric-label">Modello</div><div class="metric-value">CPC</div></div>
@@ -865,8 +865,8 @@ include 'includes/nav.php';
           <div class="card-name" style="margin:12px 0 4px;">TikTok Shop</div>
           <div class="card-type">Social Commerce · Live shopping · Gen Z</div>
           <div class="card-desc" style="margin-top:10px;">
-            TikTok Shop porta l'e-commerce dentro l'app: video, live e schede prodotto acquistabili senza uscire da TikTok. In Italia è operativo dal 2023 e ancora in fase di adozione, ma la crescita è rapida — soprattutto su beauty, moda, lifestyle e gadget.<br><br>
-            La logica è opposta ai marketplace tradizionali: l'utente non cerca il prodotto, lo scopre guardando un contenuto. Questo apre a conversioni su prodotti che non avrebbero mai intercettato traffico organico. Per funzionare richiede produzione video continua e una presenza attiva sulla piattaforma. Il programma <strong>TikTok Affiliate</strong> consente ai creator di promuovere i tuoi prodotti in cambio di commissione — un canale di acquisizione interessante senza budget pubblicitario diretto.
+            TikTok Shop porta l'e-commerce dentro l'app: video, live e schede prodotto acquistabili senza uscire da TikTok. In Italia è operativo dal 2023 e ancora in fase di adozione, ma la crescita è rapida - soprattutto su beauty, moda, lifestyle e gadget.<br><br>
+            La logica è opposta ai marketplace tradizionali: l'utente non cerca il prodotto, lo scopre guardando un contenuto. Questo apre a conversioni su prodotti che non avrebbero mai intercettato traffico organico. Per funzionare richiede produzione video continua e una presenza attiva sulla piattaforma. Il programma <strong>TikTok Affiliate</strong> consente ai creator di promuovere i tuoi prodotti in cambio di commissione - un canale di acquisizione interessante senza budget pubblicitario diretto.
           </div>
           <div class="metrics">
             <div class="metric"><div class="metric-label">Commissione</div><div class="metric-value">~5–8%</div></div>
@@ -912,8 +912,8 @@ include 'includes/nav.php';
           <div class="card-name" style="margin:12px 0 4px;">Instagram & Facebook Shop</div>
           <div class="card-type">Social Commerce · Visual · Meta Ads integration</div>
           <div class="card-desc" style="margin-top:10px;">
-            Instagram e Facebook Shop permettono di creare una vetrina prodotti integrata nei profili social. In Italia il checkout nativo non è disponibile (solo negli USA), quindi in pratica funziona come vetrina con redirect al tuo e-commerce — non come marketplace autonomo.<br><br>
-            Il vero valore è l'integrazione con <strong>Meta Ads</strong>: collegando il catalogo a Facebook Business Manager si attivano campagne Dynamic Product Ads che mostrano i prodotti giusti all'utente giusto in automatico. Per chi fa retargeting su Meta, avere il catalogo collegato è praticamente obbligatorio — la differenza in performance è netta.
+            Instagram e Facebook Shop permettono di creare una vetrina prodotti integrata nei profili social. In Italia il checkout nativo non è disponibile (solo negli USA), quindi in pratica funziona come vetrina con redirect al tuo e-commerce - non come marketplace autonomo.<br><br>
+            Il vero valore è l'integrazione con <strong>Meta Ads</strong>: collegando il catalogo a Facebook Business Manager si attivano campagne Dynamic Product Ads che mostrano i prodotti giusti all'utente giusto in automatico. Per chi fa retargeting su Meta, avere il catalogo collegato è praticamente obbligatorio - la differenza in performance è netta.
           </div>
           <div class="metrics">
             <div class="metric"><div class="metric-label">Costo piattaforma</div><div class="metric-value">Gratuito</div></div>
@@ -971,7 +971,7 @@ include 'includes/nav.php';
           <div class="card-type">Vendite privé · Flash sale · Solo stock definito</div>
           <div class="card-desc" style="margin-top:10px;">
             Già Vente-privée fino al rebranding del 2019, Veepee è la piattaforma europea delle vendite-evento riservate agli iscritti: 70 milioni di soci in Europa. Il meccanismo non cambia: il brand propone uno stock definito a prezzo scontato, la vendita dura 3–5 giorni, visibile solo a chi è registrato.<br><br>
-            Veepee gestisce tutto — comunicazione, immagini, customer service — e paga il brand entro 30–60 giorni dalla chiusura dell'evento. È una soluzione concreta per smaltire invenduto o fine stagione senza svalutare il prezzo sul proprio canale diretto. Lo svantaggio principale: gli sconti richiesti sono spesso aggressivi (30–70%) e non si ha controllo sulla presentazione creativa.
+            Veepee gestisce tutto - comunicazione, immagini, customer service - e paga il brand entro 30–60 giorni dalla chiusura dell'evento. È una soluzione concreta per smaltire invenduto o fine stagione senza svalutare il prezzo sul proprio canale diretto. Lo svantaggio principale: gli sconti richiesti sono spesso aggressivi (30–70%) e non si ha controllo sulla presentazione creativa.
           </div>
           <div class="metrics">
             <div class="metric"><div class="metric-label">Modello</div><div class="metric-value">Consignment/evento</div></div>
@@ -1016,7 +1016,7 @@ include 'includes/nav.php';
           <div class="card-name" style="margin:12px 0 4px;">Privalia</div>
           <div class="card-type">Fashion outlet · Vendite evento · B2C</div>
           <div class="card-desc" style="margin-top:10px;">
-            Privalia opera con lo stesso modello di Veepee — vendite evento a prezzi scontati, visibili solo agli iscritti — con focus su abbigliamento, scarpe e accessori di brand noti. Presente in Italia, Spagna e Messico, è stata acquisita da Veepee nel 2019 ma mantiene operatività parzialmente autonoma in alcuni mercati.<br><br>
+            Privalia opera con lo stesso modello di Veepee - vendite evento a prezzi scontati, visibili solo agli iscritti - con focus su abbigliamento, scarpe e accessori di brand noti. Presente in Italia, Spagna e Messico, è stata acquisita da Veepee nel 2019 ma mantiene operatività parzialmente autonoma in alcuni mercati.<br><br>
             In Italia ha perso visibilità rispetto al picco degli anni 2010–2016, ma resta un canale utile per brand fashion di fascia media che vogliono smaltire stock senza bruciare il prezzo sul canale diretto.
           </div>
           <div class="metrics">
@@ -1072,7 +1072,7 @@ include 'includes/nav.php';
           <div class="card-name" style="margin:12px 0 4px;">Back Market</div>
           <div class="card-type">Marketplace ricondizionato · B2C · Elettronica</div>
           <div class="card-desc" style="margin-top:10px;">
-            Back Market è il marketplace europeo per l'elettronica ricondizionata: smartphone, tablet, laptop, console, cuffie. Attivo in oltre 16 paesi, ha costruito la sua reputazione su garanzie chiare e prezzi sensibilmente inferiori al nuovo — in media il 30-70% in meno rispetto al listino.<br><br>
+            Back Market è il marketplace europeo per l'elettronica ricondizionata: smartphone, tablet, laptop, console, cuffie. Attivo in oltre 16 paesi, ha costruito la sua reputazione su garanzie chiare e prezzi sensibilmente inferiori al nuovo - in media il 30-70% in meno rispetto al listino.<br><br>
             L'accesso non è automatico: ogni venditore deve superare una verifica e ogni prodotto deve passare test tecnici standardizzati con valutazione cosmetica certificata. La garanzia minima di 12 mesi è obbligatoria su tutti gli articoli. È il canale giusto per riparatori, ricondizionatori professionali e chi gestisce stock di resi o usato certificato.
           </div>
           <div class="metrics">
@@ -1133,8 +1133,8 @@ include 'includes/nav.php';
           <div class="card-name" style="margin:12px 0 4px;">Allegro</div>
           <div class="card-type">Marketplace generalista · CEE · B2C / C2C</div>
           <div class="card-desc" style="margin-top:10px;">
-            Allegro domina il mercato polacco con 135 milioni di offerte attive e 22 milioni di acquirenti mensili — numeri paragonabili ad Amazon in un paese da 38 milioni di abitanti. Per i seller italiani è la porta d'ingresso più diretta sull'Europa Centrale e dell'Est, mercati in crescita con meno concorrenza rispetto all'ovest.<br><br>
-            Dal 2021 è aperto a seller europei non polacchi tramite il programma Allegro Express, con spedizioni internazionali. Funziona bene su elettronica, moda, casa e prodotti Made in Italy — in Polonia l'origine italiana è percepita come garanzia di qualità su molte categorie.
+            Allegro domina il mercato polacco con 135 milioni di offerte attive e 22 milioni di acquirenti mensili - numeri paragonabili ad Amazon in un paese da 38 milioni di abitanti. Per i seller italiani è la porta d'ingresso più diretta sull'Europa Centrale e dell'Est, mercati in crescita con meno concorrenza rispetto all'ovest.<br><br>
+            Dal 2021 è aperto a seller europei non polacchi tramite il programma Allegro Express, con spedizioni internazionali. Funziona bene su elettronica, moda, casa e prodotti Made in Italy - in Polonia l'origine italiana è percepita come garanzia di qualità su molte categorie.
           </div>
           <div class="metrics">
             <div class="metric"><div class="metric-label">Commissione</div><div class="metric-value">6–12%</div></div>
@@ -1180,7 +1180,7 @@ include 'includes/nav.php';
           <div class="card-type">Marketplace aste · Collezionismo · B2C / C2C</div>
           <div class="card-desc" style="margin-top:10px;">
             Catawiki è la piattaforma europea di aste online per oggetti speciali e da collezione: arte, orologi, gioielli, fumetti, monete, vini pregiati, auto d'epoca, merchandise raro. Attiva in oltre 60 paesi, organizza 75.000 aste all'anno con acquirenti da tutto il mondo disposti a pagare prezzi di mercato reali.<br><br>
-            Non è ad accesso libero: ogni venditore deve fare richiesta e ogni lotto passa attraverso una selezione editoriale curata da esperti per categoria. Questo filtro è anche il suo punto di forza — gli acquirenti si fidano perché sanno che i pezzi sono stati valutati. Il canale giusto per oggetti unici, collezioni, stock vintage o articoli difficili da prezzare su un marketplace standard.
+            Non è ad accesso libero: ogni venditore deve fare richiesta e ogni lotto passa attraverso una selezione editoriale curata da esperti per categoria. Questo filtro è anche il suo punto di forza - gli acquirenti si fidano perché sanno che i pezzi sono stati valutati. Il canale giusto per oggetti unici, collezioni, stock vintage o articoli difficili da prezzare su un marketplace standard.
           </div>
           <div class="metrics">
             <div class="metric"><div class="metric-label">Commissione</div><div class="metric-value">12.5–20%</div></div>
@@ -1318,7 +1318,7 @@ include 'includes/nav.php';
           <div class="card-type">Marketplace globale · Diretto da fabbrica · B2C</div>
           <div class="card-desc" style="margin-top:10px;">
             Temu è il marketplace di PDD Holdings (stesso gruppo di Pinduoduo) che dal 2022 ha invaso il mercato europeo con una strategia aggressiva: prezzi ultra-competitivi grazie alla filiera corta direttamente dai produttori cinesi, spedizioni gratuite anche per ordini minimi e promozioni continue. In Italia ha raggiunto milioni di utenti in pochissimo tempo.<br><br>
-            Dal 2024 Temu ha aperto un programma per seller europei (modello "semi-managed"), permettendo a venditori terzi di listare prodotti sulla piattaforma. Per i seller italiani rappresenta una doppia sfida: competere con i loro prezzi è quasi impossibile, ma allo stesso tempo venderci prodotti differenziati — Made in Italy, nicchie di qualità, accessori originali — può essere un'opportunità concreta su un traffico enorme.
+            Dal 2024 Temu ha aperto un programma per seller europei (modello "semi-managed"), permettendo a venditori terzi di listare prodotti sulla piattaforma. Per i seller italiani rappresenta una doppia sfida: competere con i loro prezzi è quasi impossibile, ma allo stesso tempo venderci prodotti differenziati - Made in Italy, nicchie di qualità, accessori originali - può essere un'opportunità concreta su un traffico enorme.
           </div>
           <div class="metrics">
             <div class="metric"><div class="metric-label">Commissione</div><div class="metric-value">0–5% (semi-managed)</div></div>

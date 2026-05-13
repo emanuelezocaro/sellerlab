@@ -1,8 +1,8 @@
 <?php
-$title = 'Calcolatore Margini Marketplace — SellerLab';
+$title = 'Calcolatore Margini Marketplace - SellerLab';
 $description = 'Calcola commissioni e margine netto su Amazon, eBay, Etsy, Zalando e altri marketplace italiani. Strumento gratuito per venditori online.';
 $canonical = 'https://sellerlab.it/calcolatore.php';
-$og_title = 'Calcolatore Margini Marketplace — SellerLab';
+$og_title = 'Calcolatore Margini Marketplace - SellerLab';
 $og_description = 'Calcola quanto guadagni realmente su ogni marketplace, al netto di commissioni e costi. Gratuito.';
 $og_url = 'https://sellerlab.it/calcolatore.php';
 $og_locale = 'it_IT';

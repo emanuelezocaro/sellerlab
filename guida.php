@@ -1,8 +1,8 @@
 <?php
-$title = 'Guida: Quale Marketplace Scegliere — SellerLab';
+$title = 'Guida: Quale Marketplace Scegliere - SellerLab';
 $description = 'Non sai da dove iniziare? Scopri quale marketplace fa per te in base al tipo di prodotto, ai tuoi obiettivi e al tuo livello di esperienza.';
 $canonical = 'https://sellerlab.it/guida.php';
-$og_title = 'Guida: Quale Marketplace Scegliere — SellerLab';
+$og_title = 'Guida: Quale Marketplace Scegliere - SellerLab';
 $og_description = 'Guida pratica per scegliere il marketplace giusto in base al tipo di prodotto e agli obiettivi di business.';
 $og_url = 'https://sellerlab.it/guida.php';
 $og_locale = 'it_IT';
@@ -150,26 +150,26 @@ include 'includes/nav.php';
           <li class="rec-item">
             <img src="https://cdn.simpleicons.org/etsy/F16521" alt="Etsy">
             <div class="rec-item-text">
-              <div class="rec-item-name">Etsy — Prima scelta</div>
+              <div class="rec-item-name">Etsy - Prima scelta</div>
               <div class="rec-item-why">Comunità globale che cerca prodotti unici. Accesso immediato, visibilità internazionale dal giorno 1.</div>
             </div>
           </li>
           <li class="rec-item">
             <img src="https://cdn.simpleicons.org/instagram/E4405F" alt="Instagram">
             <div class="rec-item-text">
-              <div class="rec-item-name">Instagram Shop — Canale di scoperta</div>
+              <div class="rec-item-name">Instagram Shop - Canale di scoperta</div>
               <div class="rec-item-why">Ottimo per costruire un pubblico e far scoprire il prodotto tramite contenuti visivi.</div>
             </div>
           </li>
           <li class="rec-item">
             <img src="https://cdn.simpleicons.org/shopify/96BF48" alt="Shopify">
             <div class="rec-item-text">
-              <div class="rec-item-name">Shopify — Quando scala</div>
+              <div class="rec-item-name">Shopify - Quando scala</div>
               <div class="rec-item-why">Apri il tuo negozio quando vuoi più controllo sul brand e fidelizzare i clienti.</div>
             </div>
           </li>
         </ul>
-        <div class="avoid-box">🚫 <strong>Evita:</strong> Amazon per iniziare — i prodotti handmade si perdono tra milioni di articoli e la piattaforma non è pensata per unicità.</div>
+        <div class="avoid-box">🚫 <strong>Evita:</strong> Amazon per iniziare - i prodotti handmade si perdono tra milioni di articoli e la piattaforma non è pensata per unicità.</div>
       </div>
 
       <!-- RIVENDITORE -->
@@ -182,21 +182,21 @@ include 'includes/nav.php';
           <li class="rec-item">
             <img src="https://www.google.com/s2/favicons?domain=amazon.it&sz=32" alt="Amazon">
             <div class="rec-item-text">
-              <div class="rec-item-name">Amazon FBA — Cardine</div>
+              <div class="rec-item-name">Amazon FBA - Cardine</div>
               <div class="rec-item-why">Massimo traffico e fiducia. FBA delega la logistica. Ma occhio alla Buy Box: con prodotti già presenti avrai concorrenza.</div>
             </div>
           </li>
           <li class="rec-item">
             <img src="https://cdn.simpleicons.org/ebay/E53238" alt="eBay">
             <div class="rec-item-text">
-              <div class="rec-item-name">eBay — Complementare</div>
+              <div class="rec-item-name">eBay - Complementare</div>
               <div class="rec-item-why">Per prodotti difficili da trovare, referenze di nicchia o quando Amazon è troppo affollato.</div>
             </div>
           </li>
           <li class="rec-item">
             <img src="https://www.google.com/s2/favicons?domain=trovaprezzi.it&sz=32" alt="Trovaprezzi">
             <div class="rec-item-text">
-              <div class="rec-item-name">Trovaprezzi — Per elettronica/tech</div>
+              <div class="rec-item-name">Trovaprezzi - Per elettronica/tech</div>
               <div class="rec-item-why">Se hai prezzi competitivi su elettronica, intercetta chi è già in fase di acquisto.</div>
             </div>
           </li>
@@ -214,21 +214,21 @@ include 'includes/nav.php';
           <li class="rec-item">
             <img src="https://cdn.simpleicons.org/shopify/96BF48" alt="Shopify">
             <div class="rec-item-text">
-              <div class="rec-item-name">Shopify — Base di partenza</div>
+              <div class="rec-item-name">Shopify - Base di partenza</div>
               <div class="rec-item-why">Il tuo negozio è il tuo asset. I dati clienti ti appartengono. È qui che costruisci la relazione diretta.</div>
             </div>
           </li>
           <li class="rec-item">
             <img src="https://www.google.com/s2/favicons?domain=amazon.it&sz=32" alt="Amazon">
             <div class="rec-item-text">
-              <div class="rec-item-name">Amazon — Per volume</div>
+              <div class="rec-item-name">Amazon - Per volume</div>
               <div class="rec-item-why">Con Brand Registry puoi sfruttare A+ Content, Sponsored Brands e protezione da hijacker.</div>
             </div>
           </li>
           <li class="rec-item">
             <img src="https://cdn.simpleicons.org/instagram/E4405F" alt="Instagram">
             <div class="rec-item-text">
-              <div class="rec-item-name">Instagram/TikTok — Discovery</div>
+              <div class="rec-item-name">Instagram/TikTok - Discovery</div>
               <div class="rec-item-why">Per far conoscere il brand a nuovi potenziali clienti tramite contenuti e creator.</div>
             </div>
           </li>
@@ -246,21 +246,21 @@ include 'includes/nav.php';
           <li class="rec-item">
             <img src="https://cdn.simpleicons.org/zalando/FF6900" alt="Zalando">
             <div class="rec-item-text">
-              <div class="rec-item-name">Zalando — Per brand strutturati</div>
+              <div class="rec-item-name">Zalando - Per brand strutturati</div>
               <div class="rec-item-why">La vetrina fashion più grande d'Europa. Ma serve un brand registrato e una collezione strutturata.</div>
             </div>
           </li>
           <li class="rec-item">
             <img src="https://cdn.simpleicons.org/vinted/007782" alt="Vinted">
             <div class="rec-item-text">
-              <div class="rec-item-name">Vinted — Per second-hand</div>
+              <div class="rec-item-name">Vinted - Per second-hand</div>
               <div class="rec-item-why">Zero commissioni venditore. Ottimo per iniziare con usato o stock di fine stagione.</div>
             </div>
           </li>
           <li class="rec-item">
             <img src="https://www.google.com/s2/favicons?domain=depop.com&sz=32" alt="Depop">
             <div class="rec-item-text">
-              <div class="rec-item-name">Depop — Per vintage e Gen Z</div>
+              <div class="rec-item-name">Depop - Per vintage e Gen Z</div>
               <div class="rec-item-why">Community giovane con passione per streetwear, vintage e moda creativa.</div>
             </div>
           </li>
@@ -278,21 +278,21 @@ include 'includes/nav.php';
           <li class="rec-item">
             <img src="https://www.google.com/s2/favicons?domain=manomano.com&sz=32" alt="ManoMano">
             <div class="rec-item-text">
-              <div class="rec-item-name">ManoMano — Prima scelta verticale</div>
+              <div class="rec-item-name">ManoMano - Prima scelta verticale</div>
               <div class="rec-item-why">Pubblico altamente targettizzato. Meno concorrenza rispetto ad Amazon per prodotti DIY.</div>
             </div>
           </li>
           <li class="rec-item">
             <img src="https://www.google.com/s2/favicons?domain=amazon.it&sz=32" alt="Amazon">
             <div class="rec-item-text">
-              <div class="rec-item-name">Amazon — Per volumi</div>
+              <div class="rec-item-name">Amazon - Per volumi</div>
               <div class="rec-item-why">Le categorie Home & Garden su Amazon.it sono molto trafficate. FBA funziona bene per prodotti non ingombranti.</div>
             </div>
           </li>
           <li class="rec-item">
             <img src="https://www.google.com/s2/favicons?domain=leroymerlin.it&sz=32" alt="Leroy Merlin">
             <div class="rec-item-text">
-              <div class="rec-item-name">Leroy Merlin — Complementare</div>
+              <div class="rec-item-name">Leroy Merlin - Complementare</div>
               <div class="rec-item-why">Brand di fiducia per prodotti casa. Accesso selettivo ma ottima qualità del traffico.</div>
             </div>
           </li>
@@ -310,21 +310,21 @@ include 'includes/nav.php';
           <li class="rec-item">
             <img src="https://www.google.com/s2/favicons?domain=amazon.it&sz=32" alt="Amazon">
             <div class="rec-item-text">
-              <div class="rec-item-name">Amazon — Inevitabile</div>
+              <div class="rec-item-name">Amazon - Inevitabile</div>
               <div class="rec-item-why">Il 60%+ degli acquisti tech in Italia inizia su Amazon. Devi esserci, ma con una strategia di pricing precisa.</div>
             </div>
           </li>
           <li class="rec-item">
             <img src="https://www.google.com/s2/favicons?domain=trovaprezzi.it&sz=32" alt="Trovaprezzi">
             <div class="rec-item-text">
-              <div class="rec-item-name">Trovaprezzi — Per prezzi competitivi</div>
+              <div class="rec-item-name">Trovaprezzi - Per prezzi competitivi</div>
               <div class="rec-item-why">Gli acquirenti tech usano i comparatori. Essere presenti con buon prezzo porta traffico qualificato a costo contenuto.</div>
             </div>
           </li>
           <li class="rec-item">
             <img src="https://www.google.com/s2/favicons?domain=backmarket.it&sz=32" alt="Back Market">
             <div class="rec-item-text">
-              <div class="rec-item-name">Back Market — Per ricondizionato</div>
+              <div class="rec-item-name">Back Market - Per ricondizionato</div>
               <div class="rec-item-why">Se hai accesso a prodotti ricondizionati certificati, il mercato cresce velocemente e i margini sono migliori.</div>
             </div>
           </li>
@@ -347,25 +347,25 @@ include 'includes/nav.php';
       <div class="timeline">
         <div class="tl-item">
           <div class="tl-dot"></div>
-          <div class="tl-phase">Fase 1 — Mese 1-3</div>
+          <div class="tl-phase">Fase 1 - Mese 1-3</div>
           <div class="tl-title">Inizia su un marketplace esistente</div>
           <div class="tl-desc">Non costruire subito il tuo e-commerce. Inizia su Amazon, eBay o Etsy: il traffico è già lì, non devi preoccuparti di marketing e impari come funziona la vendita online con infrastruttura pronta. Vendi 10–20 prodotti, impara cosa piace al mercato.</div>
         </div>
         <div class="tl-item">
           <div class="tl-dot"></div>
-          <div class="tl-phase">Fase 2 — Mese 3-6</div>
+          <div class="tl-phase">Fase 2 - Mese 3-6</div>
           <div class="tl-title">Ottimizza e aggiungi un secondo canale</div>
           <div class="tl-desc">Una volta che il primo canale funziona, aggiungi un secondo (es. da Amazon aggiungi Etsy, o da eBay aggiungi Amazon). Usa un tool di feed management se gestisci 50+ prodotti. Inizia a costruire un piccolo database clienti dove possibile.</div>
         </div>
         <div class="tl-item">
           <div class="tl-dot"></div>
-          <div class="tl-phase">Fase 3 — Mese 6-12</div>
+          <div class="tl-phase">Fase 3 - Mese 6-12</div>
           <div class="tl-title">Apri il tuo negozio indipendente</div>
           <div class="tl-desc">Solo quando hai validato il prodotto e la domanda, investi in un e-commerce proprio (Shopify o WooCommerce). A questo punto hai già dati sulle preferenze dei clienti, know-how sul pricing e un flusso di cassa per sostenere i costi fissi.</div>
         </div>
         <div class="tl-item">
           <div class="tl-dot"></div>
-          <div class="tl-phase">Fase 4 — Anno 2+</div>
+          <div class="tl-phase">Fase 4 - Anno 2+</div>
           <div class="tl-title">Strategia multichannel strutturata</div>
           <div class="tl-desc">Con un negozio proprio che funziona e marketplace attivi, costruisci una strategia coerente: prezzi allineati, stock sincronizzato via Lengow/Channable, advertising su Google Shopping e Amazon Ads, email marketing con Klaviyo.</div>
         </div>

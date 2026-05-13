@@ -1,13 +1,13 @@
 <?php
-$title = 'Tool per Vendere Online 2025 — Shopify, Helium 10, Lengow | SellerLab';
+$title = 'Tool per Vendere Online 2025 - Shopify, Helium 10, Lengow | SellerLab';
 $description = 'I migliori tool per venditori online italiani: Shopify, WooCommerce, Lengow, Helium 10, Keepa, Scalapay e molto altro. Guide pratiche con prezzi e confronti aggiornati al 2025.';
 $keywords = 'tool ecommerce italia, shopify italia, woocommerce, helium 10 amazon, lengow feed management, channable, keepa amazon, scalapay ecommerce, feedaty recensioni, repricing amazon';
 $canonical = 'https://sellerlab.it/tools.php';
-$og_title = 'Tool per Vendere Online in Italia 2025 — SellerLab';
+$og_title = 'Tool per Vendere Online in Italia 2025 - SellerLab';
 $og_description = 'I migliori tool per venditori online italiani: piattaforme e-commerce, feed management, analytics Amazon, repricing e pagamenti.';
 $og_url = 'https://sellerlab.it/tools.php';
 $og_locale = 'it_IT';
-$jsonld = '<script type="application/ld+json">\n  {\n    "@context": "https://schema.org",\n    "@graph": [\n      {\n        "@type": "BreadcrumbList",\n        "itemListElement": [\n          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sellerlab.it/" },\n          { "@type": "ListItem", "position": 2, "name": "Tool & Software", "item": "https://sellerlab.it/tools.html" }\n        ]\n      },\n      {\n        "@type": "ItemList",\n        "name": "Tool per vendere online in Italia",\n        "description": "I migliori software e tool per seller italiani: piattaforme e-commerce, feed management, analytics Amazon, repricing e pagamenti",\n        "numberOfItems": 19,\n        "itemListElement": [\n          { "@type": "ListItem", "position": 1, "name": "Shopify", "url": "https://shopify.com", "description": "Piattaforma e-commerce SaaS più popolare al mondo. Piano base 29$/mese." },\n          { "@type": "ListItem", "position": 2, "name": "WooCommerce", "url": "https://woocommerce.com", "description": "Plugin e-commerce open source per WordPress. Gratuito." },\n          { "@type": "ListItem", "position": 3, "name": "PrestaShop", "url": "https://prestashop.com", "description": "Piattaforma e-commerce open source molto diffusa in Italia." },\n          { "@type": "ListItem", "position": 4, "name": "Lengow", "url": "https://lengow.com", "description": "Feed management e multichannel. Oltre 1.800 canali supportati." },\n          { "@type": "ListItem", "position": 5, "name": "Helium 10", "url": "https://helium10.com", "description": "Suite completa per Amazon seller: keyword, listing, analytics." },\n          { "@type": "ListItem", "position": 6, "name": "Keepa", "url": "https://keepa.com", "description": "Storico prezzi Amazon. Indispensabile per retail arbitrage." },\n          { "@type": "ListItem", "position": 7, "name": "Scalapay", "url": "https://scalapay.com", "description": "BNPL italiano. 3 o 4 rate senza interessi per il cliente." },\n          { "@type": "ListItem", "position": 8, "name": "Satispay", "url": "https://satispay.com", "description": "Pagamento digitale italiano. Fee fissa 0,20€ sopra i 10€." }\n        ]\n      },\n      {\n        "@type": "WebPage",\n        "name": "Tool per Vendere Online — Guide e Confronti",\n        "url": "https://sellerlab.it/tools.html",\n        "description": "I migliori tool e software per venditori online italiani",\n        "inLanguage": "it-IT",\n        "isPartOf": { "@id": "https://sellerlab.it/#website" }\n      }\n    ]\n  }\n  </script>';
+$jsonld = '<script type="application/ld+json">\n  {\n    "@context": "https://schema.org",\n    "@graph": [\n      {\n        "@type": "BreadcrumbList",\n        "itemListElement": [\n          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sellerlab.it/" },\n          { "@type": "ListItem", "position": 2, "name": "Tool & Software", "item": "https://sellerlab.it/tools.html" }\n        ]\n      },\n      {\n        "@type": "ItemList",\n        "name": "Tool per vendere online in Italia",\n        "description": "I migliori software e tool per seller italiani: piattaforme e-commerce, feed management, analytics Amazon, repricing e pagamenti",\n        "numberOfItems": 19,\n        "itemListElement": [\n          { "@type": "ListItem", "position": 1, "name": "Shopify", "url": "https://shopify.com", "description": "Piattaforma e-commerce SaaS più popolare al mondo. Piano base 29$/mese." },\n          { "@type": "ListItem", "position": 2, "name": "WooCommerce", "url": "https://woocommerce.com", "description": "Plugin e-commerce open source per WordPress. Gratuito." },\n          { "@type": "ListItem", "position": 3, "name": "PrestaShop", "url": "https://prestashop.com", "description": "Piattaforma e-commerce open source molto diffusa in Italia." },\n          { "@type": "ListItem", "position": 4, "name": "Lengow", "url": "https://lengow.com", "description": "Feed management e multichannel. Oltre 1.800 canali supportati." },\n          { "@type": "ListItem", "position": 5, "name": "Helium 10", "url": "https://helium10.com", "description": "Suite completa per Amazon seller: keyword, listing, analytics." },\n          { "@type": "ListItem", "position": 6, "name": "Keepa", "url": "https://keepa.com", "description": "Storico prezzi Amazon. Indispensabile per retail arbitrage." },\n          { "@type": "ListItem", "position": 7, "name": "Scalapay", "url": "https://scalapay.com", "description": "BNPL italiano. 3 o 4 rate senza interessi per il cliente." },\n          { "@type": "ListItem", "position": 8, "name": "Satispay", "url": "https://satispay.com", "description": "Pagamento digitale italiano. Fee fissa 0,20€ sopra i 10€." }\n        ]\n      },\n      {\n        "@type": "WebPage",\n        "name": "Tool per Vendere Online - Guide e Confronti",\n        "url": "https://sellerlab.it/tools.html",\n        "description": "I migliori tool e software per venditori online italiani",\n        "inLanguage": "it-IT",\n        "isPartOf": { "@id": "https://sellerlab.it/#website" }\n      }\n    ]\n  }\n  </script>';
 $current_page = 'tools';
 include 'includes/head.php';
 include 'includes/nav.php';
@@ -61,9 +61,9 @@ include 'includes/nav.php';
           <div class="card-name" style="margin:12px 0 4px;">Shopify</div>
           <div class="card-type">Piattaforma e-commerce SaaS · dal 2006</div>
           <div class="card-desc" style="margin-top:10px;">
-            Shopify è la piattaforma e-commerce più usata al mondo. Il modello SaaS fa sì che hosting, SSL, checkout e gestione ordini siano già inclusi nell'abbonamento mensile — nessuna infrastruttura da gestire, nessuna configurazione server.<br><br>
+            Shopify è la piattaforma e-commerce più usata al mondo. Il modello SaaS fa sì che hosting, SSL, checkout e gestione ordini siano già inclusi nell'abbonamento mensile - nessuna infrastruttura da gestire, nessuna configurazione server.<br><br>
             L'<strong>App Store</strong> con 8.000+ app è il suo vero vantaggio competitivo: upsell, recensioni, loyalty program, integrazioni marketplace, feed Google Shopping, gestione resi. Le integrazioni italiane rilevanti ci sono tutte: Scalapay, Satispay, Packlink, Qapla'.<br><br>
-            <strong>Shopify Payments</strong> è disponibile in Italia e azzera la transaction fee dello 0,5–2% che scatta usando gateway esterni. Per chi parte da zero o vuole abbandonare un sito obsoleto è la scelta più rapida. Dove perde terreno: personalizzazioni profonde richiedono sviluppatori Liquid, e il vendor lock-in è reale — i dati e la piattaforma dipendono da Shopify.
+            <strong>Shopify Payments</strong> è disponibile in Italia e azzera la transaction fee dello 0,5–2% che scatta usando gateway esterni. Per chi parte da zero o vuole abbandonare un sito obsoleto è la scelta più rapida. Dove perde terreno: personalizzazioni profonde richiedono sviluppatori Liquid, e il vendor lock-in è reale - i dati e la piattaforma dipendono da Shopify.
           </div>
           <div class="metrics">
             <div class="metric"><div class="metric-label">Piano Base</div><div class="metric-value">29$/mese</div></div>
@@ -121,8 +121,8 @@ include 'includes/nav.php';
           <div class="card-name" style="margin:12px 0 4px;">WooCommerce</div>
           <div class="card-type">Plugin e-commerce per WordPress · Open Source</div>
           <div class="card-desc" style="margin-top:10px;">
-            WooCommerce è il plugin e-commerce più installato al mondo perché WordPress è la base di quasi la metà dei siti web. Il plugin base è gratuito e open source — la piena proprietà dei dati è garantita. Il prezzo da pagare: hosting, backup, aggiornamenti e sicurezza sono responsabilità tua, non di una piattaforma SaaS.<br><br>
-            In Italia è diffusissimo tra le PMI che lavorano con agenzie web locali. L'ecosistema di plugin copre tutto ciò che serve per il mercato italiano: fatturazione elettronica (Fatture in Cloud, Aruba), corrieri (BRT, GLS, SDA), pagamenti locali (Satispay, Scalapay). La curva di apprendimento è più alta di Shopify, e il costo totale reale — hosting + plugin premium + sviluppo — può sorprendere chi parte pensando sia "gratis".
+            WooCommerce è il plugin e-commerce più installato al mondo perché WordPress è la base di quasi la metà dei siti web. Il plugin base è gratuito e open source - la piena proprietà dei dati è garantita. Il prezzo da pagare: hosting, backup, aggiornamenti e sicurezza sono responsabilità tua, non di una piattaforma SaaS.<br><br>
+            In Italia è diffusissimo tra le PMI che lavorano con agenzie web locali. L'ecosistema di plugin copre tutto ciò che serve per il mercato italiano: fatturazione elettronica (Fatture in Cloud, Aruba), corrieri (BRT, GLS, SDA), pagamenti locali (Satispay, Scalapay). La curva di apprendimento è più alta di Shopify, e il costo totale reale - hosting + plugin premium + sviluppo - può sorprendere chi parte pensando sia "gratis".
           </div>
           <div class="metrics">
             <div class="metric"><div class="metric-label">Plugin base</div><div class="metric-value">Gratuito</div></div>
@@ -174,7 +174,7 @@ include 'includes/nav.php';
           <div class="card-name" style="margin:12px 0 4px;">PrestaShop</div>
           <div class="card-type">Piattaforma e-commerce open source · dal 2007</div>
           <div class="card-desc" style="margin-top:10px;">
-            PrestaShop nasce come piattaforma nativa per l'e-commerce — non è un plugin aggiunto a un CMS generico — e questo si vede nella gestione di cataloghi complessi: magazzino multi-deposito, varianti articolate, regole di prezzo avanzate. In Italia ha una presenza storica solida, con un ecosistema maturo di agenzie specializzate e moduli per fatturazione italiana, corrieri locali e feed marketplace.<br><br>
+            PrestaShop nasce come piattaforma nativa per l'e-commerce - non è un plugin aggiunto a un CMS generico - e questo si vede nella gestione di cataloghi complessi: magazzino multi-deposito, varianti articolate, regole di prezzo avanzate. In Italia ha una presenza storica solida, con un ecosistema maturo di agenzie specializzate e moduli per fatturazione italiana, corrieri locali e feed marketplace.<br><br>
             È la scelta tipica di aziende con cataloghi da centinaia o migliaia di SKU che hanno bisogno di personalizzazioni specifiche e preferiscono non dipendere da una piattaforma SaaS. La versione community è gratuita; i moduli aggiuntivi si acquistano sull'AddOns Marketplace ufficiale. La versione Cloud esiste ma in Italia si usa quasi sempre il self-hosted.
           </div>
           <div class="metrics">
@@ -266,7 +266,7 @@ include 'includes/nav.php';
           <div class="card-type">Piattaforma SaaS · Mid-market / Enterprise · B2C + B2B</div>
           <div class="card-desc" style="margin-top:10px;">
             BigCommerce è una piattaforma SaaS americana posizionata tra Shopify e Magento nel mercato e-commerce. Offre funzionalità native più avanzate di Shopify senza richiedere plugin extra: gestione prezzi per gruppo clienti, preventivi B2B, gestione tasse internazionale, feed avanzati per marketplace. È apprezzata da brand mid-market che vogliono flessibilità senza la complessità di Magento.<br><br>
-            Supporta vendor channel nativo, cataloghi B2B con prezzi personalizzati e ha integrazione diretta con Amazon, eBay, Google Shopping e Facebook. Piano standard da circa 29$ al mese, con commissioni di transazione pari a zero — differenza chiave rispetto a Shopify che applica fee sulle vendite.
+            Supporta vendor channel nativo, cataloghi B2B con prezzi personalizzati e ha integrazione diretta con Amazon, eBay, Google Shopping e Facebook. Piano standard da circa 29$ al mese, con commissioni di transazione pari a zero - differenza chiave rispetto a Shopify che applica fee sulle vendite.
           </div>
           <div class="metrics">
             <div class="metric"><div class="metric-label">Pricing</div><div class="metric-value">Da ~29$/mese</div></div>
@@ -950,8 +950,8 @@ include 'includes/nav.php';
           <div class="card-name" style="margin:12px 0 4px;">Trustpilot</div>
           <div class="card-type">Piattaforma recensioni · B2C · Riconosciuta globalmente</div>
           <div class="card-desc" style="margin-top:10px;">
-            Trustpilot è la piattaforma di recensioni con il riconoscimento più ampio a livello globale. Il profilo appare nei risultati di ricerca Google con le stelle nel snippet — un aumento di CTR organico misurabile. I widget dinamici si integrano nel sito per mostrare il rating in tempo reale.<br><br>
-            Il piano gratuito riceve solo recensioni spontanee. I piani a pagamento aggiungono inviti automatici post-acquisto via email, risposte alle recensioni e analisi avanzate. In Italia è lo standard per gli shop B2C che vogliono costruire reputazione online verificabile — il costo principale è il piano Standard a ~259€/mese, giustificato solo da un certo volume di ordini.
+            Trustpilot è la piattaforma di recensioni con il riconoscimento più ampio a livello globale. Il profilo appare nei risultati di ricerca Google con le stelle nel snippet - un aumento di CTR organico misurabile. I widget dinamici si integrano nel sito per mostrare il rating in tempo reale.<br><br>
+            Il piano gratuito riceve solo recensioni spontanee. I piani a pagamento aggiungono inviti automatici post-acquisto via email, risposte alle recensioni e analisi avanzate. In Italia è lo standard per gli shop B2C che vogliono costruire reputazione online verificabile - il costo principale è il piano Standard a ~259€/mese, giustificato solo da un certo volume di ordini.
           </div>
           <div class="metrics">
             <div class="metric"><div class="metric-label">Piano Free</div><div class="metric-value">Sì</div></div>
@@ -1096,7 +1096,7 @@ include 'includes/nav.php';
           <div class="card-type">Shipping management · Etichette · Multi-corriere</div>
           <div class="card-desc" style="margin-top:10px;">
             Sendcloud è la piattaforma di spedizione più diffusa in Europa tra gli e-commerce di piccole e medie dimensioni. Permette di confrontare tariffe tra più corrieri, stampare etichette in bulk, gestire resi in modo automatizzato e inviare notifiche di tracking brandizzate ai clienti.<br><br>
-            Si integra con Shopify, WooCommerce, Magento, PrestaShop, Amazon, eBay e molti altri canali. I corrieri preintegrati includono BRT, GLS, DHL, UPS, Poste Italiane, SDA e altri. Il piano gratuito consente fino a 100 spedizioni/mese — ideale per chi inizia o ha volumi bassi.
+            Si integra con Shopify, WooCommerce, Magento, PrestaShop, Amazon, eBay e molti altri canali. I corrieri preintegrati includono BRT, GLS, DHL, UPS, Poste Italiane, SDA e altri. Il piano gratuito consente fino a 100 spedizioni/mese - ideale per chi inizia o ha volumi bassi.
           </div>
           <div class="metrics">
             <div class="metric"><div class="metric-label">Pricing</div><div class="metric-value">Gratis fino a 100 sped.</div></div>
@@ -1199,7 +1199,7 @@ include 'includes/nav.php';
           <div class="card-type">Email marketing · SMS · CRM e-commerce</div>
           <div class="card-desc" style="margin-top:10px;">
             Klaviyo è la piattaforma di email e SMS marketing più usata dagli e-commerce D2C. L'integrazione con Shopify e WooCommerce è profonda: importa in automatico acquisti, comportamento on-site e storico clienti, e li usa per segmentazioni precise e automazioni ad alto impatto.<br><br>
-            Flussi pronti all'uso: welcome series, recupero carrello abbandonato, post-acquisto, win-back clienti inattivi, VIP program. I report mostrano direttamente quante revenue ogni flusso ha generato — non click o open rate, ma soldi. Per chi vende su un proprio e-commerce e vuole smettere di mandare newsletter generiche a tutta la lista, è lo strumento più potente disponibile.
+            Flussi pronti all'uso: welcome series, recupero carrello abbandonato, post-acquisto, win-back clienti inattivi, VIP program. I report mostrano direttamente quante revenue ogni flusso ha generato - non click o open rate, ma soldi. Per chi vende su un proprio e-commerce e vuole smettere di mandare newsletter generiche a tutta la lista, è lo strumento più potente disponibile.
           </div>
           <div class="metrics">
             <div class="metric"><div class="metric-label">Pricing</div><div class="metric-value">Gratis fino a 500 contatti</div></div>
@@ -1259,8 +1259,8 @@ include 'includes/nav.php';
           <div class="card-name" style="margin:12px 0 4px;">Scalapay</div>
           <div class="card-type">Buy Now Pay Later · Italiano · E-commerce & POS</div>
           <div class="card-desc" style="margin-top:10px;">
-            Scalapay è il BNPL (Buy Now, Pay Later) più usato in Italia: il cliente paga in 3 o 4 rate senza interessi, il merchant incassa l'intero importo subito. Plugin ufficiali per Shopify, WooCommerce, PrestaShop e Magento — l'integrazione tecnica è rapida.<br><br>
-            Funziona meglio su fashion, beauty e lifestyle, dove lo scontrino medio alto giustifica la rateizzazione. In pratica: chi non avrebbe comprato a 150€ in un colpo solo, compra a 50€ × 3. La fee per il merchant è del 3–5% — più alta di una carta di credito standard — ma il guadagno in conversion rate e scontrino medio la compensa su molte categorie. Da valutare con dati reali del proprio shop prima di attivarlo.
+            Scalapay è il BNPL (Buy Now, Pay Later) più usato in Italia: il cliente paga in 3 o 4 rate senza interessi, il merchant incassa l'intero importo subito. Plugin ufficiali per Shopify, WooCommerce, PrestaShop e Magento - l'integrazione tecnica è rapida.<br><br>
+            Funziona meglio su fashion, beauty e lifestyle, dove lo scontrino medio alto giustifica la rateizzazione. In pratica: chi non avrebbe comprato a 150€ in un colpo solo, compra a 50€ × 3. La fee per il merchant è del 3–5% - più alta di una carta di credito standard - ma il guadagno in conversion rate e scontrino medio la compensa su molte categorie. Da valutare con dati reali del proprio shop prima di attivarlo.
           </div>
           <div class="metrics">
             <div class="metric"><div class="metric-label">Fee merchant</div><div class="metric-value">~3–5%</div></div>
@@ -1304,8 +1304,8 @@ include 'includes/nav.php';
           <div class="card-name" style="margin:12px 0 4px;">Satispay</div>
           <div class="card-type">Pagamento digitale · Italiano · Conto corrente</div>
           <div class="card-desc" style="margin-top:10px;">
-            Satispay collega direttamente il conto corrente del cliente a quello del merchant, senza carte di credito intermedie. In Italia conta 3 milioni di utenti attivi — molto usato nei negozi fisici con POS contactless, ma disponibile anche per e-commerce tramite integrazione su Shopify e WooCommerce.<br><br>
-            La struttura delle fee è insolita: gratuito per transazioni sotto i 10€, poi 0,20€ fissi — non percentuale — per tutti gli importi superiori. Su uno scontrino da 50€ la fee è 0,20€, stessa cifra che su uno da 200€. Conveniente per scontrini medi e bassi; meno rilevante per chi vende prodotti ad alto valore dove la percentuale di una carta di credito resta competitiva.
+            Satispay collega direttamente il conto corrente del cliente a quello del merchant, senza carte di credito intermedie. In Italia conta 3 milioni di utenti attivi - molto usato nei negozi fisici con POS contactless, ma disponibile anche per e-commerce tramite integrazione su Shopify e WooCommerce.<br><br>
+            La struttura delle fee è insolita: gratuito per transazioni sotto i 10€, poi 0,20€ fissi - non percentuale - per tutti gli importi superiori. Su uno scontrino da 50€ la fee è 0,20€, stessa cifra che su uno da 200€. Conveniente per scontrini medi e bassi; meno rilevante per chi vende prodotti ad alto valore dove la percentuale di una carta di credito resta competitiva.
           </div>
           <div class="metrics">
             <div class="metric"><div class="metric-label">Fee &lt;10€</div><div class="metric-value">0€</div></div>

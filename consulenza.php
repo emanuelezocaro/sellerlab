@@ -1,8 +1,8 @@
 <?php
-$title = 'Consulenza Vendita Online 1:1 — SellerLab';
+$title = 'Consulenza Vendita Online 1:1 - SellerLab';
 $description = 'Sessione strategica 1:1 per chi vende online in Italia. 60 minuti, un piano scritto, nessun corso da comprare dopo. Scopri come funziona e prenota il tuo slot.';
 $canonical = 'https://sellerlab.it/consulenza.php';
-$og_title = 'Consulenza Vendita Online 1:1 — SellerLab';
+$og_title = 'Consulenza Vendita Online 1:1 - SellerLab';
 $og_description = '60 minuti per smettere di girare in tondo. Un piano concreto sul tuo prodotto, i tuoi canali, i tuoi margini.';
 $og_url = 'https://sellerlab.it/consulenza.php';
 $og_locale = 'it_IT';
@@ -342,7 +342,7 @@ include 'includes/nav.php';
       <div class="deliverable-card">
         <div class="deliverable-num">03</div>
         <h3>Piano d'azione 90 giorni</h3>
-        <p>Un documento scritto con i passi concreti: cosa fare prima, cosa rimandare, cosa evitare. Non "dipende" — una sequenza precisa calibrata sulla tua situazione.</p>
+        <p>Un documento scritto con i passi concreti: cosa fare prima, cosa rimandare, cosa evitare. Non "dipende" - una sequenza precisa calibrata sulla tua situazione.</p>
       </div>
       <div class="deliverable-card">
         <div class="deliverable-num">04</div>
@@ -397,7 +397,7 @@ include 'includes/nav.php';
         </div>
         <div class="why-paid-item">
           <h4>Accountability reale</h4>
-          <p>Un consulente che vuole il tuo pagamento anticipato si guadagna quella fiducia con la qualità del lavoro. <strong>Non posso permettermi di darti risposte generiche</strong> — ti richiederesti un rimborso, giustamente.</p>
+          <p>Un consulente che vuole il tuo pagamento anticipato si guadagna quella fiducia con la qualità del lavoro. <strong>Non posso permettermi di darti risposte generiche</strong> - ti richiederesti un rimborso, giustamente.</p>
         </div>
       </div>
     </div>

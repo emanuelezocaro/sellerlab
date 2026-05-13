@@ -28,7 +28,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <div class="footer-copy">© 2026 SellerLab — Commissioni e dati indicativi, verifica sempre le tariffe ufficiali.</div>
+    <div class="footer-copy">© 2026 SellerLab - Commissioni e dati indicativi, verifica sempre le tariffe ufficiali.</div>
     <div class="footer-links">
       <a href="guida.php">Guida</a>
       <a href="glossario.php">Glossario</a>
