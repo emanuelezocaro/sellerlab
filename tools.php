@@ -24,6 +24,7 @@ include 'includes/render-card.php';
 
 <section class="section">
   <div class="section-inner">
+    <?php include 'includes/breadcrumb.php'; ?>
 
     <div class="intro-box">
       <p>Vendere online richiede gli strumenti giusti. Dai tool per gestire il catalogo su più marketplace alle piattaforme per creare il tuo negozio, dalle analitiche Amazon ai pagamenti rateali. Qui trovi tutto categorizzato e confrontato.</p>

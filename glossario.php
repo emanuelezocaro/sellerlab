@@ -118,6 +118,7 @@ include 'includes/nav.php';
 
 <section class="section">
   <div class="section-inner">
+    <?php include 'includes/breadcrumb.php'; ?>
     <div class="glossary-layout">
 
       <!-- SIDEBAR -->

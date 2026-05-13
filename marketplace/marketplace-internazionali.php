@@ -28,6 +28,7 @@ $items = array_filter($marketplaces, fn($m) => $m['category'] === 'internazional
 
 <section class="section">
   <div class="section-inner">
+    <?php include '../includes/breadcrumb.php'; ?>
 <div class="grid-2">
       <?php foreach ($items as $item) render_card($item); ?>
     </div>
