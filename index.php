@@ -1,16 +1,19 @@
 <?php
 $title = 'Vendere Online in Italia: Marketplace, Tool e Guide | SellerLab';
-$description = 'Confronta tutti i marketplace italiani e i tool per vendere online: Amazon, eBay, Zalando, Etsy. Commissioni reali, pro e contro onesti, guide pratiche aggiornate al 2025.';
+$description = 'Confronta tutti i marketplace italiani e i tool per vendere online: Amazon, eBay, Zalando, Etsy. Commissioni reali, pro e contro onesti, guide pratiche aggiornate al 2026.';
 $keywords = 'marketplace italiani, vendere online italia, amazon italia commissioni, ebay italia, zalando venditori, ecommerce italia, tool ecommerce, shopify italia';
 $canonical = 'https://sellerlab.it/';
 $og_title = 'SellerLab - Marketplace e Tool per Vendere Online in Italia';
-$og_description = 'Confronta tutti i marketplace italiani e i tool per venditori online. Commissioni reali, pro e contro aggiornati al 2025.';
+$og_description = 'Confronta tutti i marketplace italiani e i tool per venditori online. Commissioni reali, pro e contro aggiornati al 2026.';
 $og_url = 'https://sellerlab.it/';
 $og_locale = 'it_IT';
-$jsonld = '<script type="application/ld+json">\n  {\n    "@context": "https://schema.org",\n    "@graph": [\n      {\n        "@type": "WebSite",\n        "@id": "https://sellerlab.it/#website",\n        "name": "SellerLab",\n        "description": "Guida indipendente a marketplace e tool per vendere online in Italia",\n        "url": "https://sellerlab.it",\n        "inLanguage": "it-IT",\n        "publisher": { "@id": "https://sellerlab.it/#organization" }\n      },\n      {\n        "@type": "Organization",\n        "@id": "https://sellerlab.it/#organization",\n        "name": "SellerLab",\n        "url": "https://sellerlab.it",\n        "description": "Guida indipendente ai marketplace e tool per vendere online in Italia"\n      },\n      {\n        "@type": "BreadcrumbList",\n        "itemListElement": [\n          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sellerlab.it/" }\n        ]\n      }\n    ]\n  }\n  </script>';
+$jsonld = '<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://sellerlab.it/#website","name":"SellerLab","url":"https://sellerlab.it","inLanguage":"it-IT"},{"@type":"Organization","@id":"https://sellerlab.it/#organization","name":"SellerLab","url":"https://sellerlab.it"}]}</script>';
 $current_page = 'home';
 include 'includes/head.php';
 include 'includes/nav.php';
+include 'includes/data-marketplace.php';
+include 'includes/data-tools.php';
+include 'includes/render-card.php';
 ?>
 
 <!-- HERO -->
@@ -27,16 +30,16 @@ include 'includes/nav.php';
 <!-- STATS -->
 <div class="stats-bar">
   <div class="stat-item">
-    <div class="stat-number">20+</div>
+    <div class="stat-number"><?= count($marketplaces) ?>+</div>
     <div class="stat-label">Marketplace analizzati</div>
   </div>
   <div class="stat-item">
-    <div class="stat-number">30+</div>
+    <div class="stat-number"><?= count($tools) ?>+</div>
     <div class="stat-label">Tool e software recensiti</div>
   </div>
   <div class="stat-item">
-    <div class="stat-number">100%</div>
-    <div class="stat-label">Focus mercato italiano</div>
+    <div class="stat-number"><?= count($marketplace_categories) + count($tools_categories) ?></div>
+    <div class="stat-label">Categorie coperte</div>
   </div>
   <div class="stat-item">
     <div class="stat-number">0</div>
@@ -44,170 +47,18 @@ include 'includes/nav.php';
   </div>
 </div>
 
-<!-- CATEGORIE PRINCIPALI -->
+<!-- MARKETPLACE CATEGORIES -->
 <section class="section section-alt">
   <div class="section-inner">
     <div class="section-header">
-      <div class="section-label">Dove vuoi vendere</div>
-      <h2>Scegli il canale giusto per il tuo business</h2>
-      <p>Ogni canale ha le sue regole, il suo pubblico e le sue commissioni. Conoscerli ti permette di scegliere con cognizione di causa.</p>
-    </div>
-    <div class="grid-3">
-
-      <a href="marketplace.php#generalisti" class="card" style="text-decoration:none;color:inherit;">
-        <div class="card-header">
-          <div class="card-icon">🏪</div>
-          <span class="badge badge-blue">7 piattaforme</span>
-        </div>
-        <div class="card-name" style="margin-bottom:8px;">Marketplace Generalisti</div>
-        <div class="card-desc">Le grandi piattaforme che vendono di tutto: Amazon, eBay, Subito. Alto traffico, alta concorrenza, regole rigide.</div>
-        <span class="tag">Amazon</span> <span class="tag">eBay</span> <span class="tag">Subito.it</span>
-      </a>
-
-      <a href="marketplace.php#verticali" class="card" style="text-decoration:none;color:inherit;">
-        <div class="card-header">
-          <div class="card-icon">🎯</div>
-          <span class="badge badge-purple">8 piattaforme</span>
-        </div>
-        <div class="card-name" style="margin-bottom:8px;">Marketplace Verticali</div>
-        <div class="card-desc">Piattaforme specializzate per categoria: moda, tech, arredamento, handmade. Pubblico più qualificato, nicchie definite.</div>
-        <span class="tag">Zalando</span> <span class="tag">Etsy</span> <span class="tag">ManoMano</span>
-      </a>
-
-      <a href="marketplace.php#comparatori" class="card" style="text-decoration:none;color:inherit;">
-        <div class="card-header">
-          <div class="card-icon">🔍</div>
-          <span class="badge badge-orange">4 piattaforme</span>
-        </div>
-        <div class="card-name" style="margin-bottom:8px;">Comparatori & Shopping Ads</div>
-        <div class="card-desc">Trovaprezzi, Google Shopping e altri canali CPC per intercettare chi è già pronto all'acquisto.</div>
-        <span class="tag">Google Shopping</span> <span class="tag">Trovaprezzi</span> <span class="tag">Kelkoo</span>
-      </a>
-
-      <a href="tools.php#ecommerce" class="card" style="text-decoration:none;color:inherit;">
-        <div class="card-header">
-          <div class="card-icon">🛒</div>
-          <span class="badge badge-green">6 tool</span>
-        </div>
-        <div class="card-name" style="margin-bottom:8px;">Piattaforme E-commerce</div>
-        <div class="card-desc">Shopify, WooCommerce, PrestaShop: il tuo negozio indipendente. Piena libertà, più responsabilità.</div>
-        <span class="tag">Shopify</span> <span class="tag">WooCommerce</span> <span class="tag">PrestaShop</span>
-      </a>
-
-      <a href="tools.php#feed" class="card" style="text-decoration:none;color:inherit;">
-        <div class="card-header">
-          <div class="card-icon">⚙️</div>
-          <span class="badge badge-blue">5 tool</span>
-        </div>
-        <div class="card-name" style="margin-bottom:8px;">Feed & Multichannel</div>
-        <div class="card-desc">Gestisci prodotti e ordini su più marketplace contemporaneamente. Lengow, Channable, DataFeedWatch.</div>
-        <span class="tag">Lengow</span> <span class="tag">Channable</span> <span class="tag">DataFeedWatch</span>
-      </a>
-
-      <a href="tools.php#analytics" class="card" style="text-decoration:none;color:inherit;">
-        <div class="card-header">
-          <div class="card-icon">📊</div>
-          <span class="badge badge-purple">7 tool</span>
-        </div>
-        <div class="card-name" style="margin-bottom:8px;">Analytics & Ottimizzazione</div>
-        <div class="card-desc">Helium 10, Jungle Scout, Keepa: studia la concorrenza, ottimizza i listing, monitora i prezzi.</div>
-        <span class="tag">Helium 10</span> <span class="tag">Keepa</span> <span class="tag">Sellerboard</span>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-<!-- TOP MARKETPLACE PREVIEW -->
-<section class="section">
-  <div class="section-inner">
-    <div class="section-header">
-      <div class="section-label">I più usati in Italia</div>
-      <h2>Marketplace principali a colpo d'occhio</h2>
-      <p>Una panoramica rapida sui canali più rilevanti per il mercato italiano.</p>
+      <div class="section-label">Marketplace</div>
+      <h2>Dove vendere online in Italia</h2>
+      <p>Tutte le categorie di marketplace analizzate: commissioni reali, pro e contro, a chi si addicono.</p>
     </div>
     <div class="grid-2">
-
-      <div class="card">
-        <div class="card-header">
-          <div class="card-icon">
-            <img src="https://www.google.com/s2/favicons?domain=amazon.it&sz=64" alt="Amazon" width="28" height="28">
-          </div>
-          <span class="badge badge-orange">Leader di mercato</span>
-        </div>
-        <div class="card-title-group">
-          <div class="card-name">Amazon.it</div>
-          <div class="card-type">Marketplace generalista · B2C</div>
-        </div>
-        <div class="card-desc" style="margin-top:12px;">La piattaforma con il maggior traffico e-commerce in Italia. Oltre 30 milioni di visitatori mensili. Ideale per chi vuole volumi, meno per chi costruisce un brand.</div>
-        <div class="metrics">
-          <div class="metric"><div class="metric-label">Commissione</div><div class="metric-value">8–15%</div></div>
-          <div class="metric"><div class="metric-label">Traffico/mese</div><div class="metric-value">~35M</div></div>
-          <div class="metric"><div class="metric-label">Iscrizione</div><div class="metric-value">39€/mese</div></div>
-        </div>
-        <a href="marketplace.php#amazon" class="btn btn-secondary" style="font-size:13px;padding:8px 16px;">Scheda completa →</a>
-      </div>
-
-      <div class="card">
-        <div class="card-header">
-          <div class="card-icon">
-            <img src="https://cdn.simpleicons.org/ebay/E53238" alt="eBay" width="28" height="28">
-          </div>
-          <span class="badge badge-blue">Storico</span>
-        </div>
-        <div class="card-title-group">
-          <div class="card-name">eBay.it</div>
-          <div class="card-type">Marketplace generalista · C2C & B2C</div>
-        </div>
-        <div class="card-desc" style="margin-top:12px;">Il marketplace più longevo, ancora forte su usato, collezionismo e ricambi auto. Traffico in calo rispetto al picco, ma nicchie specifiche rimangono molto profittevoli.</div>
-        <div class="metrics">
-          <div class="metric"><div class="metric-label">Commissione</div><div class="metric-value">~12.8%</div></div>
-          <div class="metric"><div class="metric-label">Traffico/mese</div><div class="metric-value">~12M</div></div>
-          <div class="metric"><div class="metric-label">Iscrizione</div><div class="metric-value">Gratuita</div></div>
-        </div>
-        <a href="marketplace.php#ebay" class="btn btn-secondary" style="font-size:13px;padding:8px 16px;">Scheda completa →</a>
-      </div>
-
-      <div class="card">
-        <div class="card-header">
-          <div class="card-icon">
-            <img src="https://cdn.simpleicons.org/zalando/FF6900" alt="Zalando" width="28" height="28">
-          </div>
-          <span class="badge badge-purple">Fashion</span>
-        </div>
-        <div class="card-title-group">
-          <div class="card-name">Zalando</div>
-          <div class="card-type">Marketplace verticale · Moda & Lifestyle</div>
-        </div>
-        <div class="card-desc" style="margin-top:12px;">Il marketplace fashion più grande d'Europa. Accesso selettivo: devi essere un brand riconosciuto o retailer autorizzato. Cliente fidelizzato e alta propensione all'acquisto.</div>
-        <div class="metrics">
-          <div class="metric"><div class="metric-label">Commissione</div><div class="metric-value">5–25%</div></div>
-          <div class="metric"><div class="metric-label">Traffico/mese</div><div class="metric-value">~8M (IT)</div></div>
-          <div class="metric"><div class="metric-label">Accesso</div><div class="metric-value">Su invito</div></div>
-        </div>
-        <a href="marketplace.php#zalando" class="btn btn-secondary" style="font-size:13px;padding:8px 16px;">Scheda completa →</a>
-      </div>
-
-      <div class="card">
-        <div class="card-header">
-          <div class="card-icon">
-            <img src="https://www.google.com/s2/favicons?domain=manomano.com&sz=64" alt="ManoMano" width="28" height="28">
-          </div>
-          <span class="badge badge-green">DIY & Casa</span>
-        </div>
-        <div class="card-title-group">
-          <div class="card-name">ManoMano</div>
-          <div class="card-type">Marketplace verticale · Fai da te & Giardino</div>
-        </div>
-        <div class="card-desc" style="margin-top:12px;">Marketplace europeo specializzato in bricolage, giardinaggio e arredamento. In forte crescita in Italia, con un pubblico molto targettizzato e scontrino medio alto.</div>
-        <div class="metrics">
-          <div class="metric"><div class="metric-label">Commissione</div><div class="metric-value">12–15%</div></div>
-          <div class="metric"><div class="metric-label">Traffico/mese</div><div class="metric-value">~4M (IT)</div></div>
-          <div class="metric"><div class="metric-label">Iscrizione</div><div class="metric-value">Gratuita</div></div>
-        </div>
-        <a href="marketplace.php#manomano" class="btn btn-secondary" style="font-size:13px;padding:8px 16px;">Scheda completa →</a>
-      </div>
-
+      <?php foreach ($marketplace_categories as $cat): ?>
+        <?php render_hub_card($cat, 'marketplace/marketplace'); ?>
+      <?php endforeach; ?>
     </div>
     <div style="margin-top:32px;text-align:center;">
       <a href="marketplace.php" class="btn btn-primary">Tutti i marketplace →</a>
@@ -215,13 +66,67 @@ include 'includes/nav.php';
   </div>
 </section>
 
-<!-- PERCHÉ SELLERLAB -->
+<!-- TOOLS CATEGORIES -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label">Tool & Software</div>
+      <h2>Gli strumenti per vendere meglio</h2>
+      <p>Piattaforme e-commerce, feed management, analytics Amazon, spedizioni, pagamenti: tutto quello che ti serve categorizzato e confrontato.</p>
+    </div>
+    <div class="grid-2">
+      <?php foreach ($tools_categories as $cat): ?>
+        <?php render_hub_card($cat, 'tools/tools'); ?>
+      <?php endforeach; ?>
+    </div>
+    <div style="margin-top:32px;text-align:center;">
+      <a href="tools.php" class="btn btn-primary">Tutti i tool →</a>
+    </div>
+  </div>
+</section>
+
+<!-- STRUMENTI PRATICI -->
 <section class="section section-alt">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label">Strumenti pratici</div>
+      <h2>Confronta, calcola, scegli</h2>
+      <p>Strumenti interattivi e guide per prendere decisioni concrete.</p>
+    </div>
+    <div class="grid-3">
+
+      <a href="confronto.php" class="card card-link" style="text-decoration:none;">
+        <div style="font-size:32px;margin-bottom:16px;">⚖️</div>
+        <div class="card-name" style="margin-bottom:8px;">Confronto commissioni</div>
+        <div class="card-desc">Tabella comparativa di tutti i marketplace italiani: commissioni, traffico, tipo di accesso e categorie principali in un colpo d'occhio.</div>
+        <div style="margin-top:16px;font-size:13px;font-weight:600;color:var(--accent);">Apri il confronto →</div>
+      </a>
+
+      <a href="calcolatore.php" class="card card-link" style="text-decoration:none;">
+        <div style="font-size:32px;margin-bottom:16px;">🧮</div>
+        <div class="card-name" style="margin-bottom:8px;">Calcolatore commissioni</div>
+        <div class="card-desc">Inserisci prezzo, costo e spedizione. Scopri quanto guadagni davvero su Amazon, eBay, Etsy, Zalando e altri. Calcolo in tempo reale.</div>
+        <div style="margin-top:16px;font-size:13px;font-weight:600;color:var(--accent);">Calcola ora →</div>
+      </a>
+
+      <a href="guida.php" class="card card-link" style="text-decoration:none;">
+        <div style="font-size:32px;margin-bottom:16px;">🧭</div>
+        <div class="card-name" style="margin-bottom:8px;">Guida alla scelta</div>
+        <div class="card-desc">Non sai da dove iniziare? La guida ti aiuta a scegliere il marketplace giusto in base al tipo di prodotto, al tuo profilo e agli obiettivi.</div>
+        <div style="margin-top:16px;font-size:13px;font-weight:600;color:var(--accent);">Leggi la guida →</div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- PERCHÉ SELLERLAB -->
+<section class="section">
   <div class="section-inner">
     <div class="section-header centered">
       <div class="section-label">Perché SellerLab</div>
       <h2>Informazioni chiare, nessun conflitto di interesse</h2>
-      <p>Ogni scheda è redatta in modo indipendente. Nessun marketplace ci paga per essere promosso.</p>
+      <p>Ogni scheda è redatta in modo indipendente. Nessun marketplace o tool ci paga per essere promosso.</p>
     </div>
     <div class="grid-3">
       <div class="card" style="text-align:center;">
@@ -243,14 +148,14 @@ include 'includes/nav.php';
   </div>
 </section>
 
-<!-- CTA -->
+<!-- CTA CONSULENZA -->
 <section class="cta-section">
   <div class="section-inner">
-    <h2>Pronto a scegliere il canale giusto?</h2>
-    <p>Esplora tutti i marketplace italiani con schede dettagliate, commissioni reali e confronti pratici.</p>
+    <h2>Vuoi una strategia su misura?</h2>
+    <p>Una sessione 1:1 di 60 minuti per capire su quali canali puntare, come strutturare l'operatività e cosa evitare. Con un piano scritto alla fine.</p>
     <div class="hero-actions">
-      <a href="marketplace.php" class="btn btn-primary">Esplora i Marketplace →</a>
-      <a href="tools.php" class="btn" style="background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.2);">Vedi i Tool</a>
+      <a href="consulenza.php" class="btn btn-primary">Prenota la consulenza →</a>
+      <a href="guida.php" class="btn" style="background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.2);">Prima leggi la guida</a>
     </div>
   </div>
 </section>
