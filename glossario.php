@@ -294,11 +294,20 @@ function buildAlphaNav() {
   const html = letters.map(l => `<a href="#letter-${l}">${l}</a>`).join('');
   document.getElementById('alpha-links').innerHTML = html;
   document.getElementById('section-nav-letters').innerHTML = letters.map(l =>
-    `<a href="#letter-${l}" class="section-nav-link">${l}</a>`
+    `<a href="#letter-${l}" class="section-nav-link" onclick="secNavGloss(event,'letter-${l}')">${l}</a>`
   ).join('');
 }
 
 const sectionNav = document.getElementById('section-nav');
+
+function secNavGloss(e, id) {
+  e.preventDefault();
+  var el = document.getElementById(id);
+  if (el) window.scrollTo({ top: el.offsetTop - 120, behavior: 'smooth' });
+  sectionNav.querySelectorAll('.section-nav-link').forEach(function(l) { l.classList.remove('active'); });
+  if (e.currentTarget) e.currentTarget.classList.add('active');
+}
+
 window.addEventListener('scroll', function() {
   sectionNav.classList.toggle('is-visible', window.scrollY > 120);
 }, { passive: true });
@@ -316,13 +325,6 @@ setTimeout(function() {
   const letterSections = document.querySelectorAll('.letter-section');
   const navLinks = sectionNav.querySelectorAll('.section-nav-link');
 
-  navLinks.forEach(function(link) {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const target = document.querySelector(link.getAttribute('href'));
-      if (target) { var top = target.getBoundingClientRect().top + window.scrollY - 120; window.scrollTo({ top: top, behavior: 'smooth' }); }
-    });
-  });
   const obs = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {
       if (entry.isIntersecting) {

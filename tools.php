@@ -15,15 +15,15 @@ include 'includes/nav.php';
 
 <nav class="section-nav" id="section-nav">
   <div class="section-nav-inner">
-    <a href="#ecommerce" class="section-nav-link">Piattaforme</a>
-    <a href="#feed" class="section-nav-link">Feed Management</a>
-    <a href="#analytics" class="section-nav-link">Analytics Amazon</a>
-    <a href="#repricing" class="section-nav-link">Repricing</a>
-    <a href="#inventory" class="section-nav-link">Inventory</a>
-    <a href="#reviews" class="section-nav-link">Recensioni</a>
-    <a href="#spedizioni" class="section-nav-link">Spedizioni</a>
-    <a href="#email-marketing" class="section-nav-link">Email & CRM</a>
-    <a href="#pagamenti" class="section-nav-link">Pagamenti</a>
+    <a href="#ecommerce" class="section-nav-link" onclick="secNav(event,'ecommerce')">Piattaforme</a>
+    <a href="#feed" class="section-nav-link" onclick="secNav(event,'feed')">Feed Management</a>
+    <a href="#analytics" class="section-nav-link" onclick="secNav(event,'analytics')">Analytics Amazon</a>
+    <a href="#repricing" class="section-nav-link" onclick="secNav(event,'repricing')">Repricing</a>
+    <a href="#inventory" class="section-nav-link" onclick="secNav(event,'inventory')">Inventory</a>
+    <a href="#reviews" class="section-nav-link" onclick="secNav(event,'reviews')">Recensioni</a>
+    <a href="#spedizioni" class="section-nav-link" onclick="secNav(event,'spedizioni')">Spedizioni</a>
+    <a href="#email-marketing" class="section-nav-link" onclick="secNav(event,'email-marketing')">Email & CRM</a>
+    <a href="#pagamenti" class="section-nav-link" onclick="secNav(event,'pagamenti')">Pagamenti</a>
   </div>
 </nav>
 
@@ -1507,22 +1507,22 @@ include 'includes/nav.php';
 <?php include 'includes/footer.php'; ?>
 
 <script>
+function secNav(e, id) {
+  e.preventDefault();
+  var el = document.getElementById(id);
+  if (el) window.scrollTo({ top: el.offsetTop - 120, behavior: 'smooth' });
+  document.querySelectorAll('#section-nav .section-nav-link').forEach(function(l) { l.classList.remove('active'); });
+  if (e.currentTarget) e.currentTarget.classList.add('active');
+}
+
 (function() {
   const nav = document.getElementById('section-nav');
   const links = nav.querySelectorAll('.section-nav-link');
-  const sections = Array.from(links).map(l => document.querySelector(l.getAttribute('href'))).filter(Boolean);
+  const sections = Array.from(links).map(l => document.getElementById(l.getAttribute('href').replace('#',''))).filter(Boolean);
 
   window.addEventListener('scroll', function() {
     nav.classList.toggle('is-visible', window.scrollY > 120);
   }, { passive: true });
-
-  links.forEach(function(link) {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const target = document.querySelector(link.getAttribute('href'));
-      if (target) { var top = target.getBoundingClientRect().top + window.scrollY - 120; window.scrollTo({ top: top, behavior: 'smooth' }); }
-    });
-  });
 
   const observer = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {

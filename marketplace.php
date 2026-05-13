@@ -15,14 +15,14 @@ include 'includes/nav.php';
 
 <nav class="section-nav" id="section-nav">
   <div class="section-nav-inner">
-    <a href="#generalisti" class="section-nav-link">Generalisti</a>
-    <a href="#verticali" class="section-nav-link">Verticali</a>
-    <a href="#fashion" class="section-nav-link">Fashion</a>
-    <a href="#comparatori" class="section-nav-link">Comparatori</a>
-    <a href="#social" class="section-nav-link">Social</a>
-    <a href="#outlet" class="section-nav-link">Outlet</a>
-    <a href="#ricondizionato" class="section-nav-link">Ricondizionato</a>
-    <a href="#internazionali" class="section-nav-link">Internazionali</a>
+    <a href="#generalisti" class="section-nav-link" onclick="secNav(event,'generalisti')">Generalisti</a>
+    <a href="#verticali" class="section-nav-link" onclick="secNav(event,'verticali')">Verticali</a>
+    <a href="#fashion" class="section-nav-link" onclick="secNav(event,'fashion')">Fashion</a>
+    <a href="#comparatori" class="section-nav-link" onclick="secNav(event,'comparatori')">Comparatori</a>
+    <a href="#social" class="section-nav-link" onclick="secNav(event,'social')">Social</a>
+    <a href="#outlet" class="section-nav-link" onclick="secNav(event,'outlet')">Outlet</a>
+    <a href="#ricondizionato" class="section-nav-link" onclick="secNav(event,'ricondizionato')">Ricondizionato</a>
+    <a href="#internazionali" class="section-nav-link" onclick="secNav(event,'internazionali')">Internazionali</a>
   </div>
 </nav>
 
@@ -1384,22 +1384,22 @@ include 'includes/nav.php';
 <?php include 'includes/footer.php'; ?>
 
 <script>
+function secNav(e, id) {
+  e.preventDefault();
+  var el = document.getElementById(id);
+  if (el) window.scrollTo({ top: el.offsetTop - 120, behavior: 'smooth' });
+  document.querySelectorAll('#section-nav .section-nav-link').forEach(function(l) { l.classList.remove('active'); });
+  if (e.currentTarget) e.currentTarget.classList.add('active');
+}
+
 (function() {
   const nav = document.getElementById('section-nav');
   const links = nav.querySelectorAll('.section-nav-link');
-  const sections = Array.from(links).map(l => document.querySelector(l.getAttribute('href'))).filter(Boolean);
+  const sections = Array.from(links).map(l => document.getElementById(l.getAttribute('href').replace('#',''))).filter(Boolean);
 
   window.addEventListener('scroll', function() {
     nav.classList.toggle('is-visible', window.scrollY > 120);
   }, { passive: true });
-
-  links.forEach(function(link) {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const target = document.querySelector(link.getAttribute('href'));
-      if (target) { var top = target.getBoundingClientRect().top + window.scrollY - 120; window.scrollTo({ top: top, behavior: 'smooth' }); }
-    });
-  });
 
   const observer = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {
