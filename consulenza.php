@@ -8,7 +8,7 @@ $og_url = 'https://sellerlab.it/consulenza.php';
 $og_locale = 'it_IT';
 $current_page = 'consulenza';
 include 'includes/head.php';
-include 'includes/nav.php';
+// no nav - landing page
 ?>
 
 <style>
@@ -571,7 +571,9 @@ include 'includes/nav.php';
   </div>
 </div>
 
-<?php include 'includes/footer.php'; ?>
+<div style="text-align:center;padding:24px;border-top:1px solid #1e293b;background:#060d1a;">
+  <a href="index.php" style="font-size:13px;color:#334155;text-decoration:none;">← Torna alla home</a>
+</div>
 
 <!-- Koalendar Inline Embed Scripts -->
 <script>window.Koalendar=window.Koalendar||function(){(Koalendar.props=Koalendar.props||[]).push(arguments)};</script>
