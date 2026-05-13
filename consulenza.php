@@ -181,3 +181,4 @@ include 'includes/nav.php';
 </div>
 
 <?php include 'includes/footer.php'; ?>
+<?php include 'includes/end.php'; ?>

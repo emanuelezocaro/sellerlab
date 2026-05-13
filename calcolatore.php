@@ -169,3 +169,129 @@ include 'includes/nav.php';
 </section>
 
 <?php include 'includes/footer.php'; ?>
+
+<script>
+const marketplaces = [
+  { id: 'amazon',     name: 'Amazon.it',    commission: 0.15,  fixed: 0,    icon: 'https://www.google.com/s2/favicons?domain=amazon.it&sz=32' },
+  { id: 'ebay',       name: 'eBay.it',      commission: 0.128, fixed: 0,    icon: 'https://cdn.simpleicons.org/ebay/E53238' },
+  { id: 'etsy',       name: 'Etsy',         commission: 0.065, fixed: 0.20, icon: 'https://cdn.simpleicons.org/etsy/F16521' },
+  { id: 'zalando',    name: 'Zalando',      commission: 0.20,  fixed: 0,    icon: 'https://cdn.simpleicons.org/zalando/FF6900' },
+  { id: 'manomano',   name: 'ManoMano',     commission: 0.13,  fixed: 0,    icon: 'https://www.google.com/s2/favicons?domain=manomano.com&sz=32' },
+  { id: 'tiktok',     name: 'TikTok Shop',  commission: 0.065, fixed: 0,    icon: 'https://cdn.simpleicons.org/tiktok/000000' },
+  { id: 'backmarket', name: 'Back Market',  commission: 0.12,  fixed: 0,    icon: 'https://www.google.com/s2/favicons?domain=backmarket.it&sz=32' },
+  { id: 'vinted',     name: 'Vinted',       commission: 0,     fixed: 0,    icon: 'https://cdn.simpleicons.org/vinted/007782' },
+  { id: 'temu',       name: 'Temu',         commission: 0.03,  fixed: 0,    icon: 'https://www.google.com/s2/favicons?domain=temu.com&sz=32' },
+];
+
+let selectedMp = marketplaces[0];
+
+function fmt(n) {
+  return (n >= 0 ? '' : '−') + '€' + Math.abs(n).toFixed(2).replace('.', ',');
+}
+
+function calculate() {
+  const price    = parseFloat(document.getElementById('price').value) || 0;
+  const cost     = parseFloat(document.getElementById('cost').value) || 0;
+  const shipping = parseFloat(document.getElementById('shipping').value) || 0;
+  const other    = parseFloat(document.getElementById('other').value) || 0;
+  const vatRate  = parseFloat(document.getElementById('vat').value) || 0;
+
+  let commission = selectedMp.commission;
+  let fixed = selectedMp.fixed;
+
+  if (selectedMp.id === 'custom') {
+    commission = (parseFloat(document.getElementById('custom-commission').value) || 0) / 100;
+    fixed = 0;
+  }
+
+  const vatAmount       = vatRate > 0 ? price - (price / (1 + vatRate)) : 0;
+  const priceExVat      = price - vatAmount;
+  const commissionAmt   = priceExVat * commission;
+  const totalCosts      = vatAmount + commissionAmt + fixed + cost + shipping + other;
+  const profit          = price - totalCosts;
+  const marginPct       = price > 0 ? (profit / price) * 100 : 0;
+
+  document.getElementById('r-price').textContent      = '€' + price.toFixed(2).replace('.', ',');
+  document.getElementById('r-vat').textContent        = vatAmount > 0 ? '−€' + vatAmount.toFixed(2).replace('.', ',') : '€0,00';
+  document.getElementById('r-commission').textContent = '−€' + commissionAmt.toFixed(2).replace('.', ',');
+  document.getElementById('r-fixed').textContent      = fixed > 0 ? '−€' + fixed.toFixed(2).replace('.', ',') : '€0,00';
+  document.getElementById('r-cost').textContent       = '−€' + cost.toFixed(2).replace('.', ',');
+  document.getElementById('r-shipping').textContent   = '−€' + shipping.toFixed(2).replace('.', ',');
+  document.getElementById('r-other').textContent      = other > 0 ? '−€' + other.toFixed(2).replace('.', ',') : '€0,00';
+
+  const profitEl = document.getElementById('r-profit');
+  profitEl.textContent = (profit >= 0 ? '€' : '−€') + Math.abs(profit).toFixed(2).replace('.', ',');
+  profitEl.className   = 'result-total-value' + (profit < 0 ? ' loss' : '');
+
+  const mp = Math.max(0, Math.min(100, marginPct));
+  document.getElementById('r-margin-pct').textContent = marginPct.toFixed(1) + '%';
+  const fill = document.getElementById('margin-bar-fill');
+  fill.style.width      = mp + '%';
+  fill.style.background = marginPct < 0 ? 'var(--red)' : marginPct < 10 ? 'var(--orange)' : 'var(--green)';
+
+  const tip = document.getElementById('tip-box');
+  if (profit < 0) {
+    tip.innerHTML = '⚠️ <strong>Attenzione:</strong> Stai vendendo in perdita. Aumenta il prezzo, riduci i costi o scegli un marketplace con commissioni più basse.';
+  } else if (marginPct < 10) {
+    tip.innerHTML = '⚠️ <strong>Margine basso:</strong> Meno del 10% di margine è rischioso. Considera di rivedere i costi o il prezzo di vendita.';
+  } else if (marginPct < 20) {
+    tip.innerHTML = '💡 <strong>Margine accettabile:</strong> Sei in territorio sicuro ma c\'è spazio per migliorare. Ottimizza i costi di spedizione e verifica le commissioni.';
+  } else {
+    tip.innerHTML = '✅ <strong>Ottimo margine:</strong> Sei in una posizione solida. Considera di reinvestire in advertising per scalare il volume di vendite.';
+  }
+
+  renderComparison(price, cost, shipping, other, vatRate);
+}
+
+function renderComparison(price, cost, shipping, other, vatRate) {
+  const grid = document.getElementById('comparison-grid');
+  const vatAmount = vatRate > 0 ? price - (price / (1 + vatRate)) : 0;
+  const priceExVat = price - vatAmount;
+
+  const sorted = [...marketplaces]
+    .filter(m => m.id !== 'custom')
+    .map(m => {
+      const comm = priceExVat * m.commission + m.fixed;
+      const profit = price - vatAmount - comm - cost - shipping - other;
+      const margin = price > 0 ? (profit / price) * 100 : 0;
+      return { ...m, profit, margin };
+    })
+    .sort((a, b) => b.profit - a.profit);
+
+  grid.innerHTML = sorted.map((m, i) => `
+    <div class="card" style="padding:20px;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+        <img src="${m.icon}" width="20" height="20" style="object-fit:contain;">
+        <span style="font-weight:700;font-size:15px;">${m.name}</span>
+        ${i === 0 ? '<span class="badge badge-green" style="margin-left:auto;">Migliore</span>' : ''}
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+        <div class="metric"><div class="metric-label">Commissione</div><div class="metric-value">${(m.commission * 100).toFixed(1)}%${m.fixed > 0 ? ' +€' + m.fixed.toFixed(2) : ''}</div></div>
+        <div class="metric"><div class="metric-label">Profitto</div><div class="metric-value" style="color:${m.profit >= 0 ? 'var(--green)' : 'var(--red)'};">${m.profit >= 0 ? '€' : '−€'}${Math.abs(m.profit).toFixed(2).replace('.', ',')}</div></div>
+      </div>
+      <div style="margin-top:10px;">
+        <div style="font-size:11px;color:var(--text-muted);margin-bottom:4px;">Margine: ${m.margin.toFixed(1)}%</div>
+        <div class="margin-bar"><div class="margin-bar-fill" style="width:${Math.max(0, Math.min(100, m.margin))}%;background:${m.margin < 0 ? 'var(--red)' : m.margin < 10 ? 'var(--orange)' : 'var(--green)'};"></div></div>
+      </div>
+    </div>
+  `).join('');
+}
+
+// Init
+document.querySelectorAll('.mp-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.mp-btn').forEach(b => b.classList.remove('selected'));
+    btn.classList.add('selected');
+    const mp = marketplaces.find(m => m.id === btn.dataset.mp);
+    selectedMp = mp || { id: 'custom', name: 'Personalizzato', commission: parseFloat(document.getElementById('custom-commission').value) / 100, fixed: 0 };
+    document.getElementById('custom-commission-field').style.display = btn.dataset.mp === 'custom' ? 'block' : 'none';
+    calculate();
+  });
+});
+
+document.querySelectorAll('input, select').forEach(el => el.addEventListener('input', calculate));
+
+calculate();
+</script>
+
+<?php include 'includes/end.php'; ?>

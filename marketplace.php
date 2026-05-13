@@ -1369,3 +1369,4 @@ include 'includes/nav.php';
 </section>
 
 <?php include 'includes/footer.php'; ?>
+<?php include 'includes/end.php'; ?>

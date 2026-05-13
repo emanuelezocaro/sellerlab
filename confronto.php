@@ -64,3 +64,309 @@ include 'includes/nav.php';
 </section>
 
 <?php include 'includes/footer.php'; ?>
+
+<script>
+const data = [
+  {
+    name: 'Amazon.it', type: 'generalista', typeLabel: 'Generalista',
+    commission: 15, commissionLabel: '8–15%', commissionMax: 15,
+    traffic: 35, trafficLabel: '~35M', trafficLevel: 5,
+    access: 'libero', accessLabel: 'Libero (Pro 39€/m)',
+    categories: 'Tutto', idealFor: 'Volumi alti, FBA',
+    icon: 'https://www.google.com/s2/favicons?domain=amazon.it&sz=32',
+    link: 'marketplace.html#amazon'
+  },
+  {
+    name: 'eBay.it', type: 'generalista', typeLabel: 'Generalista',
+    commission: 12.8, commissionLabel: '~12.8%', commissionMax: 12.8,
+    traffic: 12, trafficLabel: '~12M', trafficLevel: 4,
+    access: 'libero', accessLabel: 'Gratuito',
+    categories: 'Usato, Ricambi, Collezionismo', idealFor: 'Nicchie, C2C',
+    icon: 'https://cdn.simpleicons.org/ebay/E53238',
+    link: 'marketplace.html#ebay'
+  },
+  {
+    name: 'Subito.it', type: 'generalista', typeLabel: 'Annunci',
+    commission: 0, commissionLabel: '0% (privati)', commissionMax: 0,
+    traffic: 18, trafficLabel: '~18M', trafficLevel: 5,
+    access: 'libero', accessLabel: 'Gratuito',
+    categories: 'Usato, Auto, Immobili', idealFor: 'Locale, usato',
+    icon: 'https://www.google.com/s2/favicons?domain=subito.it&sz=32',
+    link: 'marketplace.html#subito'
+  },
+  {
+    name: 'Etsy', type: 'verticale', typeLabel: 'Verticale',
+    commission: 6.5, commissionLabel: '6.5% + 0,20$', commissionMax: 6.5,
+    traffic: 8, trafficLabel: '~8M (IT)', trafficLevel: 3,
+    access: 'libero', accessLabel: 'Gratuito',
+    categories: 'Handmade, Vintage, Digitali', idealFor: 'Artigiani, creativi',
+    icon: 'https://cdn.simpleicons.org/etsy/F16521',
+    link: 'marketplace.html#etsy'
+  },
+  {
+    name: 'Zalando', type: 'fashion', typeLabel: 'Fashion',
+    commission: 20, commissionLabel: '5–25%', commissionMax: 25,
+    traffic: 8, trafficLabel: '~8M (IT)', trafficLevel: 3,
+    access: 'selettivo', accessLabel: 'Su invito',
+    categories: 'Abbigliamento, Scarpe, Accessori', idealFor: 'Brand fashion',
+    icon: 'https://cdn.simpleicons.org/zalando/FF6900',
+    link: 'marketplace.html#zalando'
+  },
+  {
+    name: 'ManoMano', type: 'verticale', typeLabel: 'Verticale',
+    commission: 13, commissionLabel: '12–15%', commissionMax: 15,
+    traffic: 4, trafficLabel: '~4M (IT)', trafficLevel: 2,
+    access: 'approvazione', accessLabel: 'Con approvazione',
+    categories: 'Bricolage, Giardino, Casa', idealFor: 'DIY, scontrino alto',
+    icon: 'https://www.google.com/s2/favicons?domain=manomano.com&sz=32',
+    link: 'marketplace.html#manomano'
+  },
+  {
+    name: 'Vinted', type: 'fashion', typeLabel: 'Fashion C2C',
+    commission: 0, commissionLabel: '0% (venditore)', commissionMax: 0,
+    traffic: 6, trafficLabel: '~6M', trafficLevel: 3,
+    access: 'libero', accessLabel: 'Gratuito',
+    categories: 'Abbigliamento usato', idealFor: 'Second-hand C2C',
+    icon: 'https://cdn.simpleicons.org/vinted/007782',
+    link: 'marketplace.html#vinted'
+  },
+  {
+    name: 'Farfetch', type: 'fashion', typeLabel: 'Luxury Fashion',
+    commission: 27, commissionLabel: '25–30%', commissionMax: 30,
+    traffic: 5, trafficLabel: '~5M (glob.)', trafficLevel: 2,
+    access: 'selettivo', accessLabel: 'Su approvazione',
+    categories: 'Luxury, Designer', idealFor: 'Boutique luxury',
+    icon: 'https://www.google.com/s2/favicons?domain=farfetch.com&sz=32',
+    link: 'marketplace.html#farfetch'
+  },
+  {
+    name: 'YOOX', type: 'outlet', typeLabel: 'Outlet',
+    commission: 0, commissionLabel: 'Acquisto stock', commissionMax: 0,
+    traffic: 3, trafficLabel: '~3M', trafficLevel: 2,
+    access: 'selettivo', accessLabel: 'Selettivo',
+    categories: 'Fashion fine stagione', idealFor: 'Smaltire invenduto',
+    icon: 'https://www.google.com/s2/favicons?domain=yoox.com&sz=32',
+    link: 'marketplace.html#yoox'
+  },
+  {
+    name: 'Back Market', type: 'verticale', typeLabel: 'Verticale',
+    commission: 12, commissionLabel: '~12%', commissionMax: 12,
+    traffic: 3, trafficLabel: '~3M (IT)', trafficLevel: 2,
+    access: 'approvazione', accessLabel: 'Con approvazione',
+    categories: 'Elettronica ricondizionata', idealFor: 'Ricondizionato',
+    icon: 'https://www.google.com/s2/favicons?domain=backmarket.it&sz=32',
+    link: 'marketplace.html#backmarket'
+  },
+  {
+    name: 'ePrice', type: 'verticale', typeLabel: 'Verticale',
+    commission: 9, commissionLabel: '5–12%', commissionMax: 12,
+    traffic: 2, trafficLabel: '~2M', trafficLevel: 1,
+    access: 'approvazione', accessLabel: 'Su richiesta',
+    categories: 'Elettronica, Informatica', idealFor: 'Tech complementare',
+    icon: 'https://www.google.com/s2/favicons?domain=eprice.it&sz=32',
+    link: 'marketplace.html#eprice'
+  },
+  {
+    name: 'MediaWorld Mkt.', type: 'verticale', typeLabel: 'Verticale',
+    commission: 10, commissionLabel: '8–12%', commissionMax: 12,
+    traffic: 5, trafficLabel: '~5M', trafficLevel: 2,
+    access: 'selettivo', accessLabel: 'Su invito',
+    categories: 'Elettronica, Gaming', idealFor: 'Brand tech',
+    icon: 'https://www.google.com/s2/favicons?domain=mediaworld.it&sz=32',
+    link: 'marketplace.html#mediaworld'
+  },
+  {
+    name: 'Google Shopping', type: 'comparatore', typeLabel: 'Comparatore',
+    commission: 0, commissionLabel: 'CPC (0,20–1,50€)', commissionMax: 0,
+    traffic: 100, trafficLabel: 'Enorme', trafficLevel: 5,
+    access: 'libero', accessLabel: 'Feed + Google Ads',
+    categories: 'Tutto', idealFor: 'Tutti gli shop',
+    icon: 'https://cdn.simpleicons.org/google/4285F4',
+    link: 'marketplace.html#google-shopping'
+  },
+  {
+    name: 'Trovaprezzi.it', type: 'comparatore', typeLabel: 'Comparatore',
+    commission: 0, commissionLabel: 'CPC (0,10–0,80€)', commissionMax: 0,
+    traffic: 4, trafficLabel: '~4M', trafficLevel: 2,
+    access: 'libero', accessLabel: 'Feed + budget CPC',
+    categories: 'Elettronica, Casa', idealFor: 'Prezzi competitivi',
+    icon: 'https://www.google.com/s2/favicons?domain=trovaprezzi.it&sz=32',
+    link: 'marketplace.html#trovaprezzi'
+  },
+  {
+    name: 'TikTok Shop', type: 'social', typeLabel: 'Social',
+    commission: 6.5, commissionLabel: '~5–8%', commissionMax: 8,
+    traffic: 13, trafficLabel: '~13M utenti IT', trafficLevel: 4,
+    access: 'libero', accessLabel: 'Aperto (2023)',
+    categories: 'Lifestyle, Beauty, Moda', idealFor: 'Discovery commerce',
+    icon: 'https://cdn.simpleicons.org/tiktok/000000',
+    link: 'marketplace.html#tiktok-shop'
+  },
+  {
+    name: 'Instagram Shop', type: 'social', typeLabel: 'Social',
+    commission: 0, commissionLabel: 'Gratuito (no checkout IT)', commissionMax: 0,
+    traffic: 26, trafficLabel: '~26M utenti IT', trafficLevel: 5,
+    access: 'libero', accessLabel: 'Gratuito',
+    categories: 'Moda, Beauty, Lifestyle', idealFor: 'Brand visual',
+    icon: 'https://cdn.simpleicons.org/instagram/E4405F',
+    link: 'marketplace.html#instagram-shop'
+  },
+  {
+    name: 'Veepee', type: 'outlet', typeLabel: 'Flash Sale',
+    commission: 0, commissionLabel: 'Consignment (rev. share)', commissionMax: 0,
+    traffic: 5, trafficLabel: '70M iscritti EU', trafficLevel: 3,
+    access: 'selettivo', accessLabel: 'Su proposta brand',
+    categories: 'Fashion, Lifestyle', idealFor: 'Smaltire stock',
+    icon: 'https://www.google.com/s2/favicons?domain=veepee.it&sz=32',
+    link: 'marketplace.html#veepee'
+  },
+  {
+    name: 'Catawiki', type: 'verticale', typeLabel: 'Aste',
+    commission: 12.5, commissionLabel: '~12.5%', commissionMax: 12.5,
+    traffic: 2, trafficLabel: '~2M (IT)', trafficLevel: 1,
+    access: 'approvazione', accessLabel: 'Expert review',
+    categories: 'Arte, Orologi, Wine, Collezionismo', idealFor: 'Oggetti rari e unici',
+    icon: 'https://www.google.com/s2/favicons?domain=catawiki.com&sz=32',
+    link: 'marketplace.html#catawiki'
+  },
+  {
+    name: 'Depop', type: 'fashion', typeLabel: 'Fashion C2C',
+    commission: 10, commissionLabel: '~10%', commissionMax: 10,
+    traffic: 3, trafficLabel: '~3M (IT)', trafficLevel: 2,
+    access: 'libero', accessLabel: 'Gratuito',
+    categories: 'Vintage, Streetwear, Gen Z', idealFor: 'Giovani, moda creativa',
+    icon: 'https://www.google.com/s2/favicons?domain=depop.com&sz=32',
+    link: 'marketplace.html#depop'
+  },
+  {
+    name: 'Vestiaire Coll.', type: 'fashion', typeLabel: 'Luxury C2C',
+    commission: 15, commissionLabel: '12–15% + fee', commissionMax: 15,
+    traffic: 2, trafficLabel: '~2M (IT)', trafficLevel: 1,
+    access: 'libero', accessLabel: 'Libero (autenticazione)',
+    categories: 'Luxury second-hand', idealFor: 'Fashion luxury usato',
+    icon: 'https://www.google.com/s2/favicons?domain=vestiairecollective.com&sz=32',
+    link: 'marketplace.html#vestiaire'
+  },
+  {
+    name: 'Leroy Merlin Mkt.', type: 'verticale', typeLabel: 'Verticale',
+    commission: 12, commissionLabel: '~12%', commissionMax: 12,
+    traffic: 4, trafficLabel: '~4M', trafficLevel: 2,
+    access: 'selettivo', accessLabel: 'Su invito',
+    categories: 'DIY, Casa, Giardino', idealFor: 'Prodotti casa',
+    icon: 'https://www.google.com/s2/favicons?domain=leroymerlin.it&sz=32',
+    link: 'marketplace.html#leroymerlin'
+  },
+  {
+    name: 'Unieuro Mkt.', type: 'verticale', typeLabel: 'Verticale',
+    commission: 10, commissionLabel: '~10%', commissionMax: 10,
+    traffic: 4, trafficLabel: '~4M', trafficLevel: 2,
+    access: 'selettivo', accessLabel: 'Su invito',
+    categories: 'Elettronica, Elettrodomestici', idealFor: 'Elettronica IT',
+    icon: 'https://www.google.com/s2/favicons?domain=unieuro.it&sz=32',
+    link: 'marketplace.html#unieuro'
+  },
+  {
+    name: 'Allegro', type: 'generalista', typeLabel: 'Generalista',
+    commission: 8, commissionLabel: '5–12%', commissionMax: 12,
+    traffic: 1, trafficLabel: 'In espansione', trafficLevel: 1,
+    access: 'libero', accessLabel: 'Libero',
+    categories: 'Tutto (Polonia → EU)', idealFor: 'Espansione est-Europa',
+    icon: 'https://www.google.com/s2/favicons?domain=allegro.pl&sz=32',
+    link: 'marketplace.html#allegro'
+  },
+  {
+    name: 'Temu', type: 'generalista', typeLabel: 'Generalista',
+    commission: 2, commissionLabel: '0–5%', commissionMax: 5,
+    traffic: 20, trafficLabel: '~20M (IT)', trafficLevel: 5,
+    access: 'approvazione', accessLabel: 'Programma seller',
+    categories: 'Tutto (low-cost)', idealFor: 'Nicchie, prodotti differenziati',
+    icon: 'https://www.google.com/s2/favicons?domain=temu.com&sz=32',
+    link: 'marketplace.html#temu'
+  }
+];
+
+let currentFilter = 'all';
+let currentSort = { col: 'traffic', dir: -1 };
+
+function trafficColor(level) {
+  const colors = ['', '#e2e8f0', '#93c5fd', '#60a5fa', '#3b82f6', '#1d4ed8'];
+  return colors[level] || '#e2e8f0';
+}
+
+function accessBadge(access) {
+  const map = {
+    libero:      '<span class="badge badge-green">Libero</span>',
+    approvazione:'<span class="badge badge-orange">Approvazione</span>',
+    selettivo:   '<span class="badge badge-gray">Selettivo</span>'
+  };
+  return map[access] || '';
+}
+
+function typeBadge(type) {
+  const map = {
+    generalista: 'badge-blue', verticale: 'badge-purple', fashion: 'badge-purple',
+    comparatore: 'badge-blue', social: 'badge-orange', outlet: 'badge-gray'
+  };
+  return `<span class="badge ${map[type] || 'badge-gray'}">${type.charAt(0).toUpperCase() + type.slice(1)}</span>`;
+}
+
+function renderTable() {
+  let rows = [...data];
+  if (currentFilter !== 'all') {
+    if (currentFilter === 'libero') {
+      rows = rows.filter(r => r.access === 'libero');
+    } else {
+      rows = rows.filter(r => r.type === currentFilter);
+    }
+  }
+  rows.sort((a, b) => {
+    const col = currentSort.col;
+    if (col === 'name') return currentSort.dir * a.name.localeCompare(b.name);
+    return currentSort.dir * (a[col] - b[col]);
+  });
+
+  document.getElementById('table-body').innerHTML = rows.map(r => `
+    <tr>
+      <td>
+        <a href="${r.link}" class="mp-name" style="text-decoration:none;">
+          <img src="${r.icon}" alt="${r.name}" onerror="this.style.display='none'">
+          ${r.name}
+        </a>
+      </td>
+      <td>${typeBadge(r.type)}</td>
+      <td>
+        <div class="commission-bar-wrap">
+          <span style="font-weight:600;min-width:80px;">${r.commissionLabel}</span>
+          <div class="commission-bar"><div class="commission-bar-fill" style="width:${Math.min(r.commissionMax / 30 * 100, 100)}%;"></div></div>
+        </div>
+      </td>
+      <td>
+        <span style="display:inline-flex;align-items:center;gap:6px;">
+          <span class="traffic-dot" style="background:${trafficColor(r.trafficLevel)};"></span>
+          ${r.trafficLabel}
+        </span>
+      </td>
+      <td>${accessBadge(r.access)}<br><span style="font-size:11.5px;color:var(--text-muted);margin-top:3px;display:block;">${r.accessLabel}</span></td>
+      <td style="max-width:180px;font-size:13px;color:var(--text-secondary);">${r.categories}</td>
+      <td><span class="tag">${r.idealFor}</span></td>
+    </tr>
+  `).join('');
+}
+
+function filterTable(type, btn) {
+  currentFilter = type;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderTable();
+}
+
+function sortTable(col) {
+  if (currentSort.col === col) currentSort.dir *= -1;
+  else { currentSort.col = col; currentSort.dir = -1; }
+  renderTable();
+}
+
+renderTable();
+</script>
+
+<?php include 'includes/end.php'; ?>
