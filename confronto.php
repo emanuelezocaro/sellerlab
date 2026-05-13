@@ -11,6 +11,19 @@ include 'includes/head.php';
 include 'includes/nav.php';
 ?>
 
+<nav class="section-nav" id="section-nav">
+  <div class="section-nav-inner">
+    <button class="section-nav-link active" onclick="stickyFilter('all', this)">Tutti</button>
+    <button class="section-nav-link" onclick="stickyFilter('generalista', this)">Generalisti</button>
+    <button class="section-nav-link" onclick="stickyFilter('fashion', this)">Fashion</button>
+    <button class="section-nav-link" onclick="stickyFilter('verticale', this)">Verticali</button>
+    <button class="section-nav-link" onclick="stickyFilter('comparatore', this)">Comparatori</button>
+    <button class="section-nav-link" onclick="stickyFilter('social', this)">Social</button>
+    <button class="section-nav-link" onclick="stickyFilter('outlet', this)">Outlet</button>
+    <button class="section-nav-link" onclick="stickyFilter('libero', this)">Accesso libero</button>
+  </div>
+</nav>
+
 <style>
     .table-wrap {
       overflow-x: auto;
@@ -76,24 +89,8 @@ include 'includes/nav.php';
     .filter-bar {
       display: flex;
       gap: 8px;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      scrollbar-width: none;
-      padding: 12px 24px;
-      margin: 0 -24px 24px;
-      position: sticky;
-      top: 60px;
-      z-index: 90;
-      background: var(--bg);
-      border-bottom: 1px solid var(--border);
-      opacity: 0;
-      transform: translateY(-6px);
-      transition: opacity .2s, transform .2s;
-    }
-    .filter-bar::-webkit-scrollbar { display: none; }
-    .filter-bar.is-visible {
-      opacity: 1;
-      transform: translateY(0);
+      flex-wrap: wrap;
+      margin-bottom: 24px;
     }
     .filter-btn {
       padding: 7px 16px;
@@ -111,6 +108,13 @@ include 'includes/nav.php';
       background: var(--accent);
       border-color: var(--accent);
       color: #fff;
+    }
+
+    #section-nav .section-nav-link {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
     }
 
     .sort-btn {
@@ -493,10 +497,23 @@ function sortTable(col) {
 
 renderTable();
 
-const filterBar = document.querySelector('.filter-bar');
+// sticky section nav
+const sectionNav = document.getElementById('section-nav');
 window.addEventListener('scroll', function() {
-  filterBar.classList.toggle('is-visible', window.scrollY > 120);
+  sectionNav.classList.toggle('is-visible', window.scrollY > 120);
 }, { passive: true });
+
+function stickyFilter(type, btn) {
+  // sync sticky nav active state
+  sectionNav.querySelectorAll('.section-nav-link').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  // sync inline filter-bar
+  const match = [...document.querySelectorAll('.filter-btn')].find(b => b.textContent.trim() === btn.textContent.trim());
+  if (match) { document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active')); match.classList.add('active'); }
+  currentFilter = type;
+  renderTable();
+  document.getElementById('table-wrap').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
 </script>
 
 <?php include 'includes/end.php'; ?>
