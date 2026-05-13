@@ -315,6 +315,14 @@ buildAlphaNav();
 setTimeout(function() {
   const letterSections = document.querySelectorAll('.letter-section');
   const navLinks = sectionNav.querySelectorAll('.section-nav-link');
+
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
   const obs = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {
       if (entry.isIntersecting) {
