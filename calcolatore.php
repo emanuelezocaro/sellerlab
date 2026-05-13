@@ -11,6 +11,132 @@ include 'includes/head.php';
 include 'includes/nav.php';
 ?>
 
+<style>
+    .calc-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      align-items: start;
+    }
+    @media (max-width: 768px) { .calc-layout { grid-template-columns: 1fr; } }
+
+    .calc-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+    }
+    .calc-box h2 { font-size: 18px; font-weight: 700; margin-bottom: 24px; letter-spacing: -.2px; }
+
+    .field { margin-bottom: 20px; }
+    .field label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: .4px;
+    }
+    .field input, .field select {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-size: 15px;
+      font-family: inherit;
+      color: var(--text);
+      background: var(--bg);
+      transition: border-color .15s;
+      -webkit-appearance: none;
+    }
+    .field input:focus, .field select:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(37,99,235,.08);
+    }
+    .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+    .result-box {
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+    }
+    .result-box h2 { font-size: 18px; font-weight: 700; margin-bottom: 24px; letter-spacing: -.2px; }
+
+    .result-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+    }
+    .result-line:last-child { border-bottom: none; }
+    .result-label { color: var(--text-secondary); }
+    .result-value { font-weight: 600; color: var(--text); }
+    .result-value.negative { color: var(--red); }
+    .result-value.positive { color: var(--green); }
+
+    .result-total {
+      margin-top: 20px;
+      padding: 20px;
+      background: var(--text);
+      border-radius: var(--radius-sm);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .result-total-label { color: #94a3b8; font-size: 14px; font-weight: 600; }
+    .result-total-value { color: #fff; font-size: 24px; font-weight: 700; }
+    .result-total-value.loss { color: #fca5a5; }
+
+    .margin-bar-wrap { margin-top: 16px; }
+    .margin-bar-label { font-size: 12px; color: var(--text-secondary); margin-bottom: 6px; display: flex; justify-content: space-between; }
+    .margin-bar { height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; }
+    .margin-bar-fill { height: 100%; border-radius: 4px; transition: width .4s ease, background .4s; }
+
+    .marketplace-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .mp-btn {
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: var(--bg);
+      cursor: pointer;
+      font-size: 12.5px;
+      font-weight: 500;
+      font-family: inherit;
+      color: var(--text-secondary);
+      text-align: center;
+      transition: all .15s;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .mp-btn img { width: 16px; height: 16px; object-fit: contain; }
+    .mp-btn:hover { border-color: var(--accent); color: var(--accent); }
+    .mp-btn.selected { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .mp-btn.selected img { filter: brightness(10); }
+
+    .tip-box {
+      background: var(--accent-light);
+      border: 1px solid #bfdbfe;
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      margin-top: 20px;
+      font-size: 13px;
+      color: #1e40af;
+      line-height: 1.6;
+    }
+    .tip-box strong { color: #1e3a8a; }
+  </style>
+
 <div class="page-hero">
   <div class="page-hero-inner">
     <div class="section-label">Strumento gratuito</div>

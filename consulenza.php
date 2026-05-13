@@ -11,6 +11,271 @@ include 'includes/head.php';
 include 'includes/nav.php';
 ?>
 
+<style>
+    .consult-hero {
+      padding: 96px 24px 80px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+      background: #0f172a;
+    }
+    .consult-hero-label {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #60a5fa;
+      margin-bottom: 20px;
+    }
+    .consult-hero h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      color: #f1f5f9;
+      letter-spacing: -.5px;
+      line-height: 1.15;
+      max-width: 760px;
+      margin: 0 auto 20px;
+    }
+    .consult-hero h1 em {
+      font-style: normal;
+      color: #60a5fa;
+    }
+    .consult-hero p {
+      font-size: 18px;
+      color: #94a3b8;
+      max-width: 560px;
+      margin: 0 auto 36px;
+      line-height: 1.7;
+    }
+    .consult-hero-cta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn-hero-consult {
+      display: inline-block;
+      background: #2563eb;
+      color: #fff !important;
+      font-size: 17px;
+      font-weight: 700;
+      padding: 16px 36px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: background .2s, transform .2s;
+      letter-spacing: -.2px;
+    }
+    .btn-hero-consult:hover { background: #1d4ed8; transform: translateY(-2px); }
+    .hero-sub-note {
+      font-size: 13px;
+      color: #475569;
+    }
+
+    /* FOR WHO */
+    .for-who-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 32px;
+    }
+    .for-who-box {
+      border-radius: var(--radius);
+      padding: 28px 32px;
+    }
+    .for-who-box.yes {
+      background: #f0fdf4;
+      border: 1px solid #86efac;
+    }
+    .for-who-box.no {
+      background: #fff7ed;
+      border: 1px solid #fdba74;
+    }
+    .for-who-box h3 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .for-who-box.yes h3 { color: #166534; }
+    .for-who-box.no h3 { color: #9a3412; }
+    .for-who-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .for-who-list li {
+      font-size: 14px;
+      line-height: 1.5;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+    .for-who-box.yes li { color: #14532d; }
+    .for-who-box.no li { color: #7c2d12; }
+    .for-who-box.yes li::before { content: '✓'; font-weight: 700; flex-shrink: 0; color: #16a34a; }
+    .for-who-box.no li::before { content: '✕'; font-weight: 700; flex-shrink: 0; color: #ea580c; }
+
+    /* DELIVERABLES */
+    .deliverables-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 32px;
+    }
+    .deliverable-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      transition: border-color .2s;
+    }
+    .deliverable-card:hover { border-color: var(--accent); }
+    .deliverable-num {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--accent);
+      letter-spacing: -1px;
+      margin-bottom: 10px;
+      opacity: .4;
+    }
+    .deliverable-card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .deliverable-card p {
+      font-size: 13.5px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* HOW IT WORKS */
+    .steps-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      margin-top: 40px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .step-block {
+      padding: 32px 28px;
+      border-right: 1px solid var(--border);
+      position: relative;
+    }
+    .step-block:last-child { border-right: none; }
+    .step-block-num {
+      font-size: 42px;
+      font-weight: 800;
+      color: var(--accent);
+      opacity: .15;
+      letter-spacing: -2px;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+    .step-block h3 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+    .step-block p { font-size: 13.5px; color: var(--text-secondary); line-height: 1.6; }
+
+    /* WHY PAID */
+    .why-paid-section {
+      background: #0f172a;
+      border-radius: var(--radius);
+      padding: 56px 48px;
+      margin: 56px 0;
+    }
+    .why-paid-section .section-label { color: #60a5fa; }
+    .why-paid-section h2 { color: #f1f5f9; margin-bottom: 16px; }
+    .why-paid-section > p {
+      color: #94a3b8;
+      font-size: 16px;
+      line-height: 1.75;
+      max-width: 640px;
+      margin-bottom: 40px;
+    }
+    .why-paid-section > p strong { color: #e2e8f0; }
+    .why-paid-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .why-paid-item {
+      border: 1px solid #1e293b;
+      border-radius: var(--radius-sm);
+      padding: 24px;
+      background: rgba(255,255,255,.02);
+    }
+    .why-paid-item h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: #e2e8f0;
+      margin-bottom: 8px;
+    }
+    .why-paid-item p {
+      font-size: 13.5px;
+      color: #64748b;
+      line-height: 1.65;
+    }
+    .why-paid-item p strong { color: #94a3b8; }
+
+    /* FAQ */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin-top: 32px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      padding: 24px 28px;
+    }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 10px;
+    }
+    .faq-a {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+    .faq-a strong { color: var(--text); }
+
+    /* FINAL CTA */
+    .final-cta {
+      text-align: center;
+      padding: 80px 24px;
+      border-top: 1px solid var(--border);
+    }
+    .final-cta h2 {
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 700;
+      letter-spacing: -.3px;
+      margin-bottom: 14px;
+    }
+    .final-cta p {
+      font-size: 16px;
+      color: var(--text-secondary);
+      max-width: 480px;
+      margin: 0 auto 36px;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 768px) {
+      .for-who-grid { grid-template-columns: 1fr; }
+      .steps-row { grid-template-columns: 1fr; }
+      .step-block { border-right: none; border-bottom: 1px solid var(--border); }
+      .step-block:last-child { border-bottom: none; }
+      .why-paid-section { padding: 36px 24px; }
+      .why-paid-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+
 <!-- HERO -->
 <div class="consult-hero">
   <div class="consult-hero-label">Consulenza 1:1 a pagamento</div>

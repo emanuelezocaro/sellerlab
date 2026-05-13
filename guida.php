@@ -11,6 +11,112 @@ include 'includes/head.php';
 include 'includes/nav.php';
 ?>
 
+<style>
+    .profile-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+
+    .profile-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      transition: border-color .2s, box-shadow .2s;
+    }
+    .profile-card:hover { border-color: var(--border-hover); box-shadow: var(--shadow-hover); }
+
+    .profile-icon { font-size: 40px; margin-bottom: 16px; }
+    .profile-title { font-size: 18px; font-weight: 700; margin-bottom: 6px; letter-spacing: -.2px; }
+    .profile-subtitle { font-size: 13px; color: var(--text-muted); margin-bottom: 16px; }
+    .profile-desc { font-size: 14px; color: var(--text-secondary); line-height: 1.65; margin-bottom: 20px; }
+
+    .rec-list { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
+    .rec-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 13.5px;
+    }
+    .rec-item img { width: 20px; height: 20px; object-fit: contain; flex-shrink: 0; margin-top: 1px; }
+    .rec-item-text { flex: 1; }
+    .rec-item-name { font-weight: 600; color: var(--text); }
+    .rec-item-why { color: var(--text-secondary); font-size: 12.5px; margin-top: 1px; }
+
+    .avoid-box {
+      background: var(--red-light);
+      border: 1px solid #fecaca;
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      font-size: 13px;
+      color: #991b1b;
+    }
+    .avoid-box strong { color: #7f1d1d; }
+
+    .path-section { margin-bottom: 56px; }
+    .path-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      position: relative;
+    }
+    .path-step {
+      display: flex;
+      gap: 20px;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .path-step:last-child { border-bottom: none; }
+    .step-num {
+      width: 36px; height: 36px;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px; font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .step-content h4 { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+    .step-content p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
+
+    .comparison-mini {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 24px;
+    }
+    @media (max-width: 600px) { .comparison-mini { grid-template-columns: 1fr; } }
+
+    .mini-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 16px;
+      text-align: center;
+    }
+    .mini-card-title { font-size: 13px; font-weight: 700; margin-bottom: 8px; }
+    .mini-card-val { font-size: 22px; font-weight: 700; color: var(--accent); }
+    .mini-card-sub { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-left: 24px;
+      border-left: 2px solid var(--border);
+      margin-top: 24px;
+    }
+    .tl-item { position: relative; }
+    .tl-dot {
+      width: 12px; height: 12px;
+      background: var(--accent);
+      border-radius: 50%;
+      position: absolute;
+      left: -30px;
+      top: 4px;
+    }
+    .tl-phase { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; color: var(--accent); }
+    .tl-title { font-size: 15px; font-weight: 700; margin: 2px 0 4px; }
+    .tl-desc { font-size: 13.5px; color: var(--text-secondary); line-height: 1.6; }
+  </style>
+
 <div class="page-hero">
   <div class="page-hero-inner">
     <div class="section-label">Guida pratica</div>
@@ -324,4 +430,5 @@ include 'includes/nav.php';
 </section>
 
 <?php include 'includes/footer.php'; ?>
+
 <?php include 'includes/end.php'; ?>
