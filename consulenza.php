@@ -181,4 +181,10 @@ include 'includes/nav.php';
 </div>
 
 <?php include 'includes/footer.php'; ?>
+
+<!-- Koalendar -->
+<script>window.Koalendar=window.Koalendar||function(){(Koalendar.props=Koalendar.props||[]).push(arguments)};</script>
+<script async src="https://koalendar.com/assets/widget.js"></script>
+<script>Koalendar('init');</script>
+
 <?php include 'includes/end.php'; ?>
