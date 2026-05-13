@@ -1384,23 +1384,28 @@ include 'includes/nav.php';
 <?php include 'includes/footer.php'; ?>
 
 <script>
-function secNav(e, id) {
-  e.preventDefault();
-  var el = document.getElementById(id);
-  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  document.querySelectorAll('#section-nav .section-nav-link').forEach(function(l) { l.classList.remove('active'); });
-  if (e.currentTarget) e.currentTarget.classList.add('active');
-}
-
 (function() {
   var nav = document.getElementById('section-nav');
   var links = nav.querySelectorAll('.section-nav-link');
   var sections = Array.from(links).map(function(l) {
     return document.getElementById(l.getAttribute('href').replace('#',''));
   }).filter(Boolean);
+  var paused = false, pauseTimer;
+
+  window.secNav = function(e, id) {
+    e.preventDefault();
+    var el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    links.forEach(function(l) { l.classList.remove('active'); });
+    if (e.currentTarget) e.currentTarget.classList.add('active');
+    paused = true;
+    clearTimeout(pauseTimer);
+    pauseTimer = setTimeout(function() { paused = false; }, 900);
+  };
 
   function updateActive() {
     nav.classList.toggle('is-visible', window.scrollY > 120);
+    if (paused) return;
     var offset = 130;
     var current = null;
     sections.forEach(function(s) {
