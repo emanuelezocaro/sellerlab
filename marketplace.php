@@ -1397,7 +1397,7 @@ include 'includes/nav.php';
     link.addEventListener('click', function(e) {
       e.preventDefault();
       const target = document.querySelector(link.getAttribute('href'));
-      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      if (target) { var top = target.getBoundingClientRect().top + window.scrollY - 120; window.scrollTo({ top: top, behavior: 'smooth' }); }
     });
   });
 
