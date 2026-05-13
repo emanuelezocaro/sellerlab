@@ -12,6 +12,7 @@ $current_page = 'tools';
 $breadcrumb = [['label' => 'Home', 'url' => 'index.php'], ['label' => 'Tool & Software', 'url' => 'tools.php'], ['label' => 'Email & CRM']];
 include '../includes/head.php';
 include '../includes/nav.php';
+include '../includes/breadcrumb.php';
 include '../includes/data-tools.php';
 include '../includes/render-card.php';
 $cat = $tools_categories['email-marketing'];
@@ -28,7 +29,6 @@ $items = array_filter($tools, fn($t) => $t['category'] === 'email-marketing');
 
 <section class="section">
   <div class="section-inner">
-    <?php include '../includes/breadcrumb.php'; ?>
 <div class="grid-2">
       <?php foreach ($items as $item) render_card($item); ?>
     </div>

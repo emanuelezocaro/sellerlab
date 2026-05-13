@@ -12,6 +12,7 @@ $current_page = 'marketplace';
 $breadcrumb = [['label' => 'Home', 'url' => 'index.php'], ['label' => 'Marketplace', 'url' => 'marketplace.php'], ['label' => 'Social Commerce']];
 include '../includes/head.php';
 include '../includes/nav.php';
+include '../includes/breadcrumb.php';
 include '../includes/data-marketplace.php';
 include '../includes/render-card.php';
 $cat = $marketplace_categories['social'];
@@ -28,7 +29,6 @@ $items = array_filter($marketplaces, fn($m) => $m['category'] === 'social');
 
 <section class="section">
   <div class="section-inner">
-    <?php include '../includes/breadcrumb.php'; ?>
 <div class="grid-2">
       <?php foreach ($items as $item) render_card($item); ?>
     </div>
