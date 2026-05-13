@@ -13,6 +13,19 @@ include 'includes/head.php';
 include 'includes/nav.php';
 ?>
 
+<nav class="section-nav" id="section-nav">
+  <div class="section-nav-inner">
+    <a href="#generalisti" class="section-nav-link">Generalisti</a>
+    <a href="#verticali" class="section-nav-link">Verticali</a>
+    <a href="#fashion" class="section-nav-link">Fashion</a>
+    <a href="#comparatori" class="section-nav-link">Comparatori</a>
+    <a href="#social" class="section-nav-link">Social</a>
+    <a href="#outlet" class="section-nav-link">Outlet</a>
+    <a href="#ricondizionato" class="section-nav-link">Ricondizionato</a>
+    <a href="#internazionali" class="section-nav-link">Internazionali</a>
+  </div>
+</nav>
+
 <div class="page-hero">
   <div class="page-hero-inner">
     <div class="section-label">Marketplace</div>
@@ -38,7 +51,7 @@ include 'includes/nav.php';
     </div>
 
     <!-- ===== GENERALISTI ===== -->
-    <div id="generalisti" style="scroll-margin-top:80px;">
+    <div id="generalisti" style="scroll-margin-top:120px;">
       <div class="section-header">
         <div class="section-label">Marketplace Generalisti</div>
         <h2>Le grandi piattaforme per tutti i prodotti</h2>
@@ -251,7 +264,7 @@ include 'includes/nav.php';
     <div class="divider" style="margin:56px 0;"></div>
 
     <!-- ===== VERTICALI ===== -->
-    <div id="verticali" style="scroll-margin-top:80px;">
+    <div id="verticali" style="scroll-margin-top:120px;">
       <div class="section-header">
         <div class="section-label">Marketplace Verticali</div>
         <h2>Piattaforme specializzate per categoria</h2>
@@ -459,7 +472,7 @@ include 'includes/nav.php';
     <div class="divider" style="margin:56px 0;"></div>
 
     <!-- ===== FASHION ===== -->
-    <div id="fashion" style="scroll-margin-top:80px;">
+    <div id="fashion" style="scroll-margin-top:120px;">
       <div class="section-header">
         <div class="section-label">Moda & Fashion</div>
         <h2>I canali per vendere abbigliamento e accessori</h2>
@@ -702,7 +715,7 @@ include 'includes/nav.php';
     <div class="divider" style="margin:56px 0;"></div>
 
     <!-- ===== COMPARATORI ===== -->
-    <div id="comparatori" style="scroll-margin-top:80px;">
+    <div id="comparatori" style="scroll-margin-top:120px;">
       <div class="section-header">
         <div class="section-label">Comparatori & Shopping Ads</div>
         <h2>Intercetta chi è già pronto a comprare</h2>
@@ -846,7 +859,7 @@ include 'includes/nav.php';
     <div class="divider" style="margin:56px 0;"></div>
 
     <!-- ===== SOCIAL COMMERCE ===== -->
-    <div id="social" style="scroll-margin-top:80px;">
+    <div id="social" style="scroll-margin-top:120px;">
       <div class="section-header">
         <div class="section-label">Social Commerce</div>
         <h2>Vendere dove le persone passano il tempo</h2>
@@ -951,7 +964,7 @@ include 'includes/nav.php';
     <div class="divider" style="margin:56px 0;"></div>
 
     <!-- ===== OUTLET ===== -->
-    <div id="outlet" style="scroll-margin-top:80px;">
+    <div id="outlet" style="scroll-margin-top:120px;">
       <div class="section-header">
         <div class="section-label">Outlet & Flash Sale</div>
         <h2>Smaltire stock e invenduto senza svalutare il brand</h2>
@@ -1053,7 +1066,7 @@ include 'includes/nav.php';
     <div class="divider" style="margin:56px 0;"></div>
 
     <!-- ===== RICONDIZIONATO ===== -->
-    <div id="ricondizionato" style="scroll-margin-top:80px;">
+    <div id="ricondizionato" style="scroll-margin-top:120px;">
       <div class="section-header">
         <div class="section-label">Ricondizionato & Economia Circolare</div>
         <h2>Il mercato dell'usato e del ricondizionato</h2>
@@ -1114,7 +1127,7 @@ include 'includes/nav.php';
     <div class="divider" style="margin:56px 0;"></div>
 
     <!-- ===== INTERNAZIONALI & SPECIALIZZATI ===== -->
-    <div id="internazionali" style="scroll-margin-top:80px;">
+    <div id="internazionali" style="scroll-margin-top:120px;">
       <div class="section-header">
         <div class="section-label">Internazionali & Specializzati</div>
         <h2>Canali verticali e piattaforme con presenza in Italia</h2>
@@ -1369,4 +1382,32 @@ include 'includes/nav.php';
 </section>
 
 <?php include 'includes/footer.php'; ?>
+
+<script>
+(function() {
+  const nav = document.getElementById('section-nav');
+  const links = nav.querySelectorAll('.section-nav-link');
+  const sections = Array.from(links).map(l => document.querySelector(l.getAttribute('href'))).filter(Boolean);
+
+  window.addEventListener('scroll', function() {
+    nav.classList.toggle('is-visible', window.scrollY > 120);
+  }, { passive: true });
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        links.forEach(function(l) { l.classList.remove('active'); });
+        const active = nav.querySelector('[href="#' + entry.target.id + '"]');
+        if (active) {
+          active.classList.add('active');
+          active.scrollIntoView({ block: 'nearest', inline: 'center' });
+        }
+      }
+    });
+  }, { rootMargin: '-10% 0px -80% 0px' });
+
+  sections.forEach(function(s) { observer.observe(s); });
+})();
+</script>
+
 <?php include 'includes/end.php'; ?>

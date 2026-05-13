@@ -13,6 +13,20 @@ include 'includes/head.php';
 include 'includes/nav.php';
 ?>
 
+<nav class="section-nav" id="section-nav">
+  <div class="section-nav-inner">
+    <a href="#ecommerce" class="section-nav-link">Piattaforme</a>
+    <a href="#feed" class="section-nav-link">Feed Management</a>
+    <a href="#analytics" class="section-nav-link">Analytics Amazon</a>
+    <a href="#repricing" class="section-nav-link">Repricing</a>
+    <a href="#inventory" class="section-nav-link">Inventory</a>
+    <a href="#reviews" class="section-nav-link">Recensioni</a>
+    <a href="#spedizioni" class="section-nav-link">Spedizioni</a>
+    <a href="#email-marketing" class="section-nav-link">Email & CRM</a>
+    <a href="#pagamenti" class="section-nav-link">Pagamenti</a>
+  </div>
+</nav>
+
 <div class="page-hero">
   <div class="page-hero-inner">
     <div class="section-label">Tool & Software</div>
@@ -39,7 +53,7 @@ include 'includes/nav.php';
     </div>
 
     <!-- ===== PIATTAFORME E-COMMERCE ===== -->
-    <div id="ecommerce" style="scroll-margin-top:80px;">
+    <div id="ecommerce" style="scroll-margin-top:120px;">
       <div class="section-header">
         <div class="section-label">Piattaforme E-commerce</div>
         <h2>Il tuo negozio indipendente</h2>
@@ -351,7 +365,7 @@ include 'includes/nav.php';
     <div class="divider" style="margin:56px 0;"></div>
 
     <!-- ===== FEED & MULTICHANNEL ===== -->
-    <div id="feed" style="scroll-margin-top:80px;">
+    <div id="feed" style="scroll-margin-top:120px;">
       <div class="section-header">
         <div class="section-label">Feed & Multichannel</div>
         <h2>Gestisci più canali senza impazzire</h2>
@@ -497,7 +511,7 @@ include 'includes/nav.php';
     <div class="divider" style="margin:56px 0;"></div>
 
     <!-- ===== ANALYTICS AMAZON ===== -->
-    <div id="analytics" style="scroll-margin-top:80px;">
+    <div id="analytics" style="scroll-margin-top:120px;">
       <div class="section-header">
         <div class="section-label">Analytics Amazon</div>
         <h2>Studia la concorrenza, ottimizza i listing</h2>
@@ -732,7 +746,7 @@ include 'includes/nav.php';
     <div class="divider" style="margin:56px 0;"></div>
 
     <!-- ===== REPRICING ===== -->
-    <div id="repricing" style="scroll-margin-top:80px;">
+    <div id="repricing" style="scroll-margin-top:120px;">
       <div class="section-header">
         <div class="section-label">Repricing</div>
         <h2>Ottimizza i prezzi automaticamente</h2>
@@ -832,7 +846,7 @@ include 'includes/nav.php';
     <div class="divider" style="margin:56px 0;"></div>
 
     <!-- ===== INVENTARIO & ORDINI ===== -->
-    <div id="inventory" style="scroll-margin-top:80px;">
+    <div id="inventory" style="scroll-margin-top:120px;">
       <div class="section-header">
         <div class="section-label">Inventario & Ordini</div>
         <h2>Centralizza magazzino e ordini da tutti i canali</h2>
@@ -931,7 +945,7 @@ include 'includes/nav.php';
     <div class="divider" style="margin:56px 0;"></div>
 
     <!-- ===== RECENSIONI ===== -->
-    <div id="reviews" style="scroll-margin-top:80px;">
+    <div id="reviews" style="scroll-margin-top:120px;">
       <div class="section-header">
         <div class="section-label">Gestione Recensioni</div>
         <h2>Costruisci la fiducia dei clienti</h2>
@@ -1031,7 +1045,7 @@ include 'includes/nav.php';
     <div class="divider" style="margin:56px 0;"></div>
 
     <!-- ===== SPEDIZIONI ===== -->
-    <div id="spedizioni" style="scroll-margin-top:80px;">
+    <div id="spedizioni" style="scroll-margin-top:120px;">
       <div class="section-header">
         <div class="section-label">Gestione Spedizioni</div>
         <h2>Spedisci meglio, spendi meno</h2>
@@ -1179,7 +1193,7 @@ include 'includes/nav.php';
     <div class="divider" style="margin:56px 0;"></div>
 
     <!-- ===== EMAIL MARKETING ===== -->
-    <div id="email-marketing" style="scroll-margin-top:80px;">
+    <div id="email-marketing" style="scroll-margin-top:120px;">
       <div class="section-header">
         <div class="section-label">Email Marketing & CRM</div>
         <h2>Fidelizza i clienti dopo il primo acquisto</h2>
@@ -1240,7 +1254,7 @@ include 'includes/nav.php';
     <div class="divider" style="margin:56px 0;"></div>
 
     <!-- ===== PAGAMENTI ===== -->
-    <div id="pagamenti" style="scroll-margin-top:80px;">
+    <div id="pagamenti" style="scroll-margin-top:120px;">
       <div class="section-header">
         <div class="section-label">Pagamenti & BNPL</div>
         <h2>I metodi di pagamento che gli italiani preferiscono</h2>
@@ -1491,4 +1505,32 @@ include 'includes/nav.php';
 </section>
 
 <?php include 'includes/footer.php'; ?>
+
+<script>
+(function() {
+  const nav = document.getElementById('section-nav');
+  const links = nav.querySelectorAll('.section-nav-link');
+  const sections = Array.from(links).map(l => document.querySelector(l.getAttribute('href'))).filter(Boolean);
+
+  window.addEventListener('scroll', function() {
+    nav.classList.toggle('is-visible', window.scrollY > 120);
+  }, { passive: true });
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        links.forEach(function(l) { l.classList.remove('active'); });
+        const active = nav.querySelector('[href="#' + entry.target.id + '"]');
+        if (active) {
+          active.classList.add('active');
+          active.scrollIntoView({ block: 'nearest', inline: 'center' });
+        }
+      }
+    });
+  }, { rootMargin: '-10% 0px -80% 0px' });
+
+  sections.forEach(function(s) { observer.observe(s); });
+})();
+</script>
+
 <?php include 'includes/end.php'; ?>

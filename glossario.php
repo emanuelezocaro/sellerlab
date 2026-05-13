@@ -55,7 +55,7 @@ include 'includes/nav.php';
     }
     .search-input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(37,99,235,.08); }
 
-    .letter-section { margin-bottom: 40px; scroll-margin-top: 80px; }
+    .letter-section { margin-bottom: 40px; scroll-margin-top: 120px; }
     .letter-heading {
       font-size: 28px;
       font-weight: 700;
@@ -102,6 +102,10 @@ include 'includes/nav.php';
       display: none;
     }
   </style>
+
+<nav class="section-nav" id="section-nav">
+  <div class="section-nav-inner" id="section-nav-letters"></div>
+</nav>
 
 <div class="page-hero">
   <div class="page-hero-inner">
@@ -287,10 +291,17 @@ function buildGlossary(filter) {
 
 function buildAlphaNav() {
   const letters = [...new Set(terms.map(t => t.letter))].sort();
-  document.getElementById('alpha-links').innerHTML = letters.map(l =>
-    `<a href="#letter-${l}">${l}</a>`
+  const html = letters.map(l => `<a href="#letter-${l}">${l}</a>`).join('');
+  document.getElementById('alpha-links').innerHTML = html;
+  document.getElementById('section-nav-letters').innerHTML = letters.map(l =>
+    `<a href="#letter-${l}" class="section-nav-link">${l}</a>`
   ).join('');
 }
+
+const sectionNav = document.getElementById('section-nav');
+window.addEventListener('scroll', function() {
+  sectionNav.classList.toggle('is-visible', window.scrollY > 120);
+}, { passive: true });
 
 let searchTimeout;
 document.getElementById('search').addEventListener('input', e => {
@@ -300,6 +311,25 @@ document.getElementById('search').addEventListener('input', e => {
 
 buildGlossary();
 buildAlphaNav();
+
+setTimeout(function() {
+  const letterSections = document.querySelectorAll('.letter-section');
+  const navLinks = sectionNav.querySelectorAll('.section-nav-link');
+  const obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        navLinks.forEach(function(l) { l.classList.remove('active'); });
+        const id = entry.target.id.replace('letter-', '');
+        const active = sectionNav.querySelector('[href="#letter-' + id + '"]');
+        if (active) {
+          active.classList.add('active');
+          active.scrollIntoView({ block: 'nearest', inline: 'center' });
+        }
+      }
+    });
+  }, { rootMargin: '-10% 0px -80% 0px' });
+  letterSections.forEach(function(s) { obs.observe(s); });
+}, 100);
 </script>
 
 <?php include 'includes/end.php'; ?>
