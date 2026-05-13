@@ -7,6 +7,7 @@ $og_description = 'Helium 10, Jungle Scout, Keepa, Sellerboard: i migliori tool 
 $og_url = 'https://sellerlab.it/tools/tools-analytics.php';
 $og_locale = 'it_IT';
 $css_path = '../style.css';
+$base_path = '../';
 $current_page = 'tools';
 include '../includes/head.php';
 include '../includes/nav.php';
@@ -22,9 +23,13 @@ include '../includes/nav.php';
 
 <section class="section">
   <div class="section-inner">
-    <div class="breadcrumb" style="margin-bottom:24px;font-size:13px;color:var(--text-secondary);">
-      <a href="../tools.php" style="color:var(--accent);text-decoration:none;">← Tutti i tool</a>
-    </div>
+    <nav class="breadcrumb">
+      <a href="../index.php">Home</a>
+      <span class="breadcrumb-sep">/</span>
+      <a href="../tools.php">Tool & Software</a>
+      <span class="breadcrumb-sep">/</span>
+      <span class="breadcrumb-current">Analytics Amazon</span>
+    </nav>
     <div class="section-header" style="margin-bottom:32px;">
       <h2>Analytics e ricerca per Amazon seller</h2>
     </div>

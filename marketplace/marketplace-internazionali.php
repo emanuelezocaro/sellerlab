@@ -7,6 +7,7 @@ $og_description = 'Allegro, Temu, Leroy Merlin: i marketplace internazionali con
 $og_url = 'https://sellerlab.it/marketplace/marketplace-internazionali.php';
 $og_locale = 'it_IT';
 $css_path = '../style.css';
+$base_path = '../';
 $current_page = 'marketplace';
 include '../includes/head.php';
 include '../includes/nav.php';
@@ -22,9 +23,13 @@ include '../includes/nav.php';
 
 <section class="section">
   <div class="section-inner">
-    <div class="breadcrumb" style="margin-bottom:24px;font-size:13px;color:var(--text-secondary);">
-      <a href="../marketplace.php" style="color:var(--accent);text-decoration:none;">← Tutti i marketplace</a>
-    </div>
+    <nav class="breadcrumb">
+      <a href="../index.php">Home</a>
+      <span class="breadcrumb-sep">/</span>
+      <a href="../marketplace.php">Marketplace</a>
+      <span class="breadcrumb-sep">/</span>
+      <span class="breadcrumb-current">Internazionali</span>
+    </nav>
     <div class="section-header" style="margin-bottom:32px;">
       <h2>Marketplace internazionali in Italia</h2>
     </div>
