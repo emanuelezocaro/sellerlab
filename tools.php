@@ -15,15 +15,15 @@ include 'includes/nav.php';
 
 <nav class="section-nav" id="section-nav">
   <div class="section-nav-inner">
-    <a href="#ecommerce" class="section-nav-link" onclick="secNav(event,'ecommerce')">Piattaforme</a>
-    <a href="#feed" class="section-nav-link" onclick="secNav(event,'feed')">Feed Management</a>
+    <a href="#ecommerce" class="section-nav-link" onclick="secNav(event,'ecommerce')">Piattaforme E-commerce</a>
+    <a href="#feed" class="section-nav-link" onclick="secNav(event,'feed')">Feed & Multichannel</a>
     <a href="#analytics" class="section-nav-link" onclick="secNav(event,'analytics')">Analytics Amazon</a>
     <a href="#repricing" class="section-nav-link" onclick="secNav(event,'repricing')">Repricing</a>
-    <a href="#inventory" class="section-nav-link" onclick="secNav(event,'inventory')">Inventory</a>
+    <a href="#inventory" class="section-nav-link" onclick="secNav(event,'inventory')">Inventario & Ordini</a>
     <a href="#reviews" class="section-nav-link" onclick="secNav(event,'reviews')">Recensioni</a>
     <a href="#spedizioni" class="section-nav-link" onclick="secNav(event,'spedizioni')">Spedizioni</a>
     <a href="#email-marketing" class="section-nav-link" onclick="secNav(event,'email-marketing')">Email & CRM</a>
-    <a href="#pagamenti" class="section-nav-link" onclick="secNav(event,'pagamenti')">Pagamenti</a>
+    <a href="#pagamenti" class="section-nav-link" onclick="secNav(event,'pagamenti')">Pagamenti & BNPL</a>
   </div>
 </nav>
 

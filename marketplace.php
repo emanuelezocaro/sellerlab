@@ -17,10 +17,10 @@ include 'includes/nav.php';
   <div class="section-nav-inner">
     <a href="#generalisti" class="section-nav-link" onclick="secNav(event,'generalisti')">Generalisti</a>
     <a href="#verticali" class="section-nav-link" onclick="secNav(event,'verticali')">Verticali</a>
-    <a href="#fashion" class="section-nav-link" onclick="secNav(event,'fashion')">Fashion</a>
+    <a href="#fashion" class="section-nav-link" onclick="secNav(event,'fashion')">Moda & Fashion</a>
     <a href="#comparatori" class="section-nav-link" onclick="secNav(event,'comparatori')">Comparatori</a>
-    <a href="#social" class="section-nav-link" onclick="secNav(event,'social')">Social</a>
-    <a href="#outlet" class="section-nav-link" onclick="secNav(event,'outlet')">Outlet</a>
+    <a href="#social" class="section-nav-link" onclick="secNav(event,'social')">Social Commerce</a>
+    <a href="#outlet" class="section-nav-link" onclick="secNav(event,'outlet')">Outlet & Flash Sale</a>
     <a href="#ricondizionato" class="section-nav-link" onclick="secNav(event,'ricondizionato')">Ricondizionato</a>
     <a href="#internazionali" class="section-nav-link" onclick="secNav(event,'internazionali')">Internazionali</a>
   </div>
