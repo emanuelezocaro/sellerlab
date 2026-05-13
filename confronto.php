@@ -196,7 +196,7 @@ const data = [
     access: 'libero', accessLabel: 'Libero (Pro 39€/m)',
     categories: 'Tutto', idealFor: 'Volumi alti, FBA',
     icon: 'https://www.google.com/s2/favicons?domain=amazon.it&sz=32',
-    link: 'marketplace.html#amazon'
+    link: 'marketplace/marketplace-generalisti.php#amazon'
   },
   {
     name: 'eBay.it', type: 'generalista', typeLabel: 'Generalista',
@@ -205,7 +205,7 @@ const data = [
     access: 'libero', accessLabel: 'Gratuito',
     categories: 'Usato, Ricambi, Collezionismo', idealFor: 'Nicchie, C2C',
     icon: 'https://cdn.simpleicons.org/ebay/E53238',
-    link: 'marketplace.html#ebay'
+    link: 'marketplace/marketplace-generalisti.php#ebay'
   },
   {
     name: 'Subito.it', type: 'generalista', typeLabel: 'Annunci',
@@ -214,7 +214,7 @@ const data = [
     access: 'libero', accessLabel: 'Gratuito',
     categories: 'Usato, Auto, Immobili', idealFor: 'Locale, usato',
     icon: 'https://www.google.com/s2/favicons?domain=subito.it&sz=32',
-    link: 'marketplace.html#subito'
+    link: 'marketplace/marketplace-generalisti.php#subito'
   },
   {
     name: 'Etsy', type: 'verticale', typeLabel: 'Verticale',
@@ -223,7 +223,7 @@ const data = [
     access: 'libero', accessLabel: 'Gratuito',
     categories: 'Handmade, Vintage, Digitali', idealFor: 'Artigiani, creativi',
     icon: 'https://cdn.simpleicons.org/etsy/F16521',
-    link: 'marketplace.html#etsy'
+    link: 'marketplace/marketplace-verticali.php#etsy'
   },
   {
     name: 'Zalando', type: 'fashion', typeLabel: 'Fashion',
@@ -232,7 +232,7 @@ const data = [
     access: 'selettivo', accessLabel: 'Su invito',
     categories: 'Abbigliamento, Scarpe, Accessori', idealFor: 'Brand fashion',
     icon: 'https://cdn.simpleicons.org/zalando/FF6900',
-    link: 'marketplace.html#zalando'
+    link: 'marketplace/marketplace-fashion.php#zalando'
   },
   {
     name: 'ManoMano', type: 'verticale', typeLabel: 'Verticale',
@@ -241,7 +241,7 @@ const data = [
     access: 'approvazione', accessLabel: 'Con approvazione',
     categories: 'Bricolage, Giardino, Casa', idealFor: 'DIY, scontrino alto',
     icon: 'https://www.google.com/s2/favicons?domain=manomano.com&sz=32',
-    link: 'marketplace.html#manomano'
+    link: 'marketplace/marketplace-verticali.php#manomano'
   },
   {
     name: 'Vinted', type: 'fashion', typeLabel: 'Fashion C2C',
@@ -250,7 +250,7 @@ const data = [
     access: 'libero', accessLabel: 'Gratuito',
     categories: 'Abbigliamento usato', idealFor: 'Second-hand C2C',
     icon: 'https://cdn.simpleicons.org/vinted/007782',
-    link: 'marketplace.html#vinted'
+    link: 'marketplace/marketplace-verticali.php#vinted'
   },
   {
     name: 'Farfetch', type: 'fashion', typeLabel: 'Luxury Fashion',
@@ -259,7 +259,7 @@ const data = [
     access: 'selettivo', accessLabel: 'Su approvazione',
     categories: 'Luxury, Designer', idealFor: 'Boutique luxury',
     icon: 'https://www.google.com/s2/favicons?domain=farfetch.com&sz=32',
-    link: 'marketplace.html#farfetch'
+    link: 'marketplace/marketplace-fashion.php#farfetch'
   },
   {
     name: 'YOOX', type: 'outlet', typeLabel: 'Outlet',
@@ -268,7 +268,7 @@ const data = [
     access: 'selettivo', accessLabel: 'Selettivo',
     categories: 'Fashion fine stagione', idealFor: 'Smaltire invenduto',
     icon: 'https://www.google.com/s2/favicons?domain=yoox.com&sz=32',
-    link: 'marketplace.html#yoox'
+    link: 'marketplace/marketplace-fashion.php#yoox'
   },
   {
     name: 'Back Market', type: 'verticale', typeLabel: 'Verticale',
@@ -277,7 +277,7 @@ const data = [
     access: 'approvazione', accessLabel: 'Con approvazione',
     categories: 'Elettronica ricondizionata', idealFor: 'Ricondizionato',
     icon: 'https://www.google.com/s2/favicons?domain=backmarket.it&sz=32',
-    link: 'marketplace.html#backmarket'
+    link: 'marketplace/marketplace-ricondizionato.php#backmarket'
   },
   {
     name: 'ePrice', type: 'verticale', typeLabel: 'Verticale',
@@ -286,7 +286,7 @@ const data = [
     access: 'approvazione', accessLabel: 'Su richiesta',
     categories: 'Elettronica, Informatica', idealFor: 'Tech complementare',
     icon: 'https://www.google.com/s2/favicons?domain=eprice.it&sz=32',
-    link: 'marketplace.html#eprice'
+    link: 'marketplace/marketplace-generalisti.php#eprice'
   },
   {
     name: 'MediaWorld Mkt.', type: 'verticale', typeLabel: 'Verticale',
@@ -295,7 +295,7 @@ const data = [
     access: 'selettivo', accessLabel: 'Su invito',
     categories: 'Elettronica, Gaming', idealFor: 'Brand tech',
     icon: 'https://www.google.com/s2/favicons?domain=mediaworld.it&sz=32',
-    link: 'marketplace.html#mediaworld'
+    link: 'marketplace/marketplace-verticali.php#mediaworld'
   },
   {
     name: 'Google Shopping', type: 'comparatore', typeLabel: 'Comparatore',
@@ -304,7 +304,7 @@ const data = [
     access: 'libero', accessLabel: 'Feed + Google Ads',
     categories: 'Tutto', idealFor: 'Tutti gli shop',
     icon: 'https://cdn.simpleicons.org/google/4285F4',
-    link: 'marketplace.html#google-shopping'
+    link: 'marketplace/marketplace-comparatori.php#google-shopping'
   },
   {
     name: 'Trovaprezzi.it', type: 'comparatore', typeLabel: 'Comparatore',
@@ -313,7 +313,7 @@ const data = [
     access: 'libero', accessLabel: 'Feed + budget CPC',
     categories: 'Elettronica, Casa', idealFor: 'Prezzi competitivi',
     icon: 'https://www.google.com/s2/favicons?domain=trovaprezzi.it&sz=32',
-    link: 'marketplace.html#trovaprezzi'
+    link: 'marketplace/marketplace-comparatori.php#trovaprezzi'
   },
   {
     name: 'TikTok Shop', type: 'social', typeLabel: 'Social',
@@ -322,7 +322,7 @@ const data = [
     access: 'libero', accessLabel: 'Aperto (2023)',
     categories: 'Lifestyle, Beauty, Moda', idealFor: 'Discovery commerce',
     icon: 'https://cdn.simpleicons.org/tiktok/000000',
-    link: 'marketplace.html#tiktok-shop'
+    link: 'marketplace/marketplace-social.php#tiktok-shop'
   },
   {
     name: 'Instagram Shop', type: 'social', typeLabel: 'Social',
@@ -331,7 +331,7 @@ const data = [
     access: 'libero', accessLabel: 'Gratuito',
     categories: 'Moda, Beauty, Lifestyle', idealFor: 'Brand visual',
     icon: 'https://cdn.simpleicons.org/instagram/E4405F',
-    link: 'marketplace.html#instagram-shop'
+    link: 'marketplace/marketplace-social.php#instagram-shop'
   },
   {
     name: 'Veepee', type: 'outlet', typeLabel: 'Flash Sale',
@@ -340,7 +340,7 @@ const data = [
     access: 'selettivo', accessLabel: 'Su proposta brand',
     categories: 'Fashion, Lifestyle', idealFor: 'Smaltire stock',
     icon: 'https://www.google.com/s2/favicons?domain=veepee.it&sz=32',
-    link: 'marketplace.html#veepee'
+    link: 'marketplace/marketplace-outlet.php#veepee'
   },
   {
     name: 'Catawiki', type: 'verticale', typeLabel: 'Aste',
@@ -349,7 +349,7 @@ const data = [
     access: 'approvazione', accessLabel: 'Expert review',
     categories: 'Arte, Orologi, Wine, Collezionismo', idealFor: 'Oggetti rari e unici',
     icon: 'https://www.google.com/s2/favicons?domain=catawiki.com&sz=32',
-    link: 'marketplace.html#catawiki'
+    link: 'marketplace/marketplace-internazionali.php#catawiki'
   },
   {
     name: 'Depop', type: 'fashion', typeLabel: 'Fashion C2C',
@@ -358,7 +358,7 @@ const data = [
     access: 'libero', accessLabel: 'Gratuito',
     categories: 'Vintage, Streetwear, Gen Z', idealFor: 'Giovani, moda creativa',
     icon: 'https://www.google.com/s2/favicons?domain=depop.com&sz=32',
-    link: 'marketplace.html#depop'
+    link: 'marketplace/marketplace-fashion.php#depop'
   },
   {
     name: 'Vestiaire Coll.', type: 'fashion', typeLabel: 'Luxury C2C',
@@ -367,7 +367,7 @@ const data = [
     access: 'libero', accessLabel: 'Libero (autenticazione)',
     categories: 'Luxury second-hand', idealFor: 'Fashion luxury usato',
     icon: 'https://www.google.com/s2/favicons?domain=vestiairecollective.com&sz=32',
-    link: 'marketplace.html#vestiaire'
+    link: 'marketplace/marketplace-fashion.php#vestiaire'
   },
   {
     name: 'Leroy Merlin Mkt.', type: 'verticale', typeLabel: 'Verticale',
@@ -376,7 +376,7 @@ const data = [
     access: 'selettivo', accessLabel: 'Su invito',
     categories: 'DIY, Casa, Giardino', idealFor: 'Prodotti casa',
     icon: 'https://www.google.com/s2/favicons?domain=leroymerlin.it&sz=32',
-    link: 'marketplace.html#leroymerlin'
+    link: 'marketplace/marketplace-internazionali.php#leroymerlin'
   },
   {
     name: 'Unieuro Mkt.', type: 'verticale', typeLabel: 'Verticale',
@@ -385,7 +385,7 @@ const data = [
     access: 'selettivo', accessLabel: 'Su invito',
     categories: 'Elettronica, Elettrodomestici', idealFor: 'Elettronica IT',
     icon: 'https://www.google.com/s2/favicons?domain=unieuro.it&sz=32',
-    link: 'marketplace.html#unieuro'
+    link: 'marketplace/marketplace-internazionali.php#unieuro'
   },
   {
     name: 'Allegro', type: 'generalista', typeLabel: 'Generalista',
@@ -394,7 +394,7 @@ const data = [
     access: 'libero', accessLabel: 'Libero',
     categories: 'Tutto (Polonia → EU)', idealFor: 'Espansione est-Europa',
     icon: 'https://www.google.com/s2/favicons?domain=allegro.pl&sz=32',
-    link: 'marketplace.html#allegro'
+    link: 'marketplace/marketplace-internazionali.php#allegro'
   },
   {
     name: 'Temu', type: 'generalista', typeLabel: 'Generalista',
@@ -403,7 +403,43 @@ const data = [
     access: 'approvazione', accessLabel: 'Programma seller',
     categories: 'Tutto (low-cost)', idealFor: 'Nicchie, prodotti differenziati',
     icon: 'https://www.google.com/s2/favicons?domain=temu.com&sz=32',
-    link: 'marketplace.html#temu'
+    link: 'marketplace/marketplace-internazionali.php#temu'
+  },
+  {
+    name: 'SHEIN Marketplace', type: 'fashion', typeLabel: 'Fashion',
+    commission: 15, commissionLabel: '10–20%', commissionMax: 20,
+    traffic: 10, trafficLabel: '~10M+ (IT)', trafficLevel: 4,
+    access: 'approvazione', accessLabel: 'Programma seller',
+    categories: 'Moda, Accessori, Lifestyle', idealFor: 'Fast fashion, mid-range',
+    icon: 'https://www.google.com/s2/favicons?domain=shein.com&sz=32',
+    link: 'marketplace/marketplace-fashion.php#shein'
+  },
+  {
+    name: 'ASOS Marketplace', type: 'fashion', typeLabel: 'Fashion',
+    commission: 20, commissionLabel: '~20% + 20£/mese', commissionMax: 20,
+    traffic: 4, trafficLabel: '~4M (IT)', trafficLevel: 2,
+    access: 'approvazione', accessLabel: 'Su approvazione',
+    categories: 'Designer, Vintage, Boutique', idealFor: 'Stilisti indipendenti',
+    icon: 'https://www.google.com/s2/favicons?domain=asos.com&sz=32',
+    link: 'marketplace/marketplace-fashion.php#asos'
+  },
+  {
+    name: 'Refurbed', type: 'verticale', typeLabel: 'Ricondizionato',
+    commission: 12, commissionLabel: '10–15%', commissionMax: 15,
+    traffic: 2, trafficLabel: '~2M (IT)', trafficLevel: 1,
+    access: 'approvazione', accessLabel: 'Con approvazione',
+    categories: 'Elettronica ricondizionata', idealFor: 'Ricondizionato, sostenibilità',
+    icon: 'https://www.google.com/s2/favicons?domain=refurbed.it&sz=32',
+    link: 'marketplace/marketplace-ricondizionato.php#refurbed'
+  },
+  {
+    name: 'Cdiscount', type: 'generalista', typeLabel: 'Generalista',
+    commission: 12, commissionLabel: '7–17%', commissionMax: 17,
+    traffic: 2, trafficLabel: '20M (Francia)', trafficLevel: 2,
+    access: 'libero', accessLabel: 'Libero (P.IVA EU)',
+    categories: 'Tutto (mercato francese)', idealFor: 'Espansione in Francia',
+    icon: 'https://www.google.com/s2/favicons?domain=cdiscount.com&sz=32',
+    link: 'marketplace/marketplace-internazionali.php#cdiscount'
   }
 ];
 

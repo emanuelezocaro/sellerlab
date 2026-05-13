@@ -265,6 +265,13 @@ include 'includes/breadcrumb.php';
               <div class="rec-item-why">Community giovane con passione per streetwear, vintage e moda creativa.</div>
             </div>
           </li>
+          <li class="rec-item">
+            <img src="https://www.google.com/s2/favicons?domain=shein.com&sz=32" alt="SHEIN">
+            <div class="rec-item-text">
+              <div class="rec-item-name">SHEIN Marketplace - Per traffico discovery</div>
+              <div class="rec-item-why">Traffico enorme su target 18–35 anni. Utile per prodotti mid-range e accessori, meno per brand premium.</div>
+            </div>
+          </li>
         </ul>
         <div class="avoid-box">⚠️ <strong>Considera:</strong> I resi nel fashion raggiungono il 30–50%. Calcola sempre il costo dei resi nei tuoi margini prima di scegliere un canale.</div>
       </div>
@@ -327,6 +334,13 @@ include 'includes/breadcrumb.php';
             <div class="rec-item-text">
               <div class="rec-item-name">Back Market - Per ricondizionato</div>
               <div class="rec-item-why">Se hai accesso a prodotti ricondizionati certificati, il mercato cresce velocemente e i margini sono migliori.</div>
+            </div>
+          </li>
+          <li class="rec-item">
+            <img src="https://www.google.com/s2/favicons?domain=refurbed.it&sz=32" alt="Refurbed">
+            <div class="rec-item-text">
+              <div class="rec-item-name">Refurbed - Complementare a Back Market</div>
+              <div class="rec-item-why">In forte crescita in Italia. Pubblico più attento alla qualità. Da affiancare a Back Market per massimizzare la copertura del ricondizionato.</div>
             </div>
           </li>
         </ul>

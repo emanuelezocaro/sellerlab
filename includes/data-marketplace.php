@@ -34,9 +34,9 @@ $marketplace_categories = [
     'h2'             => 'I canali per vendere abbigliamento e accessori',
     'desc'           => 'Dal fast fashion al lusso: ogni segmento ha la sua piattaforma di riferimento.',
     'section_label'  => 'Moda & Fashion',
-    'items_count'    => 5,
-    'commission_range' => '5–30%',
-    'featured'       => ['zalando', 'farfetch', 'depop'],
+    'items_count'    => 7,
+    'commission_range' => '0–30%',
+    'featured'       => ['zalando', 'shein', 'depop'],
   ],
 
   'comparatori' => [
@@ -78,9 +78,9 @@ $marketplace_categories = [
     'h2'             => 'Il mercato dell\'usato e del ricondizionato',
     'desc'           => 'Segmento in forte crescita: i consumatori cercano risparmio e sostenibilità. Opportunità concrete per chi gestisce resi, ricondizionati e stock usato.',
     'section_label'  => 'Ricondizionato & Economia Circolare',
-    'items_count'    => 1,
-    'commission_range' => '~12%',
-    'featured'       => ['backmarket'],
+    'items_count'    => 2,
+    'commission_range' => '10–15%',
+    'featured'       => ['backmarket', 'refurbed'],
   ],
 
   'internazionali' => [
@@ -89,9 +89,9 @@ $marketplace_categories = [
     'h2'             => 'Canali verticali e piattaforme con presenza in Italia',
     'desc'           => 'Marketplace specializzati per nicchia o country, con opportunità concrete per chi vende in segmenti specifici o vuole espandersi oltre confine.',
     'section_label'  => 'Internazionali & Specializzati',
-    'items_count'    => 5,
+    'items_count'    => 6,
     'commission_range' => '6–20%',
-    'featured'       => ['allegro', 'catawiki', 'leroymerlin'],
+    'featured'       => ['allegro', 'cdiscount', 'catawiki'],
   ],
 
 ];
@@ -706,6 +706,71 @@ $marketplaces = [
     'tags'     => ['Fashion', 'Outlet', 'Stock invenduto'],
   ],
 
+  // ----- FASHION (nuovi) -----
+
+  'shein' => [
+    'id'       => 'shein',
+    'name'     => 'SHEIN Marketplace',
+    'category' => 'fashion',
+    'domain'   => 'shein.com',
+    'type'     => 'Marketplace fashion · Fast fashion · B2C globale',
+    'badges'   => [
+      ['text' => 'Traffico enorme', 'color' => 'orange'],
+      ['text' => 'Programma seller', 'color' => 'blue'],
+    ],
+    'desc'     => 'SHEIN è diventata una delle piattaforme fashion più visitate al mondo, con milioni di utenti italiani ogni mese. Dal 2023 ha aperto un programma marketplace che consente a brand e seller terzi di listare prodotti sulla piattaforma accanto al proprio catalogo.<br><br>Il modello di accesso prevede due opzioni: <strong>fully-managed</strong> (SHEIN gestisce tutto, dal pricing alla logistica) e <strong>semi-managed</strong> (il seller gestisce logistica e spedizioni, più libertà ma più responsabilità). Il secondo è quello più interessante per brand europei che vogliono mantenere controllo sul prodotto.<br><br>Il punto critico: SHEIN è percepita come piattaforma low-cost, e questo crea un posizionamento problematico per brand premium. Funziona meglio per prodotti di fascia media, accessori, lifestyle e articoli con buona rotazione. La commissione varia dal 10 al 20% a seconda della categoria.',
+    'metrics'  => [
+      ['label' => 'Commissione',        'value' => '10–20%'],
+      ['label' => 'Traffico IT/mese',   'value' => '~10M+'],
+      ['label' => 'Accesso',            'value' => 'Programma seller'],
+      ['label' => 'Modelli',            'value' => 'Fully / Semi-managed'],
+    ],
+    'pros'     => [
+      'Traffico enorme, soprattutto su target 18–35 anni',
+      'Forte crescita in Italia e in tutta Europa',
+      'Commissioni competitive rispetto ad altri fashion marketplace',
+      'Modello semi-managed mantiene controllo logistica',
+    ],
+    'cons'     => [
+      'Posizionamento low-cost: penalizza brand premium',
+      'Concorrenza diretta con l\'assortimento SHEIN',
+      'Programma seller ancora in evoluzione in Europa',
+      'Controversie su sostenibilità e condizioni di produzione',
+    ],
+    'tags'     => ['Fast fashion', 'Accessori', 'Giovani', 'Mid-range'],
+  ],
+
+  'asos' => [
+    'id'       => 'asos',
+    'name'     => 'ASOS Marketplace',
+    'category' => 'fashion',
+    'domain'   => 'asos.com/marketplace',
+    'type'     => 'Marketplace fashion · Boutique indipendenti · Designer',
+    'badges'   => [
+      ['text' => 'Designer & Vintage', 'color' => 'purple'],
+    ],
+    'desc'     => 'ASOS Marketplace è la sezione marketplace dell\'omonimo retailer fashion britannico, dedicata a <strong>boutique indipendenti, stilisti emergenti e venditori vintage</strong>. È separata dallo shop principale ASOS ed è pensata per seller con una proposta curata e originale: abiti vintage anni \'80–\'00, pezzi handmade, designer indipendenti, streetwear di nicchia.<br><br>L\'accesso richiede una candidatura con portfolio fotografico e un catalogo minimo di 15 prodotti. Una volta approvati, si paga una commissione del 20% sulle vendite più una fee mensile di circa 20£. Rispetto a Depop, ha un pubblico più adulto (25–35 anni) e più orientato all\'acquisto diretto senza trattativa.<br><br>Utile come vetrina alternativa per brand di moda indipendenti che vogliono visibilità su un pubblico internazionale già abituato ad ASOS.',
+    'metrics'  => [
+      ['label' => 'Commissione',        'value' => '~20%'],
+      ['label' => 'Fee mensile',        'value' => '~20£/mese'],
+      ['label' => 'Accesso',            'value' => 'Su approvazione'],
+      ['label' => 'Target',             'value' => '25–35 anni, internazionale'],
+    ],
+    'pros'     => [
+      'Pubblico internazionale qualificato per fashion indipendente',
+      'Posizionamento premium rispetto a Depop e Vinted',
+      'Brand ASOS riconoscibile aumenta fiducia acquirenti',
+      'Ottimo per stilisti emergenti e vintage curato',
+    ],
+    'cons'     => [
+      'Commissione alta (20%) più fee mensile fissa',
+      'Approvazione non garantita, processo selettivo',
+      'Traffico IT inferiore rispetto a Zalando o Vinted',
+      'Non adatto a prodotti seriali o low-cost',
+    ],
+    'tags'     => ['Designer indipendenti', 'Vintage', 'Boutique', 'Internazionale'],
+  ],
+
   // ----- RICONDIZIONATO -----
 
   'backmarket' => [
@@ -734,6 +799,37 @@ $marketplaces = [
       'Standard qualitativi molto rigidi',
       'Accesso non immediato, richiede verifica',
       'Competizione tra seller sulla stessa referenza',
+    ],
+    'tags'     => ['Ricondizionato', 'Smartphone', 'Laptop', 'Sostenibilità'],
+  ],
+
+  'refurbed' => [
+    'id'       => 'refurbed',
+    'name'     => 'Refurbed',
+    'category' => 'ricondizionato',
+    'domain'   => 'refurbed.it',
+    'type'     => 'Marketplace ricondizionato · B2C · Focus sostenibilità',
+    'badges'   => [
+      ['text' => 'In forte crescita', 'color' => 'green'],
+      ['text' => 'Sostenibilità', 'color' => 'blue'],
+    ],
+    'desc'     => 'Refurbed è una piattaforma austriaca di elettronica ricondizionata fondata nel 2017, attiva in Italia, Austria, Germania, Irlanda e altri mercati europei. Si differenzia da Back Market per il forte accento sulla <strong>sostenibilità</strong>: ogni dispositivo venduto viene associato a un\'albero piantato, e i prodotti devono soddisfare standard di ricondizionamento certificati con garanzia minima di 12 mesi.<br><br>Il catalogo copre smartphone, laptop, tablet, cuffie, smartwatch e piccola elettronica. L\'accesso richiede un processo di verifica: il seller deve dimostrare capacità di ricondizionamento professionale e rispetto degli standard qualitativi della piattaforma. Gli standard di grading cosmetico (A, B, C) sono trasparenti e comunicati chiaramente agli acquirenti.<br><br>In Italia è ancora meno conosciuto di Back Market, ma la crescita è rapida e il profilo degli acquirenti è mediamente più attento alla qualità rispetto al solo prezzo. Da trattare come canale complementare a Back Market, non alternativo.',
+    'metrics'  => [
+      ['label' => 'Commissione',        'value' => '~10–15%'],
+      ['label' => 'Traffico IT/mese',   'value' => '~1–2M'],
+      ['label' => 'Accesso',            'value' => 'Su approvazione'],
+      ['label' => 'Garanzia obbligatoria', 'value' => '12 mesi min.'],
+    ],
+    'pros'     => [
+      'In forte crescita in Italia e nell\'area DACH',
+      'Pubblico attento alla qualità oltre che al prezzo',
+      'Posizionamento sostenibilità differenzia dai competitor',
+      'Buona complementarietà con Back Market',
+    ],
+    'cons'     => [
+      'Traffico ancora inferiore a Back Market in Italia',
+      'Solo elettronica, nessun\'altra categoria',
+      'Standard qualitativi rigidi da rispettare',
     ],
     'tags'     => ['Ricondizionato', 'Smartphone', 'Laptop', 'Sostenibilità'],
   ],
@@ -854,6 +950,37 @@ $marketplaces = [
       'Strumenti per seller meno maturi',
     ],
     'tags'     => ['Elettronica', 'Elettrodomestici', 'Gaming', 'Italia'],
+  ],
+
+  'cdiscount' => [
+    'id'       => 'cdiscount',
+    'name'     => 'Cdiscount',
+    'category' => 'internazionali',
+    'domain'   => 'cdiscount.com',
+    'type'     => 'Marketplace generalista · Francia · B2C',
+    'badges'   => [
+      ['text' => 'N.2 in Francia', 'color' => 'blue'],
+    ],
+    'desc'     => 'Cdiscount è il secondo marketplace generalista in Francia dopo Amazon, con oltre 20 milioni di clienti unici mensili e una forte presenza nelle categorie elettronica, informatica, elettrodomestici, casa e giardino. Per i seller italiani è la porta d\'ingresso più diretta sul mercato francese, il terzo mercato e-commerce europeo per volume dopo UK e Germania.<br><br>Il programma marketplace è aperto a seller europei con partita IVA: registrazione online, feed prodotti, e sistema di gestione ordini integrato. Le commissioni variano dal 7 al 17% a seconda della categoria. Cdiscount ha anche una rete di punti di ritiro fisici (Relais Colis) che aumenta la penetrazione su acquirenti che preferiscono non ricevere a casa.<br><br>Meno competitivo di Amazon in termini di traffico, ma utile per chi vuole diversificare geograficamente con meno concorrenza da altri seller. I prodotti Made in Italy hanno buona percezione in Francia: food, moda, design e arredamento performano bene.',
+    'metrics'  => [
+      ['label' => 'Commissione',        'value' => '7–17%'],
+      ['label' => 'Clienti IT/mese',    'value' => '20M+ (Francia)'],
+      ['label' => 'Accesso',            'value' => 'Libero (P.IVA EU)'],
+      ['label' => 'Mercato',            'value' => 'Francia principalmente'],
+    ],
+    'pros'     => [
+      'Accesso diretto al mercato francese (3° in Europa)',
+      'Meno concorrenza rispetto ad Amazon.fr',
+      'Made in Italy ha ottima percezione in Francia',
+      'Registrazione semplice per seller EU',
+    ],
+    'cons'     => [
+      'Richiede gestione in lingua francese',
+      'Traffico italiano quasi assente',
+      'Logistica internazionale da strutturare',
+      'Meno strumenti advertising rispetto ad Amazon',
+    ],
+    'tags'     => ['Francia', 'Espansione EU', 'Made in Italy', 'Generalista'],
   ],
 
   'temu' => [

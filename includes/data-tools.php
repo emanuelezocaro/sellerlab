@@ -78,9 +78,9 @@ $tools_categories = [
     'h2'             => 'Spedisci meglio, spendi meno',
     'desc'           => 'Strumenti per confrontare corrieri, stampare etichette in bulk, tracciare i pacchi e ridurre i costi logistici. Fondamentali per chi vende su più canali.',
     'section_label'  => 'Gestione Spedizioni',
-    'items_count'    => 3,
-    'price_range'    => 'Gratis / Da ~49€/mese',
-    'featured'       => ['qapla', 'sendcloud', 'packlink'],
+    'items_count'    => 4,
+    'price_range'    => 'Gratis / Da ~29€/mese',
+    'featured'       => ['shippypro', 'sendcloud', 'qapla'],
   ],
 
   'email-marketing' => [
@@ -89,9 +89,9 @@ $tools_categories = [
     'h2'             => 'Fidelizza i clienti dopo il primo acquisto',
     'desc'           => 'L\'email marketing è il canale con il ROI più alto nell\'e-commerce. Automatizzare flussi post-acquisto, recupero carrelli e campagne segmentate è la differenza tra un cliente one-shot e un cliente fedele.',
     'section_label'  => 'Email Marketing & CRM',
-    'items_count'    => 1,
-    'price_range'    => 'Gratis fino a 500 contatti',
-    'featured'       => ['klaviyo'],
+    'items_count'    => 3,
+    'price_range'    => 'Gratis / Da ~13€/mese',
+    'featured'       => ['klaviyo', 'brevo', 'mailchimp'],
   ],
 
   'pagamenti' => [
@@ -100,9 +100,9 @@ $tools_categories = [
     'h2'             => 'I metodi di pagamento che gli italiani preferiscono',
     'desc'           => 'Offrire i metodi di pagamento giusti riduce l\'abbandono del carrello. In Italia ci sono alcune soluzioni locali con alto tasso di adozione.',
     'section_label'  => 'Pagamenti & BNPL',
-    'items_count'    => 5,
+    'items_count'    => 6,
     'price_range'    => 'Commission-based',
-    'featured'       => ['scalapay', 'satispay', 'paypal'],
+    'featured'       => ['stripe', 'scalapay', 'satispay'],
   ],
 
 ];
@@ -693,6 +693,37 @@ $tools = [
 
   // ----- SPEDIZIONI -----
 
+  'shippypro' => [
+    'id'       => 'shippypro',
+    'name'     => 'ShippyPro',
+    'category' => 'spedizioni',
+    'domain'   => 'shippypro.com',
+    'type'     => 'Shipping management · Etichette · Tracking · Italiano',
+    'badges'   => [
+      ['text' => 'Made in Italy', 'color' => 'green'],
+      ['text' => 'All-in-one spedizioni', 'color' => 'blue'],
+    ],
+    'desc'     => 'ShippyPro è la piattaforma italiana di gestione spedizioni più completa per e-commerce: stampa etichette in bulk, confronto tariffe multi-corriere, tracking proattivo con notifiche ai clienti, gestione resi e analytics logistici. Nata in Italia nel 2016, è progettata con il mercato locale in mente: corrieri italiani pre-integrati, supporto in italiano, conformità alle normative locali.<br><br>Si integra con oltre 180 corrieri (BRT, GLS, SDA, DHL, UPS, Poste Italiane, TNT e molti altri) e con tutti i principali marketplace e CMS: Amazon, eBay, Shopify, WooCommerce, PrestaShop, Magento. La funzione <strong>Label Creator</strong> permette di generare etichette per ordini da qualsiasi canale in un\'unica interfaccia. Il piano gratuito copre fino a 50 spedizioni al mese, ideale per chi inizia.<br><br>Rispetto a Sendcloud (olandese), ShippyPro ha un catalogo corrieri italiani più ampio e supporto dedicato in italiano. Rispetto a Qapla\', ha focus più operativo (etichette, logistica) e meno sul post-vendita e tracking esteso.',
+    'metrics'  => [
+      ['label' => 'Piano Free',          'value' => 'Fino a 50 sped./mese'],
+      ['label' => 'Piano Professional',  'value' => 'Da ~29€/mese'],
+      ['label' => 'Corrieri integrati',  'value' => '180+'],
+      ['label' => 'Origine',             'value' => 'Italiana'],
+    ],
+    'pros'     => [
+      'Piattaforma italiana: supporto e UX in italiano',
+      'Catalogo corrieri italiani il più completo disponibile',
+      'Piano gratuito funzionale per piccoli volumi',
+      'Integrazione con tutti i principali marketplace italiani',
+      'Resi automatizzati e tracking branded',
+    ],
+    'cons'     => [
+      'Meno conosciuto fuori dall\'Italia',
+      'Funzioni analytics meno avanzate di soluzioni enterprise',
+    ],
+    'tags'     => ['Italiano', 'Multi-corriere', 'Etichette bulk', 'Resi'],
+  ],
+
   'qapla' => [
     'id'       => 'qapla',
     'name'     => 'Qapla\'',
@@ -779,6 +810,69 @@ $tools = [
 
   // ----- EMAIL MARKETING & CRM -----
 
+  'mailchimp' => [
+    'id'       => 'mailchimp',
+    'name'     => 'Mailchimp',
+    'category' => 'email-marketing',
+    'domain'   => 'mailchimp.com',
+    'type'     => 'Email marketing · Newsletter · Automazioni base',
+    'badges'   => [
+      ['text' => 'Il più conosciuto', 'color' => 'orange'],
+      ['text' => 'Piano gratuito', 'color' => 'green'],
+    ],
+    'desc'     => 'Mailchimp è la piattaforma di email marketing più conosciuta al mondo: oltre 13 milioni di utenti attivi, interfaccia intuitiva, piano gratuito fino a 500 contatti. In Italia è spesso la prima scelta per chi si avvicina all\'email marketing senza esperienza pregressa.<br><br>Il punto di forza è la semplicità: editor drag-and-drop, template pronti, automazioni di base (welcome email, recupero carrello) e buone integrazioni con Shopify e WooCommerce. Il piano gratuito è funzionale per chi inizia, ma include il branding Mailchimp e limita le funzionalità di automazione avanzata.<br><br>Rispetto a Klaviyo, è meno potente nella segmentazione basata su dati d\'acquisto e non riporta revenue attribution diretta. Rispetto a Brevo, costa di più all\'aumentare della lista. È la scelta giusta per chi parte da zero e vuole uno strumento familiare con ampia documentazione e community.',
+    'metrics'  => [
+      ['label' => 'Piano Free',      'value' => 'Fino a 500 contatti'],
+      ['label' => 'Piano Essentials', 'value' => 'Da ~13€/mese'],
+      ['label' => 'Integrazioni',    'value' => 'Shopify, WooCommerce…'],
+    ],
+    'pros'     => [
+      'Interfaccia più semplice e intuitiva del mercato',
+      'Piano gratuito funzionale per iniziare',
+      'Ampia documentazione e community in italiano',
+      'Integrazioni con tutti i principali CMS e-commerce',
+    ],
+    'cons'     => [
+      'Costi crescono rapidamente con i contatti',
+      'Automazioni meno potenti di Klaviyo',
+      'Segmentazione e-commerce meno granulare',
+      'Piano gratuito include il logo Mailchimp nelle email',
+    ],
+    'tags'     => ['Newsletter', 'Semplicità', 'Principianti', 'PMI'],
+  ],
+
+  'brevo' => [
+    'id'       => 'brevo',
+    'name'     => 'Brevo (ex Sendinblue)',
+    'category' => 'email-marketing',
+    'domain'   => 'brevo.com',
+    'type'     => 'Email marketing · SMS · CRM · Europeo',
+    'badges'   => [
+      ['text' => 'GDPR nativo', 'color' => 'blue'],
+      ['text' => 'Piano gratuito generoso', 'color' => 'green'],
+    ],
+    'desc'     => 'Brevo (ex Sendinblue, rinominato nel 2023) è la piattaforma europea di email e SMS marketing più usata tra le PMI italiane, grazie a un piano gratuito molto generoso (300 email/giorno senza limite di contatti) e prezzi competitivi sui piani a pagamento.<br><br>A differenza di Mailchimp che limita per numero di contatti, Brevo limita per <strong>volume di invio</strong>: puoi avere 10.000 contatti in lista e pagare solo in base a quante email mandi al mese. Per chi ha liste grandi ma manda poco, è molto più conveniente. Essendo europea, la conformità GDPR è integrata nativamente - un vantaggio non banale per chi vende in Italia e UE.<br><br>Offre email transazionali (conferme ordine, tracking), SMS marketing, live chat e un CRM base. Integrazioni native con Shopify, WooCommerce, PrestaShop. La qualità delle automazioni è buona ma non raggiunge la profondità di Klaviyo per e-commerce avanzato.',
+    'metrics'  => [
+      ['label' => 'Piano Free',       'value' => '300 email/giorno illimitati contatti'],
+      ['label' => 'Piano Starter',    'value' => 'Da ~19€/mese'],
+      ['label' => 'SMS marketing',    'value' => 'Sì, integrato'],
+      ['label' => 'Origine',          'value' => 'Europea (Francia)'],
+    ],
+    'pros'     => [
+      'Piano gratuito senza limite di contatti',
+      'Prezzo per volume, non per lista: conveniente per liste grandi',
+      'GDPR compliance nativa',
+      'Email transazionali + SMS in un unico strumento',
+      'Interfaccia in italiano disponibile',
+    ],
+    'cons'     => [
+      'Automazioni e-commerce meno avanzate di Klaviyo',
+      'Meno template di qualità rispetto a Mailchimp',
+      'Deliverability inferiore ai leader su invii massivi',
+    ],
+    'tags'     => ['PMI italiane', 'GDPR', 'Email + SMS', 'Costo contenuto'],
+  ],
+
   'klaviyo' => [
     'id'       => 'klaviyo',
     'name'     => 'Klaviyo',
@@ -809,6 +903,37 @@ $tools = [
   ],
 
   // ----- PAGAMENTI & BNPL -----
+
+  'stripe' => [
+    'id'       => 'stripe',
+    'name'     => 'Stripe',
+    'category' => 'pagamenti',
+    'domain'   => 'stripe.com',
+    'type'     => 'Payment gateway · Developer-first · Globale',
+    'badges'   => [
+      ['text' => 'Standard per sviluppatori', 'color' => 'purple'],
+    ],
+    'desc'     => 'Stripe è il gateway di pagamento di riferimento per sviluppatori e aziende tech di tutto il mondo. La sua API è considerata la più completa e ben documentata del settore: integrazione in ore, non giorni, con supporto per pagamenti una tantum, abbonamenti, marketplace split-payment, fatturazione automatica e molto altro.<br><br>In Italia accetta carte Visa/Mastercard/Amex, bonifici SEPA, PayPal, Apple Pay, Google Pay e metodi locali europei. La fee standard è <strong>1,5% + 0,25€ per carte europee</strong> - tra le più basse per chi ha volumi significativi. Supporta anche Klarna, Scalapay e altri BNPL tramite Stripe Payment Element.<br><br>È la scelta naturale per chi costruisce un e-commerce custom, un\'app o ha esigenze di pagamento complesse. Per chi usa Shopify, WooCommerce o PrestaShop, l\'integrazione ufficiale è disponibile e stabile. Non richiede contratti né minimi mensili.',
+    'metrics'  => [
+      ['label' => 'Fee carte EU',     'value' => '1,5% + 0,25€'],
+      ['label' => 'Fee carte non-EU', 'value' => '2,5% + 0,25€'],
+      ['label' => 'Costo fisso',      'value' => '0€/mese'],
+      ['label' => 'Setup',            'value' => 'Immediato online'],
+    ],
+    'pros'     => [
+      'API più completa e documentata del mercato',
+      'Fee tra le più basse su carte europee',
+      'Nessun costo fisso mensile',
+      'Supporta tutti i metodi di pagamento rilevanti',
+      'Dashboard e reporting eccellenti',
+    ],
+    'cons'     => [
+      'Supporto clienti meno reattivo rispetto a Nexi per aziende italiane',
+      'Richiede conoscenze tecniche per integrazioni custom',
+      'Pagamenti in sospeso (payout) nei primi mesi di attività',
+    ],
+    'tags'     => ['Developer', 'API', 'Globale', 'Commissioni basse'],
+  ],
 
   'scalapay' => [
     'id'       => 'scalapay',

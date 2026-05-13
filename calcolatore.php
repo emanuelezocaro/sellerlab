@@ -182,6 +182,18 @@ include 'includes/breadcrumb.php';
             <button class="mp-btn" data-mp="temu" data-commission="0.03" data-fixed="0">
               <img src="https://www.google.com/s2/favicons?domain=temu.com&sz=32" alt="">Temu
             </button>
+            <button class="mp-btn" data-mp="shein" data-commission="0.15" data-fixed="0">
+              <img src="https://www.google.com/s2/favicons?domain=shein.com&sz=32" alt="">SHEIN
+            </button>
+            <button class="mp-btn" data-mp="asos" data-commission="0.20" data-fixed="0">
+              <img src="https://www.google.com/s2/favicons?domain=asos.com&sz=32" alt="">ASOS Mkt.
+            </button>
+            <button class="mp-btn" data-mp="refurbed" data-commission="0.12" data-fixed="0">
+              <img src="https://www.google.com/s2/favicons?domain=refurbed.it&sz=32" alt="">Refurbed
+            </button>
+            <button class="mp-btn" data-mp="cdiscount" data-commission="0.12" data-fixed="0">
+              <img src="https://www.google.com/s2/favicons?domain=cdiscount.com&sz=32" alt="">Cdiscount
+            </button>
             <button class="mp-btn" data-mp="custom" data-commission="0.10" data-fixed="0">
               ✏️ Personalizzato
             </button>
@@ -309,6 +321,10 @@ const marketplaces = [
   { id: 'backmarket', name: 'Back Market',  commission: 0.12,  fixed: 0,    icon: 'https://www.google.com/s2/favicons?domain=backmarket.it&sz=32' },
   { id: 'vinted',     name: 'Vinted',       commission: 0,     fixed: 0,    icon: 'https://cdn.simpleicons.org/vinted/007782' },
   { id: 'temu',       name: 'Temu',         commission: 0.03,  fixed: 0,    icon: 'https://www.google.com/s2/favicons?domain=temu.com&sz=32' },
+  { id: 'shein',      name: 'SHEIN',        commission: 0.15,  fixed: 0,    icon: 'https://www.google.com/s2/favicons?domain=shein.com&sz=32' },
+  { id: 'asos',       name: 'ASOS Mkt.',    commission: 0.20,  fixed: 0,    icon: 'https://www.google.com/s2/favicons?domain=asos.com&sz=32' },
+  { id: 'refurbed',   name: 'Refurbed',     commission: 0.12,  fixed: 0,    icon: 'https://www.google.com/s2/favicons?domain=refurbed.it&sz=32' },
+  { id: 'cdiscount',  name: 'Cdiscount',    commission: 0.12,  fixed: 0,    icon: 'https://www.google.com/s2/favicons?domain=cdiscount.com&sz=32' },
 ];
 
 let selectedMp = marketplaces[0];
