@@ -17,7 +17,7 @@ include $root . '/includes/breadcrumb.php';
 include $root . '/includes/data-marketplace.php';
 include $root . '/includes/render-card.php';
 $cat = $marketplace_categories['outlet'];
-$items = array_filter($marketplaces, fn($m) => $m['category'] === 'outlet');
+$items = array_filter($marketplaces, function($m) { return $m['category'] === 'outlet'; });
 ?>
 
 <div class="page-hero">

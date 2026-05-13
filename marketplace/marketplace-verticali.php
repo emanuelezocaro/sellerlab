@@ -17,7 +17,7 @@ include $root . '/includes/breadcrumb.php';
 include $root . '/includes/data-marketplace.php';
 include $root . '/includes/render-card.php';
 $cat = $marketplace_categories['verticali'];
-$items = array_filter($marketplaces, fn($m) => $m['category'] === 'verticali');
+$items = array_filter($marketplaces, function($m) { return $m['category'] === 'verticali'; });
 ?>
 
 <div class="page-hero">

@@ -17,7 +17,7 @@ include $root . '/includes/breadcrumb.php';
 include $root . '/includes/data-marketplace.php';
 include $root . '/includes/render-card.php';
 $cat = $marketplace_categories['internazionali'];
-$items = array_filter($marketplaces, fn($m) => $m['category'] === 'internazionali');
+$items = array_filter($marketplaces, function($m) { return $m['category'] === 'internazionali'; });
 ?>
 
 <div class="page-hero">

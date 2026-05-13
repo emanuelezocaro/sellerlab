@@ -17,7 +17,7 @@ include $root . '/includes/breadcrumb.php';
 include $root . '/includes/data-tools.php';
 include $root . '/includes/render-card.php';
 $cat = $tools_categories['spedizioni'];
-$items = array_filter($tools, fn($t) => $t['category'] === 'spedizioni');
+$items = array_filter($tools, function($t) { return $t['category'] === 'spedizioni'; });
 ?>
 
 <div class="page-hero">

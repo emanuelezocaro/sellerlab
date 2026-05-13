@@ -17,7 +17,7 @@ include $root . '/includes/breadcrumb.php';
 include $root . '/includes/data-tools.php';
 include $root . '/includes/render-card.php';
 $cat = $tools_categories['analytics'];
-$items = array_filter($tools, fn($t) => $t['category'] === 'analytics');
+$items = array_filter($tools, function($t) { return $t['category'] === 'analytics'; });
 ?>
 
 <div class="page-hero">

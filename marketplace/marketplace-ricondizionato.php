@@ -17,7 +17,7 @@ include $root . '/includes/breadcrumb.php';
 include $root . '/includes/data-marketplace.php';
 include $root . '/includes/render-card.php';
 $cat = $marketplace_categories['ricondizionato'];
-$items = array_filter($marketplaces, fn($m) => $m['category'] === 'ricondizionato');
+$items = array_filter($marketplaces, function($m) { return $m['category'] === 'ricondizionato'; });
 ?>
 
 <div class="page-hero">
