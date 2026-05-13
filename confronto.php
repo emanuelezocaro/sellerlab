@@ -10,6 +10,7 @@ $current_page = 'confronto';
 $breadcrumb = [['label' => 'Home', 'url' => 'index.php'], ['label' => 'Confronto']];
 include 'includes/head.php';
 include 'includes/nav.php';
+include 'includes/breadcrumb.php';
 ?>
 
 <nav class="section-nav" id="section-nav">
@@ -143,8 +144,6 @@ include 'includes/nav.php';
 
 <section class="section">
   <div class="section-inner">
-    <?php include 'includes/breadcrumb.php'; ?>
-
     <div class="intro-box">
       <p>Le commissioni indicate sono <strong>medie indicative</strong> per le categorie più comuni. Ogni marketplace applica tariffe diverse per categoria: verifica sempre la tabella commissioni ufficiale prima di vendere. I dati di traffico sono stime basate su fonti pubbliche (SimilarWeb, Statista) - <strong>aggiornate al 2025</strong>.</p>
     </div>

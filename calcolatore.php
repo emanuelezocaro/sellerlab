@@ -10,6 +10,7 @@ $current_page = 'calcolatore';
 $breadcrumb = [['label' => 'Home', 'url' => 'index.php'], ['label' => 'Calcolatore']];
 include 'includes/head.php';
 include 'includes/nav.php';
+include 'includes/breadcrumb.php';
 ?>
 
 <style>
@@ -148,7 +149,6 @@ include 'includes/nav.php';
 
 <section class="section">
   <div class="section-inner">
-    <?php include 'includes/breadcrumb.php'; ?>
     <div class="calc-layout">
 
       <!-- INPUT -->

@@ -10,6 +10,7 @@ $current_page = 'marketplace';
 $breadcrumb = [['label' => 'Home', 'url' => 'index.php'], ['label' => 'Marketplace']];
 include 'includes/head.php';
 include 'includes/nav.php';
+include 'includes/breadcrumb.php';
 include 'includes/data-marketplace.php';
 include 'includes/render-card.php';
 ?>
@@ -24,8 +25,6 @@ include 'includes/render-card.php';
 
 <section class="section">
   <div class="section-inner">
-    <?php include 'includes/breadcrumb.php'; ?>
-
     <div class="intro-box">
       <p>Il mercato e-commerce italiano vale oltre <strong>54 miliardi di euro</strong> e cresce ogni anno. Scegliere dove vendere non è banale: ogni marketplace ha il suo pubblico, le sue regole e le sue commissioni. Questa guida ti aiuta a orientarti senza perderti.</p>
     </div>

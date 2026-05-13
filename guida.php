@@ -10,6 +10,7 @@ $current_page = 'guida';
 $breadcrumb = [['label' => 'Home', 'url' => 'index.php'], ['label' => 'Guida']];
 include 'includes/head.php';
 include 'includes/nav.php';
+include 'includes/breadcrumb.php';
 ?>
 
 <style>
@@ -128,8 +129,6 @@ include 'includes/nav.php';
 
 <section class="section">
   <div class="section-inner">
-    <?php include 'includes/breadcrumb.php'; ?>
-
     <div class="intro-box">
       <p>La domanda più comune di chi inizia a vendere online è: <strong>"Da dove parto?"</strong>. La risposta dipende da tre variabili: il tipo di prodotto, il tuo modello di business e il capitale disponibile. Questa guida analizza i profili più comuni e associa a ciascuno i canali più adatti.</p>
     </div>
