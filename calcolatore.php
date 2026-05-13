@@ -7,6 +7,7 @@ $og_description = 'Calcola quanto guadagni realmente su ogni marketplace, al net
 $og_url = 'https://sellerlab.it/calcolatore.php';
 $og_locale = 'it_IT';
 $current_page = 'calcolatore';
+$breadcrumb = [['label' => 'Home', 'url' => 'index.php'], ['label' => 'Calcolatore']];
 include 'includes/head.php';
 include 'includes/nav.php';
 ?>

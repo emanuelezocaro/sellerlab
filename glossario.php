@@ -7,6 +7,7 @@ $og_description = 'Tutti i termini del commercio online spiegati in italiano: FB
 $og_url = 'https://sellerlab.it/glossario.php';
 $og_locale = 'it_IT';
 $current_page = 'glossario';
+$breadcrumb = [['label' => 'Home', 'url' => 'index.php'], ['label' => 'Glossario']];
 include 'includes/head.php';
 include 'includes/nav.php';
 ?>

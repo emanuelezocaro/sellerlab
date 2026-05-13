@@ -7,6 +7,7 @@ $og_description = 'Tabella comparativa completa: commissioni, traffico, accesso 
 $og_url = 'https://sellerlab.it/confronto.php';
 $og_locale = 'it_IT';
 $current_page = 'confronto';
+$breadcrumb = [['label' => 'Home', 'url' => 'index.php'], ['label' => 'Confronto']];
 include 'includes/head.php';
 include 'includes/nav.php';
 ?>

@@ -7,6 +7,7 @@ $og_description = 'Confronta Amazon, eBay, Zalando, Etsy, Subito e altri 15+ mar
 $og_url = 'https://sellerlab.it/marketplace.php';
 $og_locale = 'it_IT';
 $current_page = 'marketplace';
+$breadcrumb = [['label' => 'Home', 'url' => 'index.php'], ['label' => 'Marketplace']];
 include 'includes/head.php';
 include 'includes/nav.php';
 include 'includes/data-marketplace.php';

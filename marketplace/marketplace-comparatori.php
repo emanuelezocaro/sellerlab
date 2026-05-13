@@ -9,6 +9,7 @@ $og_locale = 'it_IT';
 $css_path = '../style.css';
 $base_path = '../';
 $current_page = 'marketplace';
+$breadcrumb = [['label' => 'Home', 'url' => 'index.php'], ['label' => 'Marketplace', 'url' => 'marketplace.php'], ['label' => 'Comparatori']];
 include '../includes/head.php';
 include '../includes/nav.php';
 include '../includes/data-marketplace.php';

@@ -7,6 +7,7 @@ $og_description = 'Guida pratica per scegliere il marketplace giusto in base al 
 $og_url = 'https://sellerlab.it/guida.php';
 $og_locale = 'it_IT';
 $current_page = 'guida';
+$breadcrumb = [['label' => 'Home', 'url' => 'index.php'], ['label' => 'Guida']];
 include 'includes/head.php';
 include 'includes/nav.php';
 ?>

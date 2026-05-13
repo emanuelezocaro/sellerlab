@@ -97,6 +97,27 @@ nav a:hover, nav a.active {
   color: #fff !important;
 }
 
+/* BREADCRUMB BAR */
+.breadcrumb-bar {
+  background: var(--bg-soft);
+  border-bottom: 1px solid var(--border);
+  padding: 0 24px;
+}
+.breadcrumb-bar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 0;
+  font-size: 12px;
+  flex-wrap: wrap;
+}
+.breadcrumb-bar a { color: var(--accent); text-decoration: none; }
+.breadcrumb-bar a:hover { text-decoration: underline; }
+.breadcrumb-bar .breadcrumb-sep { color: var(--text-secondary); opacity: .4; }
+.breadcrumb-bar .breadcrumb-current { color: var(--text); font-weight: 500; }
+
 /* NAV DROPDOWN */
 .has-dropdown { position: relative; }
 .dropdown-arrow { font-size: 9px; margin-left: 2px; opacity: .6; }

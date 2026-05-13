@@ -9,6 +9,7 @@ $og_locale = 'it_IT';
 $css_path = '../style.css';
 $base_path = '../';
 $current_page = 'tools';
+$breadcrumb = [['label' => 'Home', 'url' => 'index.php'], ['label' => 'Tool & Software', 'url' => 'tools.php'], ['label' => 'Feed & Multichannel']];
 include '../includes/head.php';
 include '../includes/nav.php';
 include '../includes/data-tools.php';

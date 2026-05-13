@@ -7,6 +7,7 @@ $og_description = 'I migliori tool per venditori online italiani: piattaforme e-
 $og_url = 'https://sellerlab.it/tools.php';
 $og_locale = 'it_IT';
 $current_page = 'tools';
+$breadcrumb = [['label' => 'Home', 'url' => 'index.php'], ['label' => 'Tool & Software']];
 include 'includes/head.php';
 include 'includes/nav.php';
 include 'includes/data-tools.php';
