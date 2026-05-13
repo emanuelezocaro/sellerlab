@@ -76,8 +76,24 @@ include 'includes/nav.php';
     .filter-bar {
       display: flex;
       gap: 8px;
-      flex-wrap: wrap;
-      margin-bottom: 24px;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scrollbar-width: none;
+      padding: 12px 24px;
+      margin: 0 -24px 24px;
+      position: sticky;
+      top: 60px;
+      z-index: 90;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      opacity: 0;
+      transform: translateY(-6px);
+      transition: opacity .2s, transform .2s;
+    }
+    .filter-bar::-webkit-scrollbar { display: none; }
+    .filter-bar.is-visible {
+      opacity: 1;
+      transform: translateY(0);
     }
     .filter-btn {
       padding: 7px 16px;
@@ -473,6 +489,11 @@ function sortTable(col) {
 }
 
 renderTable();
+
+const filterBar = document.querySelector('.filter-bar');
+window.addEventListener('scroll', function() {
+  filterBar.classList.toggle('is-visible', window.scrollY > 120);
+}, { passive: true });
 </script>
 
 <?php include 'includes/end.php'; ?>
