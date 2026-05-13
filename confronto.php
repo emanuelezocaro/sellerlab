@@ -329,7 +329,7 @@ function renderTable() {
     <tr>
       <td>
         <a href="${r.link}" class="mp-name" style="text-decoration:none;">
-          <img src="${r.icon}" alt="${r.name}" onerror="this.style.display='none'">
+          <img src="${r.icon}" alt="${r.name}" width="20" height="20" style="width:20px;height:20px;object-fit:contain;vertical-align:middle;margin-right:6px;" onerror="this.style.display='none'">
           ${r.name}
         </a>
       </td>
