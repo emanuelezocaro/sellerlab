@@ -13,14 +13,14 @@ include 'includes/nav.php';
 
 <nav class="section-nav" id="section-nav">
   <div class="section-nav-inner">
-    <button class="section-nav-link active" onclick="stickyFilter('all', this)">Tutti</button>
-    <button class="section-nav-link" onclick="stickyFilter('generalista', this)">Generalisti</button>
-    <button class="section-nav-link" onclick="stickyFilter('fashion', this)">Fashion</button>
-    <button class="section-nav-link" onclick="stickyFilter('verticale', this)">Verticali</button>
-    <button class="section-nav-link" onclick="stickyFilter('comparatore', this)">Comparatori</button>
-    <button class="section-nav-link" onclick="stickyFilter('social', this)">Social</button>
-    <button class="section-nav-link" onclick="stickyFilter('outlet', this)">Outlet</button>
-    <button class="section-nav-link" onclick="stickyFilter('libero', this)">Accesso libero</button>
+    <a href="#" class="section-nav-link active" onclick="secNav(event,'all')">Tutti</a>
+    <a href="#" class="section-nav-link" onclick="secNav(event,'generalista')">Generalisti</a>
+    <a href="#" class="section-nav-link" onclick="secNav(event,'fashion')">Fashion</a>
+    <a href="#" class="section-nav-link" onclick="secNav(event,'verticale')">Verticali</a>
+    <a href="#" class="section-nav-link" onclick="secNav(event,'comparatore')">Comparatori</a>
+    <a href="#" class="section-nav-link" onclick="secNav(event,'social')">Social</a>
+    <a href="#" class="section-nav-link" onclick="secNav(event,'outlet')">Outlet</a>
+    <a href="#" class="section-nav-link" onclick="secNav(event,'libero')">Accesso libero</a>
   </div>
 </nav>
 
@@ -110,12 +110,7 @@ include 'includes/nav.php';
       color: #fff;
     }
 
-    #section-nav .section-nav-link {
-      background: none;
-      border: none;
-      cursor: pointer;
-      font-family: inherit;
-    }
+
 
     .sort-btn {
       background: none;
@@ -153,14 +148,14 @@ include 'includes/nav.php';
     </div>
 
     <div class="filter-bar">
-      <button class="filter-btn active" onclick="filterTable('all', this)">Tutti</button>
-      <button class="filter-btn" onclick="filterTable('generalista', this)">Generalisti</button>
-      <button class="filter-btn" onclick="filterTable('fashion', this)">Fashion</button>
-      <button class="filter-btn" onclick="filterTable('verticale', this)">Verticali</button>
-      <button class="filter-btn" onclick="filterTable('comparatore', this)">Comparatori</button>
-      <button class="filter-btn" onclick="filterTable('social', this)">Social</button>
-      <button class="filter-btn" onclick="filterTable('outlet', this)">Outlet</button>
-      <button class="filter-btn" onclick="filterTable('libero', this)">Accesso libero</button>
+      <button class="filter-btn active" data-filter="all" onclick="filterTable('all', this)">Tutti</button>
+      <button class="filter-btn" data-filter="generalista" onclick="filterTable('generalista', this)">Generalisti</button>
+      <button class="filter-btn" data-filter="fashion" onclick="filterTable('fashion', this)">Fashion</button>
+      <button class="filter-btn" data-filter="verticale" onclick="filterTable('verticale', this)">Verticali</button>
+      <button class="filter-btn" data-filter="comparatore" onclick="filterTable('comparatore', this)">Comparatori</button>
+      <button class="filter-btn" data-filter="social" onclick="filterTable('social', this)">Social</button>
+      <button class="filter-btn" data-filter="outlet" onclick="filterTable('outlet', this)">Outlet</button>
+      <button class="filter-btn" data-filter="libero" onclick="filterTable('libero', this)">Accesso libero</button>
     </div>
 
     <div class="table-wrap" id="table-wrap">
@@ -503,12 +498,12 @@ window.addEventListener('scroll', function() {
   sectionNav.classList.toggle('is-visible', window.scrollY > 120);
 }, { passive: true });
 
-function stickyFilter(type, btn) {
-  // sync sticky nav active state
+function secNav(e, type) {
+  e.preventDefault();
   sectionNav.querySelectorAll('.section-nav-link').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
+  e.currentTarget.classList.add('active');
   // sync inline filter-bar
-  const match = [...document.querySelectorAll('.filter-btn')].find(b => b.textContent.trim() === btn.textContent.trim());
+  const match = [...document.querySelectorAll('.filter-btn')].find(b => b.dataset.filter === type);
   if (match) { document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active')); match.classList.add('active'); }
   currentFilter = type;
   renderTable();
