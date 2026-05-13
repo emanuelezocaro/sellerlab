@@ -298,6 +298,8 @@ nav a:hover, nav a.active {
   border-color: var(--border-hover);
   box-shadow: var(--shadow-hover);
 }
+.card-link { cursor: pointer; color: inherit; display: block; }
+.card-link:hover { border-color: var(--accent); box-shadow: var(--shadow-hover); }
 .card-header {
   display: flex;
   align-items: flex-start;
