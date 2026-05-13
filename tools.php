@@ -1509,8 +1509,8 @@ include 'includes/nav.php';
 <script>
 function secNav(e, id) {
   e.preventDefault();
-  var el = document.getElementById(id);
-  if (el) window.scrollTo({ top: el.offsetTop - 120, behavior: 'smooth' });
+  window.location.hash = id;
+  setTimeout(function() { window.scrollBy(0, -120); }, 10);
   document.querySelectorAll('#section-nav .section-nav-link').forEach(function(l) { l.classList.remove('active'); });
   if (e.currentTarget) e.currentTarget.classList.add('active');
 }
