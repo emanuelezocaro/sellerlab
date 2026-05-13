@@ -10,11 +10,12 @@ $css_path = '../style.css';
 $base_path = '../';
 $current_page = 'tools';
 $breadcrumb = [['label' => 'Home', 'url' => 'index.php'], ['label' => 'Tool & Software', 'url' => 'tools.php'], ['label' => 'Email & CRM']];
-include '../includes/head.php';
-include '../includes/nav.php';
-include '../includes/breadcrumb.php';
-include '../includes/data-tools.php';
-include '../includes/render-card.php';
+$root = dirname(__DIR__);
+include $root . '/includes/head.php';
+include $root . '/includes/nav.php';
+include $root . '/includes/breadcrumb.php';
+include $root . '/includes/data-tools.php';
+include $root . '/includes/render-card.php';
 $cat = $tools_categories['email-marketing'];
 $items = array_filter($tools, fn($t) => $t['category'] === 'email-marketing');
 ?>
@@ -35,5 +36,5 @@ $items = array_filter($tools, fn($t) => $t['category'] === 'email-marketing');
   </div>
 </section>
 
-<?php include '../includes/footer.php'; ?>
-<?php include '../includes/end.php'; ?>
+<?php include $root . '/includes/footer.php'; ?>
+<?php include $root . '/includes/end.php'; ?>

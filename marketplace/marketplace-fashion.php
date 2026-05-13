@@ -10,11 +10,12 @@ $css_path = '../style.css';
 $base_path = '../';
 $current_page = 'marketplace';
 $breadcrumb = [['label' => 'Home', 'url' => 'index.php'], ['label' => 'Marketplace', 'url' => 'marketplace.php'], ['label' => 'Moda & Fashion']];
-include '../includes/head.php';
-include '../includes/nav.php';
-include '../includes/breadcrumb.php';
-include '../includes/data-marketplace.php';
-include '../includes/render-card.php';
+$root = dirname(__DIR__);
+include $root . '/includes/head.php';
+include $root . '/includes/nav.php';
+include $root . '/includes/breadcrumb.php';
+include $root . '/includes/data-marketplace.php';
+include $root . '/includes/render-card.php';
 $cat = $marketplace_categories['fashion'];
 $items = array_filter($marketplaces, fn($m) => $m['category'] === 'fashion');
 ?>
@@ -35,5 +36,5 @@ $items = array_filter($marketplaces, fn($m) => $m['category'] === 'fashion');
   </div>
 </section>
 
-<?php include '../includes/footer.php'; ?>
-<?php include '../includes/end.php'; ?>
+<?php include $root . '/includes/footer.php'; ?>
+<?php include $root . '/includes/end.php'; ?>
