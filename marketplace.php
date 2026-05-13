@@ -1386,8 +1386,8 @@ include 'includes/nav.php';
 <script>
 function secNav(e, id) {
   e.preventDefault();
-  window.location.hash = id;
-  setTimeout(function() { window.scrollBy(0, -120); }, 10);
+  var el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   document.querySelectorAll('#section-nav .section-nav-link').forEach(function(l) { l.classList.remove('active'); });
   if (e.currentTarget) e.currentTarget.classList.add('active');
 }

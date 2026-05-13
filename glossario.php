@@ -302,8 +302,8 @@ const sectionNav = document.getElementById('section-nav');
 
 function secNavGloss(e, id) {
   e.preventDefault();
-  window.location.hash = id;
-  setTimeout(function() { window.scrollBy(0, -120); }, 10);
+  var el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   sectionNav.querySelectorAll('.section-nav-link').forEach(function(l) { l.classList.remove('active'); });
   if (e.currentTarget) e.currentTarget.classList.add('active');
 }
