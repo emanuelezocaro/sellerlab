@@ -1,0 +1,9 @@
+Options -Indexes
+
+# Redirect .html to .php (301 permanente per SEO)
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)\.html$ /$1.php [R=301,L]
+
+# index di default
+DirectoryIndex index.php index.html
