@@ -19,6 +19,8 @@
   <meta name="robots" content="index, follow">
   <meta name="author" content="SellerLab">
   <link rel="canonical" href="<?= htmlspecialchars($canonical) ?>">
+  <link rel="alternate" hreflang="it" href="<?= htmlspecialchars($canonical) ?>">
+  <link rel="alternate" hreflang="x-default" href="<?= htmlspecialchars($canonical) ?>">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
