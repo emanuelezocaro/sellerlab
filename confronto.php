@@ -1,8 +1,8 @@
 <?php
-$title = 'Confronto Commissioni Marketplace 2025: Amazon vs eBay vs Zalando | SellerLab';
-$description = 'Tabella comparativa di tutti i marketplace italiani: commissioni, traffico, tipo di accesso, categorie principali. Amazon vs eBay vs Zalando vs Etsy e molto altro.';
+$title = 'Confronto Commissioni Marketplace 2026: Amazon vs eBay vs Zalando | SellerLab';
+$description = 'Tabella comparativa di tutti i marketplace italiani: commissioni, traffico, tipo di accesso e categorie. Amazon vs eBay vs Zalando vs Etsy e altri 20+ marketplace aggiornati 2026.';
 $canonical = 'https://sellerlab.it/confronto.php';
-$og_title = 'Confronto Commissioni Marketplace Italiani 2025 - SellerLab';
+$og_title = 'Confronto Commissioni Marketplace Italiani 2026 - SellerLab';
 $og_description = 'Tabella comparativa completa: commissioni, traffico, accesso e categorie di tutti i marketplace italiani.';
 $og_url = 'https://sellerlab.it/confronto.php';
 $og_locale = 'it_IT';
@@ -137,7 +137,7 @@ include 'includes/breadcrumb.php';
 <div class="page-hero">
   <div class="page-hero-inner">
     <div class="section-label">Tabella comparativa</div>
-    <h1>Confronto commissioni marketplace 2025</h1>
+    <h1>Confronto commissioni marketplace 2026</h1>
     <p>Commissioni, traffico, tipo di accesso e categorie principali. Filtra e ordina per trovare il canale giusto per te.</p>
   </div>
 </div>
@@ -145,7 +145,7 @@ include 'includes/breadcrumb.php';
 <section class="section">
   <div class="section-inner">
     <div class="intro-box">
-      <p>Le commissioni indicate sono <strong>medie indicative</strong> per le categorie più comuni. Ogni marketplace applica tariffe diverse per categoria: verifica sempre la tabella commissioni ufficiale prima di vendere. I dati di traffico sono stime basate su fonti pubbliche (SimilarWeb, Statista) - <strong>aggiornate al 2025</strong>.</p>
+      <p>Le commissioni indicate sono <strong>medie indicative</strong> per le categorie più comuni. Ogni marketplace applica tariffe diverse per categoria: verifica sempre la tabella commissioni ufficiale prima di vendere. I dati di traffico sono stime basate su fonti pubbliche (SimilarWeb, Statista) - <strong>aggiornate al 2026</strong>.</p>
     </div>
 
     <div class="filter-bar">
